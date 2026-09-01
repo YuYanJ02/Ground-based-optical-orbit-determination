@@ -1,0 +1,8 @@
+"Type","TypeDesc","ErrorCode","Filename","LineNumber","DateTime","ComputerName","UserName","Message"
+1,"MsgWnd",0,"",0,05/19/2022 22:49:26,"ZHR-LAPTOP","haozh","An STK EOIR license exists but the Earth Hi Res Imagery file (""C:\Program Files\AGI\STK 12\EOIR_Databases\MaterialMaps\earthHiRes.dat"") could not be found. Indicating EOIR has not been installed."
+3,"Default",0,"AgStkInitObj.cpp",2226,05/19/2022 22:49:26,"ZHR-LAPTOP","haozh","STK Radar Advanced Environment license is present, but a valid install was not found."
+3,"Default",0,"AgStkInitObj.cpp",1889,05/19/2022 22:49:26,"ZHR-LAPTOP","haozh","STK Space Environment and Effects Tool license is present, but a valid install was not found."
+3,"Default",0,"AgStkInitObj.cpp",1892,05/19/2022 22:49:26,"ZHR-LAPTOP","haozh","Install or Update STK SEET to match the STK version 12.2.0."
+1,"MsgWnd",0,"",0,05/19/2022 22:49:27,"ZHR-LAPTOP","haozh","STK MATLAB Interface:  Loaded API at C:\Program Files\MATLAB\R2017b\bin\win64."
+2,"Default",0,"AgApRmtMsg.cpp",1332,05/19/2022 22:49:27,"ZHR-LAPTOP","haozh","STK/CON: Initializing STK/CON module."
+4,"MsgWnd",14008,"AgApRmtMsg.cpp",4335,05/19/2022 22:49:27,"ZHR-LAPTOP","haozh","STK/CON: Error binding to socket, Port 5001 address in use"

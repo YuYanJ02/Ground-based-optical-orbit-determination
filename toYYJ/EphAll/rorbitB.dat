@@ -1,0 +1,107 @@
+   VERSION       = 1.0
+   CREATION_DATE = 2026-01-26T15:35:12.0130
+   ORIGINATOR    = BACC
+   CREATION_SOFT = OOAA-OODB
+   OBJECT_NAME   = DROB
+   OBJECT_ID     = 7292
+   CENTER_ID     = 3
+   CENTER_NAME   = EARTH
+   REF_FRAME     = ICRF2000
+   TIME_SYSTEM   = BJT
+ 
+   COMMENT: State Vector.
+   EPOCH = 2026-01-26T08:00:00.0000
+   X     =     315233023.9510320     [m]
+   Y     =     242525743.8245271     [m]
+   Z     =     144635651.1290448     [m]
+   X_DOT =    -402.0829400253537     [m/s]
+   Y_DOT =     675.0319170981619     [m/s]
+   Z_DOT =     309.6341119615198     [m/s]
+ 
+   COMMENT: Keplerian osculate elements.
+   SEMI_MAJOR_AXIS       =     340547122.3074556     [m]
+   ECCENTRICITY          =     .3288707494287970    
+   INCLINATION           =     26.89362783703195     [deg]
+   RA_OF_ASC_NODE        =     351.7662268288932     [deg]
+   ARG_OF_PERICENTER     =     259.9149730365129     [deg]
+   MEAN_ANOMALY          =     124.8591322749471     [deg]
+   TRUE_ANOMALY          =     149.1571767010966     [deg]
+   ARG_OF_LATITUDE       =     49.07214973760949     [deg]
+ 
+   COMMENT: Keplerian mean elements.
+   MEAN_AXIS     =      .000000000000000     [m]
+   MEAN_ECCE     =      .000000000000000    
+   MEAN_INCL     =      .000000000000000     [deg]
+   MEAN_RAAN     =      .000000000000000     [deg]
+   MEAN_ARG_PERI =      .000000000000000     [deg]
+   MEAN_M_ANOM   =      .000000000000000     [deg]
+ 
+   COMMENT: other orbit parameter
+   PERIOD            =     1977774.635174520     [sec]
+   PERIOD_RATE       =    -.1700000000000000     [sec/day]
+   MEAN_MOTION       =    4093298.735125940      [rad/sec]
+   ESCAPE_VEL        =     1372.473242304713     [m/s]
+   ESCAPE_ENERGY     =    -1170470.737791559     [m**2/s**2]
+   R_PERIGEE         =     228551134.9783825     [m]
+   R_PERIGEE_M       =      .000000000000000     [m]
+   R_APOGEE          =     452543109.6365287     [m]
+   R_APOGEE_M        =      .000000000000000     [m]
+   RAAN_RATE         =      .000000000000000     [deg/day]
+   ARG_PERI_RATE     =      .000000000000000     [deg/day]
+ 
+   COMMENT: Perturbation information.
+   IP_EARTH    =            1                                                   
+   IP_EARNSP   =            1                                                   
+   IP_LUNNSP   =            1                                                   
+   IP_DRAG     =            0                                                   
+   IP_LUNSOL   =            1                                                   
+   IP_SRP      =            1                                                   
+   IP_OHPLANET =            1                                                   
+   IP_WOL      =            2                                                   
+ 
+   CB_RNU            =     398600441500000.0    [m**3/s**2]
+   CB_RADIUS         =     6378136.300000000    [m]
+   EARTH_NSP_DEGREE  =            8                                             
+   EARTH_NSP_ORDER   =            8                                             
+   LUNAR_NSP_DEGREE  =            8                                             
+   LUNAR_NSP_ORDER   =            8                                             
+   SRP_CR            =     1.374267436139804    
+   DRAG_CD           =     2.000000000000000    
+   DRAG_AP           =     5.000000000000000    
+   DRAG_F107         =     130.0000000000000    
+   DRAG_F107P        =     154.9000000000000    
+ 
+   COMMENT: S/C Parameters.
+   MASS       =     208.2240000000000     [kg]
+   SE_AREA    =     9.359000000000000     [m**2]
+   SC_AREA    =     30.95120000000000     [m**2]
+   PLANE_AREA =     6.270000000000000     [m**2]
+   DRAG_AREA  =     2.700000000000000     [m**2]
+   SRP_AREA   =     2.700000000000000     [m**2]
+   DRAG_SHAPE =            1
+ 
+   COMMENT: INTEG Parameters.
+   INTEG_ORDER      =               10
+   INTEG_STEP       =            30.00 [s]
+   INTEG_ALIM       =       0.1000E-09
+   OUTPUT_STEP      =            30.00 [s]
+ 
+   COMMENT:Parameter Precision Info.
+   ERR_X     =     1.673137927944088     [m]
+   ERR_Y     =     8.886754274884289     [m]
+   ERR_Z     =     16.30562323901316     [m]
+   ERR_X_DOT =     .5144583114880166E-05 [m/s]
+   ERR_Y_DOT =     .1440601016553913E-04 [m/s]
+   ERR_Z_DOT =     .1863599939722947E-04 [m/s]
+ 
+   ERR_AXIS   =     4.713254022668581     [m]
+   ERR_ECCE   =     .8225388675894715E-08
+   ERR_INCL   =     .1640038035227830E-05 [deg]
+   ERR_RAAN   =     .5679002979458437E-05 [deg]
+   ERR_ARGP   =     .6547820322823628E-05 [deg]
+   ERR_M_ANOM =     .3070905728487542E-05 [deg]
+ 
+   COMMENT: Flight segment and revolution infor.
+   ORBIT_SEGMENT = DR
+   REV_NUMBER    =            1
+   PAR_TYPE      = 002A0205H

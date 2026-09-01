@@ -1,0 +1,231 @@
+Astrogator Log File; DriverMCS: Mission_Control_Sequence
+-------------------------------------------------------------
+
+
+----------------------------------------------
+Begin targeter profile Target_Sequence.Differential_Corrector
+
+Initial control parameters:
+
+Unscaled Controls:
+Name                                             Current Value           Last Update       Total Correction
+Maneuver : ImpulsiveMnvr.Pointing.Cartesian.X -27.672091636169 m/sec  0.000000000000 m/sec   0.000000000000 m/sec
+
+
+Homotopy step   1 of   1
+
+Intermediate Goals Desired:
+- : Orbit_Period  786240.000000000000 sec
+
+
+
+---Running one step of the differential corrector...
+
+-------------------------------------------------------------
+Iteration =   1
+Unscaled Intermediate Constraints:
+Name                    Current Value                  Desired              Difference           Tolerance
+- : Orbit_Period  686913.425024394295 sec  786240.000000000000 sec -99326.574975605705 sec  0.100000000000 sec
+
+
+
+Performing one Newton-Raphson Step...
+
+Perturbation evaluation +1
+Controls:
+Name                                                     Value          Perturbation       Scaled Perturbation
+Maneuver : ImpulsiveMnvr.Pointing.Cartesian.X -27.572091636169 m/sec  0.100000000000 m/sec      0.003613749236
+
+Constraints:
+Name                            Value                Change           Scaled Change
+- : Orbit_Period  687206.104629489593 sec  292.679605095298 sec   0.000372252244983
+
+
+Partial derivative matrix (scaled) :
+
+       0.103009982349
+
+Newton Step Done...
+
+DC proposed step:
+Name                                                   Scaled         Unscaled
+Maneuver : ImpulsiveMnvr.Pointing.Cartesian.X  1.226396811231  33.936964942694 m/sec
+
+
+Step with Max Step limits applied:
+Name                                                   Scaled         Unscaled
+Maneuver : ImpulsiveMnvr.Pointing.Cartesian.X  1.226396811231  33.936964942694 m/sec
+
+
+Step final values:
+
+Unscaled Controls:
+Name                                            Current Value            Last Update       Total Correction
+Maneuver : ImpulsiveMnvr.Pointing.Cartesian.X  6.264873306525 m/sec  33.936964942694 m/sec  33.936964942694 m/sec
+
+
+Unscaled Intermediate Constraints:
+Name                    Current Value                  Desired              Difference           Tolerance
+- : Orbit_Period  800316.532885834691 sec  786240.000000000000 sec  14076.532885834691 sec  0.100000000000 sec
+
+
+
+-------------------------------------------------------------
+Iteration =   2
+Unscaled Intermediate Constraints:
+Name                    Current Value                  Desired              Difference           Tolerance
+- : Orbit_Period  800316.532885834691 sec  786240.000000000000 sec  14076.532885834691 sec  0.100000000000 sec
+
+
+
+Updating partials with Secant method...
+
+Partial derivative matrix (scaled) :
+
+       0.117608526641
+
+Secant Update Done...
+
+DC proposed step:
+Name                                                   Scaled        Unscaled
+Maneuver : ImpulsiveMnvr.Pointing.Cartesian.X -0.152230528510 -4.212537134740 m/sec
+
+
+Step with Max Step limits applied:
+Name                                                   Scaled        Unscaled
+Maneuver : ImpulsiveMnvr.Pointing.Cartesian.X -0.152230528510 -4.212537134740 m/sec
+
+
+Step final values:
+
+Unscaled Controls:
+Name                                            Current Value           Last Update       Total Correction
+Maneuver : ImpulsiveMnvr.Pointing.Cartesian.X  2.052336171785 m/sec -4.212537134740 m/sec  29.724427807954 m/sec
+
+
+Unscaled Intermediate Constraints:
+Name                    Current Value                  Desired             Difference           Tolerance
+- : Orbit_Period  784530.955738546909 sec  786240.000000000000 sec -1709.044261453091 sec  0.100000000000 sec
+
+
+
+-------------------------------------------------------------
+Iteration =   3
+Unscaled Intermediate Constraints:
+Name                    Current Value                  Desired             Difference           Tolerance
+- : Orbit_Period  784530.955738546909 sec  786240.000000000000 sec -1709.044261453091 sec  0.100000000000 sec
+
+
+
+Updating partials with Secant method...
+
+Partial derivative matrix (scaled) :
+
+       0.131887481493
+
+Secant Update Done...
+
+DC proposed step:
+Name                                                   Scaled        Unscaled
+Maneuver : ImpulsiveMnvr.Pointing.Cartesian.X  0.016481419003  0.456075336943 m/sec
+
+
+Step with Max Step limits applied:
+Name                                                   Scaled        Unscaled
+Maneuver : ImpulsiveMnvr.Pointing.Cartesian.X  0.016481419003  0.456075336943 m/sec
+
+
+Step final values:
+
+Unscaled Controls:
+Name                                            Current Value           Last Update       Total Correction
+Maneuver : ImpulsiveMnvr.Pointing.Cartesian.X  2.508411508728 m/sec  0.456075336943 m/sec  30.180503144896 m/sec
+
+
+Unscaled Intermediate Constraints:
+Name                    Current Value                  Desired           Difference           Tolerance
+- : Orbit_Period  786213.919711130555 sec  786240.000000000000 sec -26.080288869445 sec  0.100000000000 sec
+
+
+
+-------------------------------------------------------------
+Iteration =   4
+Unscaled Intermediate Constraints:
+Name                    Current Value                  Desired           Difference           Tolerance
+- : Orbit_Period  786213.919711130555 sec  786240.000000000000 sec -26.080288869445 sec  0.100000000000 sec
+
+
+
+Updating partials with Secant method...
+
+Partial derivative matrix (scaled) :
+
+       0.129874857424
+
+Secant Update Done...
+
+DC proposed step:
+Name                                                   Scaled        Unscaled
+Maneuver : ImpulsiveMnvr.Pointing.Cartesian.X  0.000255406637  0.007067635866 m/sec
+
+
+Step with Max Step limits applied:
+Name                                                   Scaled        Unscaled
+Maneuver : ImpulsiveMnvr.Pointing.Cartesian.X  0.000255406637  0.007067635866 m/sec
+
+
+Step final values:
+
+Unscaled Controls:
+Name                                            Current Value           Last Update       Total Correction
+Maneuver : ImpulsiveMnvr.Pointing.Cartesian.X  2.515479144594 m/sec  0.007067635866 m/sec  30.187570780762 m/sec
+
+
+Unscaled Intermediate Constraints:
+Name                    Current Value                  Desired          Difference           Tolerance
+- : Orbit_Period  786240.049118150142 sec  786240.000000000000 sec  0.049118150142 sec  0.100000000000 sec
+
+
+
+--------------------------------------------------------
+
+<<< Targeting Finished >>>
+    [Goals met]
+
+
+--------------------------------------------------------
+
+---Done. (running one step of the differential corrector.)
+
+Params from single diff corr
+
+Unscaled Controls:
+Name                                            Current Value           Last Update       Total Correction
+Maneuver : ImpulsiveMnvr.Pointing.Cartesian.X  2.515479144594 m/sec  0.007067635866 m/sec  30.187570780762 m/sec
+
+
+Unscaled Intermediate Constraints:
+Name                    Current Value                  Desired          Difference           Tolerance
+- : Orbit_Period  786240.049118150142 sec  786240.000000000000 sec  0.049118150142 sec  0.100000000000 sec
+
+
+
+----------------------------------------------
+Final Params from Homotopy Diff Corr
+
+Unscaled Controls:
+Name                                            Current Value           Last Update       Total Correction
+Maneuver : ImpulsiveMnvr.Pointing.Cartesian.X  2.515479144594 m/sec  0.007067635866 m/sec  30.187570780762 m/sec
+
+
+Unscaled Intermediate Constraints:
+Name                    Current Value                  Desired          Difference           Tolerance
+- : Orbit_Period  786240.049118150142 sec  786240.000000000000 sec  0.049118150142 sec  0.100000000000 sec
+
+
+
+----------------------------------------------
+
+*********** Done Targeting************************
+
+End targeter profile Target_Sequence.Differential_Corrector

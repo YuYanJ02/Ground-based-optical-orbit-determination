@@ -1,0 +1,238 @@
+<?xml version = "1.0" standalone = "yes"?>
+<VAR name = "Hipparcos_2_Collection">
+    <SCOPE Class = "StarCollection">
+        <VAR name = "Version">
+            <STRING>&quot;1.0.0 a&quot;</STRING>
+        </VAR>
+        <VAR name = "STKVersion">
+            <INT>1220</INT>
+        </VAR>
+        <VAR name = "Description">
+            <STRING>&quot;Hipparcos to magnitude 8&quot;</STRING>
+        </VAR>
+        <VAR name = "Type">
+            <STRING>&quot;StarCollection&quot;</STRING>
+        </VAR>
+        <VAR name = "UserComment">
+            <STRING>&quot;Hipparcos to magnitude 8&quot;</STRING>
+        </VAR>
+        <VAR name = "ReadOnly">
+            <BOOL>false</BOOL>
+        </VAR>
+        <VAR name = "Clonable">
+            <BOOL>true</BOOL>
+        </VAR>
+        <VAR name = "Category">
+            <STRING>&quot;@Top&quot;</STRING>
+        </VAR>
+        <VAR name = "StarCatalog">
+            <STRING>&quot;Hipparcos 2&quot;</STRING>
+        </VAR>
+        <VAR name = "Constraint">
+            <LIST>
+                <VAR name = "VisualMagnitude">
+                    <SCOPE Class = "VisualMagnitude">
+                        <VAR name = "UseMin">
+                            <BOOL>false</BOOL>
+                        </VAR>
+                        <VAR name = "Min">
+                            <REAL>-10</REAL>
+                        </VAR>
+                        <VAR name = "UseMax">
+                            <BOOL>false</BOOL>
+                        </VAR>
+                        <VAR name = "Max">
+                            <REAL>100</REAL>
+                        </VAR>
+                    </SCOPE>
+                </VAR>
+                <VAR name = "RightAscension">
+                    <SCOPE Class = "RightAscension">
+                        <VAR name = "UseMin">
+                            <BOOL>false</BOOL>
+                        </VAR>
+                        <VAR name = "Min">
+                            <QUANTITY Dimension = "AngleUnit" Unit = "deg">
+                                <REAL>-6.283185307179586</REAL>
+                            </QUANTITY>
+                        </VAR>
+                        <VAR name = "UseMax">
+                            <BOOL>false</BOOL>
+                        </VAR>
+                        <VAR name = "Max">
+                            <QUANTITY Dimension = "AngleUnit" Unit = "deg">
+                                <REAL>6.283185307179586</REAL>
+                            </QUANTITY>
+                        </VAR>
+                    </SCOPE>
+                </VAR>
+                <VAR name = "Declination">
+                    <SCOPE Class = "Declination">
+                        <VAR name = "UseMin">
+                            <BOOL>false</BOOL>
+                        </VAR>
+                        <VAR name = "Min">
+                            <QUANTITY Dimension = "AngleUnit" Unit = "deg">
+                                <REAL>-1.570796326794897</REAL>
+                            </QUANTITY>
+                        </VAR>
+                        <VAR name = "UseMax">
+                            <BOOL>false</BOOL>
+                        </VAR>
+                        <VAR name = "Max">
+                            <QUANTITY Dimension = "AngleUnit" Unit = "deg">
+                                <REAL>1.570796326794897</REAL>
+                            </QUANTITY>
+                        </VAR>
+                    </SCOPE>
+                </VAR>
+                <VAR name = "ProperMotionRA">
+                    <SCOPE Class = "ProperMotionRA">
+                        <VAR name = "UseMin">
+                            <BOOL>false</BOOL>
+                        </VAR>
+                        <VAR name = "Min">
+                            <QUANTITY Dimension = "AngleRateUnit" Unit = "arcSec*yr^-1">
+                                <REAL>-1.536281865610611e-11</REAL>
+                            </QUANTITY>
+                        </VAR>
+                        <VAR name = "UseMax">
+                            <BOOL>false</BOOL>
+                        </VAR>
+                        <VAR name = "Max">
+                            <QUANTITY Dimension = "AngleRateUnit" Unit = "arcSec*yr^-1">
+                                <REAL>1.536281865610611e-11</REAL>
+                            </QUANTITY>
+                        </VAR>
+                    </SCOPE>
+                </VAR>
+                <VAR name = "ProperMotionDec">
+                    <SCOPE Class = "ProperMotionDec">
+                        <VAR name = "UseMin">
+                            <BOOL>false</BOOL>
+                        </VAR>
+                        <VAR name = "Min">
+                            <QUANTITY Dimension = "AngleRateUnit" Unit = "arcSec*yr^-1">
+                                <REAL>-1.536281865610611e-11</REAL>
+                            </QUANTITY>
+                        </VAR>
+                        <VAR name = "UseMax">
+                            <BOOL>false</BOOL>
+                        </VAR>
+                        <VAR name = "Max">
+                            <QUANTITY Dimension = "AngleRateUnit" Unit = "arcSec*yr^-1">
+                                <REAL>1.536281865610611e-11</REAL>
+                            </QUANTITY>
+                        </VAR>
+                    </SCOPE>
+                </VAR>
+                <VAR name = "RadialVelocity">
+                    <SCOPE Class = "RadialVelocity">
+                        <VAR name = "UseMin">
+                            <BOOL>false</BOOL>
+                        </VAR>
+                        <VAR name = "Min">
+                            <QUANTITY Dimension = "Rate" Unit = "km*sec^-1">
+                                <REAL>-1000000</REAL>
+                            </QUANTITY>
+                        </VAR>
+                        <VAR name = "UseMax">
+                            <BOOL>false</BOOL>
+                        </VAR>
+                        <VAR name = "Max">
+                            <QUANTITY Dimension = "Rate" Unit = "km*sec^-1">
+                                <REAL>1000000</REAL>
+                            </QUANTITY>
+                        </VAR>
+                    </SCOPE>
+                </VAR>
+                <VAR name = "Parallax">
+                    <SCOPE Class = "Parallax">
+                        <VAR name = "UseMin">
+                            <BOOL>false</BOOL>
+                        </VAR>
+                        <VAR name = "Min">
+                            <QUANTITY Dimension = "AngleUnit" Unit = "arcSec">
+                                <REAL>0</REAL>
+                            </QUANTITY>
+                        </VAR>
+                        <VAR name = "UseMax">
+                            <BOOL>false</BOOL>
+                        </VAR>
+                        <VAR name = "Max">
+                            <QUANTITY Dimension = "AngleUnit" Unit = "arcSec">
+                                <REAL>0.0004848136741202325</REAL>
+                            </QUANTITY>
+                        </VAR>
+                    </SCOPE>
+                </VAR>
+                <VAR name = "Constellation">
+                    <SCOPE Class = "Constellation">
+                        <VAR name = "Use">
+                            <BOOL>false</BOOL>
+                        </VAR>
+                        <VAR name = "Value">
+                            <STRING>&quot;Andromeda&quot;</STRING>
+                        </VAR>
+                    </SCOPE>
+                </VAR>
+                <VAR name = "B-V">
+                    <SCOPE Class = "B-V">
+                        <VAR name = "UseMin">
+                            <BOOL>false</BOOL>
+                        </VAR>
+                        <VAR name = "Min">
+                            <REAL>-100</REAL>
+                        </VAR>
+                        <VAR name = "UseMax">
+                            <BOOL>false</BOOL>
+                        </VAR>
+                        <VAR name = "Max">
+                            <REAL>100</REAL>
+                        </VAR>
+                    </SCOPE>
+                </VAR>
+                <VAR name = "EffectiveTemperature">
+                    <SCOPE Class = "EffectiveTemperature">
+                        <VAR name = "UseMin">
+                            <BOOL>false</BOOL>
+                        </VAR>
+                        <VAR name = "Min">
+                            <QUANTITY Dimension = "Temperature" Unit = "K">
+                                <REAL>0</REAL>
+                            </QUANTITY>
+                        </VAR>
+                        <VAR name = "UseMax">
+                            <BOOL>false</BOOL>
+                        </VAR>
+                        <VAR name = "Max">
+                            <QUANTITY Dimension = "Temperature" Unit = "K">
+                                <REAL>1e+30</REAL>
+                            </QUANTITY>
+                        </VAR>
+                    </SCOPE>
+                </VAR>
+                <VAR name = "ID">
+                    <SCOPE Class = "ID">
+                        <VAR name = "Use">
+                            <BOOL>false</BOOL>
+                        </VAR>
+                        <VAR name = "Value">
+                            <STRING>&quot;&quot;</STRING>
+                        </VAR>
+                    </SCOPE>
+                </VAR>
+                <VAR name = "CommonName">
+                    <SCOPE Class = "CommonName">
+                        <VAR name = "Use">
+                            <BOOL>false</BOOL>
+                        </VAR>
+                        <VAR name = "Value">
+                            <STRING>&quot;&quot;</STRING>
+                        </VAR>
+                    </SCOPE>
+                </VAR>
+            </LIST>
+        </VAR>
+    </SCOPE>
+</VAR>

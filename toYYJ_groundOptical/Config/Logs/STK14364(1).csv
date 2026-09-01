@@ -1,0 +1,6 @@
+"Type","TypeDesc","ErrorCode","Filename","LineNumber","DateTime","ComputerName","UserName","Message"
+3,"MsgWnd",0,"",0,08/02/2023 19:54:21,"ZHR-LAPTOP","haozh","No valid 64 bit Matlab automation server is available.  Please run matlab /regserver as administrator or see Mathworks online help."
+2,"Default",0,"AgApRmtMsg.cpp",1336,08/02/2023 19:54:21,"ZHR-LAPTOP","haozh","STK/CON: Initializing STK/CON module."
+2,"Default",0,"AgApRmtMsg.cpp",1516,08/02/2023 19:54:21,"ZHR-LAPTOP","haozh","STK/CON: Accepting connection requests"
+1,"Default",0,"IAgUiPluginSiteImpl.hpp",50,08/02/2023 19:54:26,"ZHR-LAPTOP","haozh","Scalable Networks Modeling Interface:  Loading EXata UI xml files from ""C:\Program Files\AGI\STK 12\STK-QualNet Interface\QualNetUI\gui\settings""."
+3,"Default",0,"IAgUiPluginSiteImpl.hpp",50,08/02/2023 19:54:27,"ZHR-LAPTOP","haozh","Scalable Networks Modeling Interface:  Unable to find a valid Scalable Networks simulator installation."

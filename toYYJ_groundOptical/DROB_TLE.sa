@@ -1,0 +1,4234 @@
+stk.v.12.0
+WrittenBy    STK_v12.2.0
+
+BEGIN Satellite
+
+    Name		 DROB_TLE
+
+    BEGIN VehiclePath
+        CentralBody		 Earth
+
+        BEGIN Interval
+
+            StartTime		 28 Aug 2024 04:01:00.000000000
+            StopTime		 28 Apr 2027 04:01:00.000000000
+
+        END Interval
+
+        StoreEphemeris		 Yes
+        SmoothInterp		 No
+
+        BEGIN SGP4
+
+            VersionIndicator		 20080918
+
+            SSCNumber		 60058
+            IntlDesignator		 2024-048D
+            CommonName		 2024-048D = NORAD 60058 = DRO-B
+            UseScenInterval		 No
+            EphemSmartInterval		
+            BEGIN EVENTINTERVAL
+                EventInterval		
+                BEGIN EVENTINTERVAL
+                    Type		 EVENTINTERVAL_LINKTO
+                    Name		 AnalysisInterval
+                    AbsolutePath		 Scenario
+                END EVENTINTERVAL
+                IntervalState		 Implicit
+            END EVENTINTERVAL
+
+            StartTime		 28 Aug 2024 04:01:00.000
+            StopTime		 28 Apr 2027 04:01:00.000
+            TimeStep		 60
+            Use1PtInterpolation		 Yes
+            Use1PtValidation		 No
+            Use1PtInterpWarning		 No
+            UpdateMode		 FromFiles
+            RetrieveMethod		 AllTLEs
+            UpdateSwitchMethod		 Epoch
+            SourceFile		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   30 Jun 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25181.49919926  .00000000  00000-0  00000-0 0 27151
+                2 60058 028.0873 358.5227 4356685 088.4498 142.4179 00.06097187    05
+                SwitchMethod		 Epoch
+                SwitchEpoch		 30 Jun 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   1 Jul 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25182.49919926  .00000000  00000-0  00000-0 0 27152
+                2 60058 028.0855 358.4965 4338906 088.0159 165.4439 00.06099880    05
+                SwitchMethod		 Epoch
+                SwitchEpoch		 1 Jul 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   2 Jul 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25183.49919926  .00000000  00000-0  00000-0 0 27153
+                2 60058 028.0860 358.4893 4320411 087.6207 188.2730 00.06089747    00
+                SwitchMethod		 Epoch
+                SwitchEpoch		 2 Jul 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   3 Jul 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25184.49919926  .00000000  00000-0  00000-0 0 27154
+                2 60058 028.0867 358.4711 4303192 087.1472 211.1382 00.06069616    04
+                SwitchMethod		 Epoch
+                SwitchEpoch		 3 Jul 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   4 Jul 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25185.49919926  .00000000  00000-0  00000-0 0 27155
+                2 60058 028.0887 358.4534 4292446 086.4821 234.2039 00.06037464    09
+                SwitchMethod		 Epoch
+                SwitchEpoch		 4 Jul 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   5 Jul 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25186.49919926  .00000000  00000-0  00000-0 0 27156
+                2 60058 028.0925 358.4381 4296755 085.5193 257.6292 00.05984970    03
+                SwitchMethod		 Epoch
+                SwitchEpoch		 5 Jul 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   6 Jul 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25187.49919926  .00000000  00000-0  00000-0 0 27157
+                2 60058 028.0956 358.4326 4329591 084.1896 281.4560 00.05896518    09
+                SwitchMethod		 Epoch
+                SwitchEpoch		 6 Jul 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   7 Jul 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25188.49919926  .00000000  00000-0  00000-0 0 27158
+                2 60058 028.1050 358.4292 4422378 082.2514 305.9634 00.05722985    00
+                SwitchMethod		 Epoch
+                SwitchEpoch		 7 Jul 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   8 Jul 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25189.49919926  .00000000  00000-0  00000-0 0 27159
+                2 60058 028.1043 358.4597 4664421 079.6187 331.1832 00.05341758    09
+                SwitchMethod		 Epoch
+                SwitchEpoch		 8 Jul 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   9 Jul 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25190.49919926  .00000000  00000-0  00000-0 0 27151
+                2 60058 028.2033 358.5807 5123226 078.9778 354.0230 00.04677783    01
+                SwitchMethod		 Epoch
+                SwitchEpoch		 9 Jul 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   10 Jul 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25191.49919926  .00000000  00000-0  00000-0 0 27152
+                2 60058 028.1425 358.5351 4567235 084.7476 007.6763 00.05749382    08
+                SwitchMethod		 Epoch
+                SwitchEpoch		 10 Jul 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   11 Jul 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25192.49919926  .00000000  00000-0  00000-0 0 27153
+                2 60058 028.1484 358.4582 4844871 091.2267 023.3191 00.04969754    09
+                SwitchMethod		 Epoch
+                SwitchEpoch		 11 Jul 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   12 Jul 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25193.49919926  .00000000  00000-0  00000-0 0 27154
+                2 60058 028.0805 358.4299 4622245 096.2018 039.3202 00.04967068    04
+                SwitchMethod		 Epoch
+                SwitchEpoch		 12 Jul 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   13 Jul 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25194.49919926  .00000000  00000-0  00000-0 0 27155
+                2 60058 028.1097 358.4179 4366437 090.8856 067.0320 00.05635479    01
+                SwitchMethod		 Epoch
+                SwitchEpoch		 13 Jul 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   14 Jul 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25195.49919926  .00000000  00000-0  00000-0 0 27156
+                2 60058 028.0912 358.3771 4331396 088.0313 092.3699 00.05880509    02
+                SwitchMethod		 Epoch
+                SwitchEpoch		 14 Jul 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   15 Jul 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25196.49919926  .00000000  00000-0  00000-0 0 27157
+                2 60058 028.0917 358.3662 4361665 086.2280 116.6336 00.06008554    02
+                SwitchMethod		 Epoch
+                SwitchEpoch		 15 Jul 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   16 Jul 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25197.49919926  .00000000  00000-0  00000-0 0 27158
+                2 60058 028.0921 358.3629 4413849 085.2075 140.0042 00.06082024    02
+                SwitchMethod		 Epoch
+                SwitchEpoch		 16 Jul 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   17 Jul 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25198.49919926  .00000000  00000-0  00000-0 0 27159
+                2 60058 028.0897 358.3453 4468943 084.7662 162.6805 00.06128253    02
+                SwitchMethod		 Epoch
+                SwitchEpoch		 17 Jul 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   18 Jul 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25199.49919926  .00000000  00000-0  00000-0 0 27150
+                2 60058 028.0887 358.3336 4519298 084.7084 184.8686 00.06161826    05
+                SwitchMethod		 Epoch
+                SwitchEpoch		 18 Jul 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   19 Jul 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25200.49919926  .00000000  00000-0  00000-0 0 27153
+                2 60058 028.0877 358.3192 4564137 084.9266 206.7335 00.06192169    09
+                SwitchMethod		 Epoch
+                SwitchEpoch		 19 Jul 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   20 Jul 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25201.49919926  .00000000  00000-0  00000-0 0 27154
+                2 60058 028.0871 358.3033 4602351 085.3674 228.3720 00.06224663    09
+                SwitchMethod		 Epoch
+                SwitchEpoch		 20 Jul 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   21 Jul 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25202.49919926  .00000000  00000-0  00000-0 0 27155
+                2 60058 028.0869 358.2857 4630004 085.9772 249.8869 00.06261031    02
+                SwitchMethod		 Epoch
+                SwitchEpoch		 21 Jul 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   22 Jul 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25203.49919926  .00000000  00000-0  00000-0 0 27156
+                2 60058 028.0868 358.2687 4643228 086.6976 271.3680 00.06302667    00
+                SwitchMethod		 Epoch
+                SwitchEpoch		 22 Jul 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   23 Jul 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25204.49919926  .00000000  00000-0  00000-0 0 27157
+                2 60058 028.0871 358.2523 4639648 087.3953 293.0102 00.06346627    01
+                SwitchMethod		 Epoch
+                SwitchEpoch		 23 Jul 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   24 Jul 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25205.49919926  .00000000  00000-0  00000-0 0 27158
+                2 60058 028.0884 358.2374 4625191 087.8505 315.1024 00.06380804    09
+                SwitchMethod		 Epoch
+                SwitchEpoch		 24 Jul 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   25 Jul 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25206.49919926  .00000000  00000-0  00000-0 0 27159
+                2 60058 028.0927 358.2298 4629720 087.8045 337.9448 00.06365022    00
+                SwitchMethod		 Epoch
+                SwitchEpoch		 25 Jul 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   26 Jul 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25207.49919926  .00000000  00000-0  00000-0 0 27150
+                2 60058 028.0991 358.2476 4715909 087.7457 000.9973 00.06213431    06
+                SwitchMethod		 Epoch
+                SwitchEpoch		 26 Jul 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   27 Jul 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25208.49919926  .00000000  00000-0  00000-0 0 27151
+                2 60058 028.0928 358.2814 4797370 089.2890 022.2314 00.06002676    05
+                SwitchMethod		 Epoch
+                SwitchEpoch		 27 Jul 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   28 Jul 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25209.49919926  .00000000  00000-0  00000-0 0 27152
+                2 60058 028.0835 358.2651 4749610 089.6784 043.8163 00.06053637    05
+                SwitchMethod		 Epoch
+                SwitchEpoch		 28 Jul 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   29 Jul 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25210.49919926  .00000000  00000-0  00000-0 0 27154
+                2 60058 028.0806 358.2433 4752497 087.8150 067.6797 00.06249759    04
+                SwitchMethod		 Epoch
+                SwitchEpoch		 29 Jul 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   30 Jul 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25211.49919926  .00000000  00000-0  00000-0 0 27155
+                2 60058 028.0875 358.2410 4824871 085.7628 092.5477 00.06433448    00
+                SwitchMethod		 Epoch
+                SwitchEpoch		 30 Jul 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   31 Jul 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25212.49919926  .00000000  00000-0  00000-0 0 27156
+                2 60058 028.0886 358.2314 4925393 084.2356 117.7137 00.06577037    04
+                SwitchMethod		 Epoch
+                SwitchEpoch		 31 Jul 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   1 Aug 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25213.49919926  .00000000  00000-0  00000-0 0 27157
+                2 60058 028.0929 358.2379 5040549 083.1492 143.0660 00.06694104    02
+                SwitchMethod		 Epoch
+                SwitchEpoch		 1 Aug 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   2 Aug 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25214.49919926  .00000000  00000-0  00000-0 0 27158
+                2 60058 028.0965 358.2531 5175290 082.4082 168.6169 00.06801265    06
+                SwitchMethod		 Epoch
+                SwitchEpoch		 2 Aug 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   3 Aug 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25215.49919926  .00000000  00000-0  00000-0 0 27159
+                2 60058 028.0989 358.2815 5343331 082.0793 194.2153 00.06915470    07
+                SwitchMethod		 Epoch
+                SwitchEpoch		 3 Aug 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   4 Aug 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25216.49919926  .00000000  00000-0  00000-0 0 27150
+                2 60058 028.0971 358.3548 5557318 082.3503 219.6749 00.07058779    00
+                SwitchMethod		 Epoch
+                SwitchEpoch		 4 Aug 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   5 Aug 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25217.49919926  .00000000  00000-0  00000-0 0 27151
+                2 60058 028.0880 358.4187 5800962 083.6787 244.4182 00.07257479    08
+                SwitchMethod		 Epoch
+                SwitchEpoch		 5 Aug 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   6 Aug 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25218.49919926  .00000000  00000-0  00000-0 0 27152
+                2 60058 028.0709 358.4915 6009193 086.0587 268.3334 00.07525055    02
+                SwitchMethod		 Epoch
+                SwitchEpoch		 6 Aug 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   7 Aug 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25219.49919926  .00000000  00000-0  00000-0 0 27153
+                2 60058 028.0425 358.5497 6097078 088.5220 292.6049 00.07806698    01
+                SwitchMethod		 Epoch
+                SwitchEpoch		 7 Aug 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   8 Aug 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25220.49919926  .00000000  00000-0  00000-0 0 27155
+                2 60058 028.0324 358.5405 6089413 090.0548 318.8831 00.08015745    09
+                SwitchMethod		 Epoch
+                SwitchEpoch		 8 Aug 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   9 Aug 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25221.49919926  .00000000  00000-0  00000-0 0 27156
+                2 60058 028.0338 358.5244 6065213 090.3911 347.1841 00.08091412    05
+                SwitchMethod		 Epoch
+                SwitchEpoch		 9 Aug 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   10 Aug 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25222.49919926  .00000000  00000-0  00000-0 0 27157
+                2 60058 028.0358 358.5471 6136619 090.4718 016.0200 00.07865608    00
+                SwitchMethod		 Epoch
+                SwitchEpoch		 10 Aug 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   11 Aug 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25223.49919926  .00000000  00000-0  00000-0 0 27158
+                2 60058 028.0269 358.5325 6099921 090.9793 044.2253 00.07890673    02
+                SwitchMethod		 Epoch
+                SwitchEpoch		 11 Aug 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   12 Aug 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25224.49919926  .00000000  00000-0  00000-0 0 27159
+                2 60058 028.0261 358.5121 6091117 090.5311 073.3936 00.08001239    03
+                SwitchMethod		 Epoch
+                SwitchEpoch		 12 Aug 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   13 Aug 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25225.49919926  .00000000  00000-0  00000-0 0 27150
+                2 60058 028.0275 358.5036 6117413 090.1945 102.5409 00.08057592    03
+                SwitchMethod		 Epoch
+                SwitchEpoch		 13 Aug 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   14 Aug 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25226.49919926  .00000000  00000-0  00000-0 0 27151
+                2 60058 028.0284 358.4990 6144605 090.1012 131.4811 00.08083197    07
+                SwitchMethod		 Epoch
+                SwitchEpoch		 14 Aug 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   15 Aug 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25227.49919926  .00000000  00000-0  00000-0 0 27152
+                2 60058 028.0285 358.4926 6161226 090.1548 160.3051 00.08094462    03
+                SwitchMethod		 Epoch
+                SwitchEpoch		 15 Aug 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   16 Aug 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25228.49919926  .00000000  00000-0  00000-0 0 27153
+                2 60058 028.0282 358.4816 6170244 090.2581 189.1259 00.08101303    08
+                SwitchMethod		 Epoch
+                SwitchEpoch		 16 Aug 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   17 Aug 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25229.49919926  .00000000  00000-0  00000-0 0 27154
+                2 60058 028.0281 358.4683 6178210 090.3865 217.9607 00.08109651    07
+                SwitchMethod		 Epoch
+                SwitchEpoch		 17 Aug 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   18 Aug 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25230.49919926  .00000000  00000-0  00000-0 0 27156
+                2 60058 028.0281 358.4552 6188306 090.5777 246.7496 00.08125162    04
+                SwitchMethod		 Epoch
+                SwitchEpoch		 18 Aug 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   19 Aug 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25231.49919926  .00000000  00000-0  00000-0 0 27157
+                2 60058 028.0277 358.4437 6196016 090.8783 275.4335 00.08154392    06
+                SwitchMethod		 Epoch
+                SwitchEpoch		 19 Aug 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   20 Aug 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25232.49919926  .00000000  00000-0  00000-0 0 27158
+                2 60058 028.0250 358.4348 6190602 091.2612 304.0724 00.08203837    09
+                SwitchMethod		 Epoch
+                SwitchEpoch		 20 Aug 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   21 Aug 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25233.49919926  .00000000  00000-0  00000-0 0 27159
+                2 60058 028.0263 358.4172 6166633 091.5051 333.0033 00.08261763    02
+                SwitchMethod		 Epoch
+                SwitchEpoch		 21 Aug 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   22 Aug 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25234.49919926  .00000000  00000-0  00000-0 0 27150
+                2 60058 028.0274 358.4086 6203375 091.2464 002.7077 00.08137255    04
+                SwitchMethod		 Epoch
+                SwitchEpoch		 22 Aug 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   23 Aug 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25235.49919926  .00000000  00000-0  00000-0 0 27151
+                2 60058 028.0225 358.4270 6243858 092.1360 031.1996 00.07929717    07
+                SwitchMethod		 Epoch
+                SwitchEpoch		 23 Aug 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   24 Aug 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25236.49919926  .00000000  00000-0  00000-0 0 27152
+                2 60058 028.0232 358.4031 6186248 091.8152 060.8238 00.08104471    05
+                SwitchMethod		 Epoch
+                SwitchEpoch		 24 Aug 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   25 Aug 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25237.49919926  .00000000  00000-0  00000-0 0 27153
+                2 60058 028.0226 358.3821 6179848 091.2701 091.1526 00.08220436    03
+                SwitchMethod		 Epoch
+                SwitchEpoch		 25 Aug 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   26 Aug 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25238.49919926  .00000000  00000-0  00000-0 0 27154
+                2 60058 028.0239 358.3706 6186564 090.9065 121.6286 00.08281841    00
+                SwitchMethod		 Epoch
+                SwitchEpoch		 26 Aug 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   27 Aug 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25239.49919926  .00000000  00000-0  00000-0 0 27155
+                2 60058 028.0245 358.3596 6189054 090.6652 152.1970 00.08310480    01
+                SwitchMethod		 Epoch
+                SwitchEpoch		 27 Aug 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   28 Aug 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25240.49919926  .00000000  00000-0  00000-0 0 27157
+                2 60058 028.0248 358.3467 6186211 090.4429 182.8815 00.08316890    02
+                SwitchMethod		 Epoch
+                SwitchEpoch		 28 Aug 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   29 Aug 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25241.49919926  .00000000  00000-0  00000-0 0 27158
+                2 60058 028.0253 358.3323 6184800 090.1789 213.6728 00.08305841    07
+                SwitchMethod		 Epoch
+                SwitchEpoch		 29 Aug 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   30 Aug 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25242.49919926  .00000000  00000-0  00000-0 0 27159
+                2 60058 028.0259 358.3188 6193404 089.8742 244.4969 00.08278838    00
+                SwitchMethod		 Epoch
+                SwitchEpoch		 30 Aug 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   31 Aug 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25243.49919926  .00000000  00000-0  00000-0 0 27150
+                2 60058 028.0264 358.3083 6217582 089.5659 275.2407 00.08232501    04
+                SwitchMethod		 Epoch
+                SwitchEpoch		 31 Aug 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   1 Sep 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25244.49919926  .00000000  00000-0  00000-0 0 27151
+                2 60058 028.0262 358.3020 6262127 089.2363 305.8519 00.08144748    06
+                SwitchMethod		 Epoch
+                SwitchEpoch		 1 Sep 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   2 Sep 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25245.49919926  .00000000  00000-0  00000-0 0 27152
+                2 60058 028.0209 358.3101 6369584 088.7649 336.4045 00.07902324    08
+                SwitchMethod		 Epoch
+                SwitchEpoch		 2 Sep 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   3 Sep 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25246.49919926  .00000000  00000-0  00000-0 0 27153
+                2 60058 028.0184 358.3272 6595997 090.0860 005.1139 00.07399173    05
+                SwitchMethod		 Epoch
+                SwitchEpoch		 3 Sep 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   4 Sep 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25247.49919926  .00000000  00000-0  00000-0 0 27154
+                2 60058 028.0125 358.3135 6432151 092.8857 031.9986 00.07551087    07
+                SwitchMethod		 Epoch
+                SwitchEpoch		 4 Sep 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   5 Sep 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25248.49919926  .00000000  00000-0  00000-0 0 27155
+                2 60058 028.0174 358.2680 6256039 092.0163 062.6232 00.08016391    06
+                SwitchMethod		 Epoch
+                SwitchEpoch		 5 Sep 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   6 Sep 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25249.49919926  .00000000  00000-0  00000-0 0 27156
+                2 60058 028.0214 358.2548 6230273 091.0331 093.8359 00.08219580    03
+                SwitchMethod		 Epoch
+                SwitchEpoch		 6 Sep 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   7 Sep 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25250.49919926  .00000000  00000-0  00000-0 0 27158
+                2 60058 028.0195 358.2268 6254769 090.3490 125.0335 00.08329492    00
+                SwitchMethod		 Epoch
+                SwitchEpoch		 7 Sep 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   8 Sep 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25251.49919926  .00000000  00000-0  00000-0 0 27159
+                2 60058 028.0202 358.2148 6291135 089.9657 156.0062 00.08389020    07
+                SwitchMethod		 Epoch
+                SwitchEpoch		 8 Sep 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   9 Sep 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25252.49919926  .00000000  00000-0  00000-0 0 27150
+                2 60058 028.0205 358.2047 6318970 089.7905 186.7974 00.08416680    04
+                SwitchMethod		 Epoch
+                SwitchEpoch		 9 Sep 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   10 Sep 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25253.49919926  .00000000  00000-0  00000-0 0 27151
+                2 60058 028.0205 358.1934 6332612 089.6774 217.5486 00.08420010    03
+                SwitchMethod		 Epoch
+                SwitchEpoch		 10 Sep 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   11 Sep 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25254.49919926  .00000000  00000-0  00000-0 0 27152
+                2 60058 028.0199 358.1843 6339841 089.4977 248.4044 00.08399696    06
+                SwitchMethod		 Epoch
+                SwitchEpoch		 11 Sep 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   12 Sep 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25255.49919926  .00000000  00000-0  00000-0 0 27153
+                2 60058 028.0208 358.1667 6358480 089.2178 279.4193 00.08347834    08
+                SwitchMethod		 Epoch
+                SwitchEpoch		 12 Sep 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   13 Sep 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25256.49919926  .00000000  00000-0  00000-0 0 27154
+                2 60058 028.0200 358.1560 6413049 088.8254 310.5525 00.08224794    00
+                SwitchMethod		 Epoch
+                SwitchEpoch		 13 Sep 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   14 Sep 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25257.49919926  .00000000  00000-0  00000-0 0 27155
+                2 60058 028.0157 358.1500 6588222 088.5218 341.5336 00.07842620    05
+                SwitchMethod		 Epoch
+                SwitchEpoch		 14 Sep 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   15 Sep 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25258.49919926  .00000000  00000-0  00000-0 0 27156
+                2 60058 028.0106 358.1502 6732547 091.2181 009.4280 00.07547988    09
+                SwitchMethod		 Epoch
+                SwitchEpoch		 15 Sep 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   16 Sep 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25259.49919926  .00000000  00000-0  00000-0 0 27157
+                2 60058 028.0149 358.1378 6485419 092.6455 038.5910 00.07985143    01
+                SwitchMethod		 Epoch
+                SwitchEpoch		 16 Sep 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   17 Sep 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25260.49919926  .00000000  00000-0  00000-0 0 27159
+                2 60058 028.0165 358.1204 6372760 092.0304 069.9073 00.08264963    07
+                SwitchMethod		 Epoch
+                SwitchEpoch		 17 Sep 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   18 Sep 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25261.49919926  .00000000  00000-0  00000-0 0 27150
+                2 60058 028.0156 358.1014 6343088 091.5112 101.2758 00.08378359    03
+                SwitchMethod		 Epoch
+                SwitchEpoch		 18 Sep 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   19 Sep 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25262.49919926  .00000000  00000-0  00000-0 0 27151
+                2 60058 028.0154 358.0852 6340872 091.1634 132.4882 00.08431065    01
+                SwitchMethod		 Epoch
+                SwitchEpoch		 19 Sep 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   20 Sep 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25263.49919926  .00000000  00000-0  00000-0 0 27152
+                2 60058 028.0153 358.0711 6341136 090.9631 163.5217 00.08449961    03
+                SwitchMethod		 Epoch
+                SwitchEpoch		 20 Sep 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   21 Sep 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25264.49919926  .00000000  00000-0  00000-0 0 27153
+                2 60058 028.0151 358.0578 6331165 090.8181 194.4378 00.08443265    04
+                SwitchMethod		 Epoch
+                SwitchEpoch		 21 Sep 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   22 Sep 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25265.49919926  .00000000  00000-0  00000-0 0 27154
+                2 60058 028.0149 358.0439 6309340 090.6050 225.3304 00.08411851    09
+                SwitchMethod		 Epoch
+                SwitchEpoch		 22 Sep 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   23 Sep 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25266.49919926  .00000000  00000-0  00000-0 0 27155
+                2 60058 028.0146 358.0282 6285124 090.2168 256.2636 00.08350817    06
+                SwitchMethod		 Epoch
+                SwitchEpoch		 23 Sep 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   24 Sep 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25267.49919926  .00000000  00000-0  00000-0 0 27156
+                2 60058 028.0142 358.0106 6279414 089.6085 287.2193 00.08245143    09
+                SwitchMethod		 Epoch
+                SwitchEpoch		 24 Sep 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   25 Sep 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25268.49919926  .00000000  00000-0  00000-0 0 27157
+                2 60058 028.0129 357.9903 6333326 088.8813 318.0187 00.08047373    01
+                SwitchMethod		 Epoch
+                SwitchEpoch		 25 Sep 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   26 Sep 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25269.49919926  .00000000  00000-0  00000-0 0 27158
+                2 60058 028.0100 357.9684 6506133 089.2665 347.5468 00.07724699    05
+                SwitchMethod		 Epoch
+                SwitchEpoch		 26 Sep 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   27 Sep 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25270.49919926  .00000000  00000-0  00000-0 0 27150
+                2 60058 028.0195 357.9650 6447244 091.4536 015.5168 00.07898054    07
+                SwitchMethod		 Epoch
+                SwitchEpoch		 27 Sep 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   28 Sep 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25271.49919926  .00000000  00000-0  00000-0 0 27151
+                2 60058 028.0155 357.9614 6315784 091.5341 045.5681 00.08166280    04
+                SwitchMethod		 Epoch
+                SwitchEpoch		 28 Sep 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   29 Sep 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25272.49919926  .00000000  00000-0  00000-0 0 27152
+                2 60058 028.0176 357.9586 6260570 091.5243 075.7848 00.08232892    01
+                SwitchMethod		 Epoch
+                SwitchEpoch		 29 Sep 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   30 Sep 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25273.49919926  .00000000  00000-0  00000-0 0 27153
+                2 60058 028.0153 357.9388 6208581 091.5636 106.0962 00.08248445    02
+                SwitchMethod		 Epoch
+                SwitchEpoch		 30 Sep 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   1 Oct 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25274.49919926  .00000000  00000-0  00000-0 0 27154
+                2 60058 028.0176 357.9435 6159896 091.4341 136.6555 00.08250930    05
+                SwitchMethod		 Epoch
+                SwitchEpoch		 1 Oct 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   2 Oct 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25275.49919926  .00000000  00000-0  00000-0 0 27155
+                2 60058 028.0171 357.9321 6127560 091.1840 167.3359 00.08246745    00
+                SwitchMethod		 Epoch
+                SwitchEpoch		 2 Oct 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   3 Oct 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25276.49919926  .00000000  00000-0  00000-0 0 27156
+                2 60058 028.0166 357.9215 6111561 090.9075 197.8979 00.08233764    00
+                SwitchMethod		 Epoch
+                SwitchEpoch		 3 Oct 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   4 Oct 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25277.49919926  .00000000  00000-0  00000-0 0 27157
+                2 60058 028.0161 357.9098 6101935 090.6619 228.1800 00.08208984    06
+                SwitchMethod		 Epoch
+                SwitchEpoch		 4 Oct 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   5 Oct 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25278.49919926  .00000000  00000-0  00000-0 0 27158
+                2 60058 028.0149 357.8990 6088647 090.3892 258.1763 00.08167009    09
+                SwitchMethod		 Epoch
+                SwitchEpoch		 5 Oct 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   6 Oct 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25279.49919926  .00000000  00000-0  00000-0 0 27159
+                2 60058 028.0138 357.8861 6073243 089.9923 287.9247 00.08100303    00
+                SwitchMethod		 Epoch
+                SwitchEpoch		 6 Oct 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   7 Oct 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25280.49919926  .00000000  00000-0  00000-0 0 27151
+                2 60058 028.0143 357.8677 6072681 089.4733 317.3523 00.08001366    04
+                SwitchMethod		 Epoch
+                SwitchEpoch		 7 Oct 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   8 Oct 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25281.49919926  .00000000  00000-0  00000-0 0 27152
+                2 60058 028.0160 357.8570 6070006 089.4614 345.9626 00.07996235    00
+                SwitchMethod		 Epoch
+                SwitchEpoch		 8 Oct 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   9 Oct 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25282.49919926  .00000000  00000-0  00000-0 0 27153
+                2 60058 028.0166 357.8551 6010279 089.3335 014.9838 00.08157367    04
+                SwitchMethod		 Epoch
+                SwitchEpoch		 9 Oct 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   10 Oct 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25283.49919926  .00000000  00000-0  00000-0 0 27154
+                2 60058 028.0180 357.8379 6056130 089.5662 043.3847 00.08052525    05
+                SwitchMethod		 Epoch
+                SwitchEpoch		 10 Oct 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   11 Oct 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25284.49919926  .00000000  00000-0  00000-0 0 27155
+                2 60058 028.0184 357.8242 6070437 090.1440 071.2195 00.07963816    05
+                SwitchMethod		 Epoch
+                SwitchEpoch		 11 Oct 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   12 Oct 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25285.49919926  .00000000  00000-0  00000-0 0 27156
+                2 60058 028.0173 357.8095 6058882 090.5498 099.1699 00.07920467    09
+                SwitchMethod		 Epoch
+                SwitchEpoch		 12 Oct 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   13 Oct 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25286.49919926  .00000000  00000-0  00000-0 0 27157
+                2 60058 028.0158 357.7917 6043324 090.7397 127.3695 00.07903728    00
+                SwitchMethod		 Epoch
+                SwitchEpoch		 13 Oct 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   14 Oct 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25287.49919926  .00000000  00000-0  00000-0 0 27158
+                2 60058 028.0149 357.7730 6033923 090.7988 155.7387 00.07899009    02
+                SwitchMethod		 Epoch
+                SwitchEpoch		 14 Oct 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   15 Oct 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25288.49919926  .00000000  00000-0  00000-0 0 27159
+                2 60058 028.0146 357.7565 6029426 090.8150 184.1570 00.07896458    05
+                SwitchMethod		 Epoch
+                SwitchEpoch		 15 Oct 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   16 Oct 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25289.49919926  .00000000  00000-0  00000-0 0 27150
+                2 60058 028.0144 357.7462 6022309 090.8109 212.5617 00.07888739    07
+                SwitchMethod		 Epoch
+                SwitchEpoch		 16 Oct 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   17 Oct 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25290.49919926  .00000000  00000-0  00000-0 0 27152
+                2 60058 028.0135 357.7378 6007293 090.7417 240.9680 00.07869697    06
+                SwitchMethod		 Epoch
+                SwitchEpoch		 17 Oct 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   18 Oct 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25291.49919926  .00000000  00000-0  00000-0 0 27153
+                2 60058 028.0133 357.7244 5986438 090.5279 269.4181 00.07831268    01
+                SwitchMethod		 Epoch
+                SwitchEpoch		 18 Oct 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   19 Oct 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25292.49919926  .00000000  00000-0  00000-0 0 27154
+                2 60058 028.0122 357.7108 5976923 090.1591 297.8715 00.07766005    03
+                SwitchMethod		 Epoch
+                SwitchEpoch		 19 Oct 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   20 Oct 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25293.49919926  .00000000  00000-0  00000-0 0 27155
+                2 60058 028.0139 357.6900 6004182 089.9747 325.9990 00.07684426    03
+                SwitchMethod		 Epoch
+                SwitchEpoch		 20 Oct 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   21 Oct 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25294.49919926  .00000000  00000-0  00000-0 0 27156
+                2 60058 028.0188 357.6941 5989529 090.6805 353.4544 00.07794645    08
+                SwitchMethod		 Epoch
+                SwitchEpoch		 21 Oct 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   22 Oct 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25295.49919926  .00000000  00000-0  00000-0 0 27157
+                2 60058 028.0177 357.6997 5931403 090.4632 021.9804 00.07953352    09
+                SwitchMethod		 Epoch
+                SwitchEpoch		 22 Oct 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   23 Oct 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25296.49919926  .00000000  00000-0  00000-0 0 27158
+                2 60058 028.0185 357.6812 5970126 090.9112 049.4719 00.07849543    03
+                SwitchMethod		 Epoch
+                SwitchEpoch		 23 Oct 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   24 Oct 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25297.49919926  .00000000  00000-0  00000-0 0 27159
+                2 60058 028.0284 357.6743 5989040 092.3611 075.0818 00.07649905    06
+                SwitchMethod		 Epoch
+                SwitchEpoch		 24 Oct 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   25 Oct 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25298.49919926  .00000000  00000-0  00000-0 0 27150
+                2 60058 028.0521 357.7228 5922111 094.9109 098.1997 00.07354581    02
+                SwitchMethod		 Epoch
+                SwitchEpoch		 25 Oct 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   26 Oct 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25299.49919926  .00000000  00000-0  00000-0 0 27151
+                2 60058 028.0796 357.8514 5681732 098.1850 119.4965 00.06988283    08
+                SwitchMethod		 Epoch
+                SwitchEpoch		 26 Oct 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   27 Oct 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25300.49919926  .00000000  00000-0  00000-0 0 27154
+                2 60058 028.0913 357.9833 5304375 100.6946 141.2883 00.06653560    03
+                SwitchMethod		 Epoch
+                SwitchEpoch		 27 Oct 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   28 Oct 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25301.49919926  .00000000  00000-0  00000-0 0 27155
+                2 60058 028.0894 358.0852 4935391 101.6201 164.3132 00.06403021    04
+                SwitchMethod		 Epoch
+                SwitchEpoch		 28 Oct 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   29 Oct 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25302.49919926  .00000000  00000-0  00000-0 0 27156
+                2 60058 028.0829 358.1094 4635739 101.2880 188.0967 00.06212562    00
+                SwitchMethod		 Epoch
+                SwitchEpoch		 29 Oct 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   30 Oct 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25303.49919926  .00000000  00000-0  00000-0 0 27157
+                2 60058 028.0833 358.0814 4405784 100.2297 211.8649 00.06052048    03
+                SwitchMethod		 Epoch
+                SwitchEpoch		 30 Oct 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   31 Oct 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25304.49919926  .00000000  00000-0  00000-0 0 27158
+                2 60058 028.0815 358.0721 4221144 098.5256 235.5345 00.05894115    04
+                SwitchMethod		 Epoch
+                SwitchEpoch		 31 Oct 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   1 Nov 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25305.49919926  .00000000  00000-0  00000-0 0 27159
+                2 60058 028.0809 358.0558 4065022 096.0604 259.1681 00.05712145    03
+                SwitchMethod		 Epoch
+                SwitchEpoch		 1 Nov 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   2 Nov 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25306.49919926  .00000000  00000-0  00000-0 0 27150
+                2 60058 028.0822 358.0310 3945618 092.4135 283.0252 00.05470795    02
+                SwitchMethod		 Epoch
+                SwitchEpoch		 2 Nov 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   3 Nov 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25307.49919926  .00000000  00000-0  00000-0 0 27151
+                2 60058 028.0871 357.9925 3923654 087.3332 307.0405 00.05120428    06
+                SwitchMethod		 Epoch
+                SwitchEpoch		 3 Nov 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   4 Nov 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25308.49919926  .00000000  00000-0  00000-0 0 27152
+                2 60058 028.0970 357.9336 4116177 082.5598 329.1773 00.04640640    03
+                SwitchMethod		 Epoch
+                SwitchEpoch		 4 Nov 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   5 Nov 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25309.49919926  .00000000  00000-0  00000-0 0 27153
+                2 60058 028.1130 357.9013 4330602 083.7951 345.1555 00.04435569    09
+                SwitchMethod		 Epoch
+                SwitchEpoch		 5 Nov 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   6 Nov 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25310.49919926  .00000000  00000-0  00000-0 0 27155
+                2 60058 028.1225 357.9584 4138485 087.7940 000.4408 00.04762309    07
+                SwitchMethod		 Epoch
+                SwitchEpoch		 6 Nov 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   7 Nov 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25311.49919926  .00000000  00000-0  00000-0 0 27156
+                2 60058 028.1219 357.9992 3898633 089.7410 018.5642 00.05029578    09
+                SwitchMethod		 Epoch
+                SwitchEpoch		 7 Nov 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   8 Nov 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25312.49919926  .00000000  00000-0  00000-0 0 27157
+                2 60058 028.1192 358.0145 3733086 090.6162 037.8339 00.05159267    02
+                SwitchMethod		 Epoch
+                SwitchEpoch		 8 Nov 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   9 Nov 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25313.49919926  .00000000  00000-0  00000-0 0 27158
+                2 60058 028.1157 358.0169 3615703 091.2016 057.2975 00.05210793    03
+                SwitchMethod		 Epoch
+                SwitchEpoch		 9 Nov 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   10 Nov 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25314.49919926  .00000000  00000-0  00000-0 0 27159
+                2 60058 028.1114 358.0119 3520281 091.5910 076.8015 00.05226726    08
+                SwitchMethod		 Epoch
+                SwitchEpoch		 10 Nov 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   11 Nov 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25315.49919926  .00000000  00000-0  00000-0 0 27150
+                2 60058 028.1066 358.0013 3438777 091.7108 096.4056 00.05228765    04
+                SwitchMethod		 Epoch
+                SwitchEpoch		 11 Nov 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   12 Nov 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25316.49919926  .00000000  00000-0  00000-0 0 27151
+                2 60058 028.1020 357.9862 3371571 091.5397 116.1532 00.05226732    01
+                SwitchMethod		 Epoch
+                SwitchEpoch		 12 Nov 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   13 Nov 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25317.49919926  .00000000  00000-0  00000-0 0 27152
+                2 60058 028.0981 357.9679 3318938 091.1248 136.0480 00.05223698    02
+                SwitchMethod		 Epoch
+                SwitchEpoch		 13 Nov 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   14 Nov 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25318.49919926  .00000000  00000-0  00000-0 0 27153
+                2 60058 028.0953 357.9476 3278137 090.5173 156.1043 00.05218896    04
+                SwitchMethod		 Epoch
+                SwitchEpoch		 14 Nov 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   15 Nov 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25319.49919926  .00000000  00000-0  00000-0 0 27154
+                2 60058 028.0938 357.9266 3245605 089.7127 176.3895 00.05209770    07
+                SwitchMethod		 Epoch
+                SwitchEpoch		 15 Nov 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   16 Nov 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25320.49919926  .00000000  00000-0  00000-0 0 27156
+                2 60058 028.0930 357.9130 3221346 088.6465 197.0134 00.05193434    03
+                SwitchMethod		 Epoch
+                SwitchEpoch		 16 Nov 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   17 Nov 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25321.49919926  .00000000  00000-0  00000-0 0 27157
+                2 60058 028.0936 357.8873 3206556 087.2579 218.0769 00.05163842    07
+                SwitchMethod		 Epoch
+                SwitchEpoch		 17 Nov 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   18 Nov 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25322.49919926  .00000000  00000-0  00000-0 0 27158
+                2 60058 028.0943 357.8701 3210219 085.4615 239.6490 00.05114555    04
+                SwitchMethod		 Epoch
+                SwitchEpoch		 18 Nov 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   19 Nov 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25323.49919926  .00000000  00000-0  00000-0 0 27159
+                2 60058 028.0949 357.8539 3241735 083.1763 261.7709 00.05030769    08
+                SwitchMethod		 Epoch
+                SwitchEpoch		 19 Nov 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   20 Nov 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25324.49919926  .00000000  00000-0  00000-0 0 27150
+                2 60058 028.0953 357.8362 3321476 080.2908 284.4610 00.04885725    09
+                SwitchMethod		 Epoch
+                SwitchEpoch		 20 Nov 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   21 Nov 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25325.49919926  .00000000  00000-0  00000-0 0 27151
+                2 60058 028.0932 357.8119 3501155 076.7697 307.6410 00.04621286    01
+                SwitchMethod		 Epoch
+                SwitchEpoch		 21 Nov 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   22 Nov 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25326.49919926  .00000000  00000-0  00000-0 0 27152
+                2 60058 028.0995 357.7506 3971031 071.8809 332.0685 00.03975837    03
+                SwitchMethod		 Epoch
+                SwitchEpoch		 22 Nov 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   23 Nov 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25327.49919926  .00000000  00000-0  00000-0 0 27153
+                2 60058 028.1137 357.7995 3659986 083.9389 337.0587 00.04816671    00
+                SwitchMethod		 Epoch
+                SwitchEpoch		 23 Nov 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   24 Nov 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25328.49919926  .00000000  00000-0  00000-0 0 27154
+                2 60058 028.1625 357.8393 4089163 086.3865 353.1544 00.04285555    09
+                SwitchMethod		 Epoch
+                SwitchEpoch		 24 Nov 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   25 Nov 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25329.49919926  .00000000  00000-0  00000-0 0 27155
+                2 60058 028.1408 357.6951 4168652 091.6154 005.7410 00.04213638    02
+                SwitchMethod		 Epoch
+                SwitchEpoch		 25 Nov 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   26 Nov 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25330.49919926  .00000000  00000-0  00000-0 0 27157
+                2 60058 028.1281 357.7437 4004753 096.0115 019.9363 00.04352843    04
+                SwitchMethod		 Epoch
+                SwitchEpoch		 26 Nov 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   27 Nov 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25331.49919926  .00000000  00000-0  00000-0 0 27158
+                2 60058 028.1078 357.8014 3573584 091.9205 043.3062 00.04857148    01
+                SwitchMethod		 Epoch
+                SwitchEpoch		 27 Nov 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   28 Nov 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25332.49919926  .00000000  00000-0  00000-0 0 27159
+                2 60058 028.0976 357.8114 3437292 088.7620 065.5080 00.05065343    03
+                SwitchMethod		 Epoch
+                SwitchEpoch		 28 Nov 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   29 Nov 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25333.49919926  .00000000  00000-0  00000-0 0 27150
+                2 60058 028.0885 357.8064 3414045 086.5613 086.5898 00.05172429    09
+                SwitchMethod		 Epoch
+                SwitchEpoch		 29 Nov 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   30 Nov 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25334.49919926  .00000000  00000-0  00000-0 0 27151
+                2 60058 028.0847 357.7968 3447164 085.3587 106.4117 00.05230591    05
+                SwitchMethod		 Epoch
+                SwitchEpoch		 30 Nov 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   1 Dec 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25335.49919926  .00000000  00000-0  00000-0 0 27152
+                2 60058 028.0787 357.7759 3505366 084.9689 125.1957 00.05266832    00
+                SwitchMethod		 Epoch
+                SwitchEpoch		 1 Dec 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   2 Dec 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25336.49919926  .00000000  00000-0  00000-0 0 27153
+                2 60058 028.0752 357.7562 3574827 085.1976 143.1575 00.05295267    04
+                SwitchMethod		 Epoch
+                SwitchEpoch		 2 Dec 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   3 Dec 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25337.49919926  .00000000  00000-0  00000-0 0 27154
+                2 60058 028.0723 357.7305 3642508 085.9135 160.5193 00.05320905    01
+                SwitchMethod		 Epoch
+                SwitchEpoch		 3 Dec 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   4 Dec 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25338.49919926  .00000000  00000-0  00000-0 0 27155
+                2 60058 028.0706 357.7027 3697567 086.9643 177.5151 00.05344868    09
+                SwitchMethod		 Epoch
+                SwitchEpoch		 4 Dec 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   5 Dec 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25339.49919926  .00000000  00000-0  00000-0 0 27156
+                2 60058 028.0704 357.6748 3731364 088.1759 194.3965 00.05366131    09
+                SwitchMethod		 Epoch
+                SwitchEpoch		 5 Dec 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   6 Dec 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25340.49919926  .00000000  00000-0  00000-0 0 27158
+                2 60058 028.0715 357.6489 3739796 089.3596 211.4136 00.05383230    02
+                SwitchMethod		 Epoch
+                SwitchEpoch		 6 Dec 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   7 Dec 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25341.49919926  .00000000  00000-0  00000-0 0 27159
+                2 60058 028.0740 357.6231 3724226 090.3358 228.7977 00.05394709    02
+                SwitchMethod		 Epoch
+                SwitchEpoch		 7 Dec 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   8 Dec 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25342.49919926  .00000000  00000-0  00000-0 0 27150
+                2 60058 028.0762 357.6078 3689992 090.9330 246.7400 00.05398189    08
+                SwitchMethod		 Epoch
+                SwitchEpoch		 8 Dec 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   9 Dec 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25343.49919926  .00000000  00000-0  00000-0 0 27151
+                2 60058 028.0793 357.5925 3647226 091.0136 265.4065 00.05389065    00
+                SwitchMethod		 Epoch
+                SwitchEpoch		 9 Dec 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   10 Dec 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25344.49919926  .00000000  00000-0  00000-0 0 27152
+                2 60058 028.0833 357.5797 3610281 090.4491 284.9007 00.05357862    02
+                SwitchMethod		 Epoch
+                SwitchEpoch		 10 Dec 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   11 Dec 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25345.49919926  .00000000  00000-0  00000-0 0 27153
+                2 60058 028.0892 357.5692 3603199 089.2204 305.1701 00.05288013    07
+                SwitchMethod		 Epoch
+                SwitchEpoch		 11 Dec 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   12 Dec 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25346.49919926  .00000000  00000-0  00000-0 0 27154
+                2 60058 028.0989 357.5626 3662520 087.7718 325.6426 00.05157688    01
+                SwitchMethod		 Epoch
+                SwitchEpoch		 12 Dec 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   13 Dec 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25347.49919926  .00000000  00000-0  00000-0 0 27155
+                2 60058 028.1116 357.5648 3796414 087.7055 344.5819 00.04982495    09
+                SwitchMethod		 Epoch
+                SwitchEpoch		 13 Dec 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   14 Dec 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25348.49919926  .00000000  00000-0  00000-0 0 27156
+                2 60058 028.1187 357.5709 3853610 090.1845 000.9293 00.04933567    07
+                SwitchMethod		 Epoch
+                SwitchEpoch		 14 Dec 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   15 Dec 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25349.49919926  .00000000  00000-0  00000-0 0 27157
+                2 60058 028.1083 357.5899 3744209 092.1050 018.1609 00.05071692    00
+                SwitchMethod		 Epoch
+                SwitchEpoch		 15 Dec 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   16 Dec 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25350.49919926  .00000000  00000-0  00000-0 0 27159
+                2 60058 028.0975 357.5893 3622231 092.2426 037.5105 00.05211894    07
+                SwitchMethod		 Epoch
+                SwitchEpoch		 16 Dec 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   17 Dec 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25351.49919926  .00000000  00000-0  00000-0 0 27150
+                2 60058 028.0909 357.5804 3546589 092.0709 057.3221 00.05283665    03
+                SwitchMethod		 Epoch
+                SwitchEpoch		 17 Dec 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   18 Dec 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25352.49919926  .00000000  00000-0  00000-0 0 27151
+                2 60058 028.0875 357.5682 3491690 092.3647 076.6636 00.05298876    09
+                SwitchMethod		 Epoch
+                SwitchEpoch		 18 Dec 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   19 Dec 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25353.49919926  .00000000  00000-0  00000-0 0 27152
+                2 60058 028.0857 357.5542 3431010 093.0927 095.4691 00.05279181    01
+                SwitchMethod		 Epoch
+                SwitchEpoch		 19 Dec 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   20 Dec 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25354.49919926  .00000000  00000-0  00000-0 0 27153
+                2 60058 028.0842 357.5378 3356428 093.9187 114.0229 00.05242215    01
+                SwitchMethod		 Epoch
+                SwitchEpoch		 20 Dec 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   21 Dec 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25355.49919926  .00000000  00000-0  00000-0 0 27154
+                2 60058 028.0828 357.5181 3272742 094.5611 132.5704 00.05198711    06
+                SwitchMethod		 Epoch
+                SwitchEpoch		 21 Dec 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   22 Dec 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25356.49919926  .00000000  00000-0  00000-0 0 27155
+                2 60058 028.0819 357.4957 3187211 094.8902 151.2217 00.05153610    04
+                SwitchMethod		 Epoch
+                SwitchEpoch		 22 Dec 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   23 Dec 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25357.49919926  .00000000  00000-0  00000-0 0 27156
+                2 60058 028.0822 357.4724 3105785 094.8575 170.0304 00.05109099    00
+                SwitchMethod		 Epoch
+                SwitchEpoch		 23 Dec 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   24 Dec 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25358.49919926  .00000000  00000-0  00000-0 0 27157
+                2 60058 028.0838 357.4481 3032889 094.4227 189.0849 00.05065575    05
+                SwitchMethod		 Epoch
+                SwitchEpoch		 24 Dec 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   25 Dec 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25359.49919926  .00000000  00000-0  00000-0 0 27158
+                2 60058 028.0876 357.4195 2975363 093.5657 208.4719 00.05023390    09
+                SwitchMethod		 Epoch
+                SwitchEpoch		 25 Dec 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   26 Dec 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25360.49919926  .00000000  00000-0  00000-0 0 27150
+                2 60058 028.0902 357.4071 2938703 092.2391 228.3050 00.04979297    04
+                SwitchMethod		 Epoch
+                SwitchEpoch		 26 Dec 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   27 Dec 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25361.49919926  .00000000  00000-0  00000-0 0 27151
+                2 60058 028.0950 357.3922 2929910 090.3926 248.7401 00.04925503    01
+                SwitchMethod		 Epoch
+                SwitchEpoch		 27 Dec 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   28 Dec 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25362.49919926  .00000000  00000-0  00000-0 0 27152
+                2 60058 028.1009 357.3831 2960650 087.8798 269.9799 00.04845829    07
+                SwitchMethod		 Epoch
+                SwitchEpoch		 28 Dec 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   29 Dec 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25363.49919926  .00000000  00000-0  00000-0 0 27153
+                2 60058 028.1085 357.3824 3057950 084.4466 292.3031 00.04707165    08
+                SwitchMethod		 Epoch
+                SwitchEpoch		 29 Dec 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   30 Dec 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25364.49919926  .00000000  00000-0  00000-0 0 27154
+                2 60058 028.1209 357.3995 3296852 079.6437 316.1609 00.04428124    06
+                SwitchMethod		 Epoch
+                SwitchEpoch		 30 Dec 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+            BEGIN TwoLineElement
+
+                Enabled		 Yes
+
+                Source		 File
+                Filename		 E:\DRO\in_orbit\in_Orbit_Scn\droGroundOptical\DROB_TLE.txt
+                LastUpdated		 29 Jun 2026 10:38:35.000
+
+# EpochTime in UTCG   31 Dec 2025 11:58:50.816
+                TLE		
+                1 60058U 24048D   25365.49919926  .00000000  00000-0  00000-0 0 27155
+                2 60058 028.1661 357.5183 4133856 070.3198 345.6246 00.03527105    08
+                SwitchMethod		 Epoch
+                SwitchEpoch		 31 Dec 2025 11:58:50.816
+
+            END TwoLineElement
+
+
+        END SGP4
+
+        BEGIN PassDefn
+
+            Break		 Ascending
+            CoordSystem		 Inertial
+            BreakType		 Latitude
+            BreakAngle		  0.0000000000000000e+00
+            PartialPassMethod		 ByTime
+            DisplayFlag		 Both
+            FirstPass		 1
+            FirstPath		 1
+            RepeatCycle		 1
+            MaintainPassNum		 State
+            RangeFirstPass		 1
+            RangeLastPass		 2147483647
+            DisplayScheme		 AllEphemeris
+            ScenarioEpoch		 28 Aug 2024 04:01:00.000000
+        END PassDefn
+
+    END VehiclePath
+
+    BEGIN MassProperties
+
+        Mass		  1.0000000000000000e+03
+        InertiaXX		  4.5000000000000000e+03
+        InertiaYX		  0.0000000000000000e+00
+        InertiaYY		  4.5000000000000000e+03
+        InertiaZX		  0.0000000000000000e+00
+        InertiaZY		  0.0000000000000000e+00
+        InertiaZZ		  4.5000000000000000e+03
+
+    END MassProperties
+
+    BEGIN Attitude
+
+        ScenarioEpoch		 28 Aug 2024 04:01:00.000000
+
+        BEGIN Profile
+            Name		 ECIVVLH
+            UserNamed		 No
+            StartTime		  0.0000000000000000e+00
+            BEGIN ECIVVLH
+                Azimuth		  0.0000000000000000e+00
+            END ECIVVLH
+        END Profile
+
+    END Attitude
+
+    BEGIN Swath
+
+        SwathType		 ElevAngleEnvelope
+        ElevationAngle		  0.0000000000000000e+00
+        HalfAngle		  0.0000000000000000e+00
+        Distance		  0.0000000000000000e+00
+        RepType		 NoSwath
+
+    END Swath
+
+    BEGIN Eclipse
+
+        Sunlight		 Off
+        SunlightLineStyle		 0
+        SunlightLineWidth		 3
+        SunlightMarkerStyle		 15
+
+        Penumbra		 Off
+        PenumbraLineStyle		 0
+        PenumbraLineWidth		 3
+        PenumbraMarkerStyle		 15
+
+        Umbra		 Off
+        UmbraLineStyle		 0
+        UmbraLineWidth		 3
+        UmbraMarkerStyle		 15
+
+        SunlightPenumbraLine		 Off
+        PenumbraUmbraLine		 Off
+
+        SunlightColor		 #ffff00
+        PenumbraColor		 #87cefa
+        UmbraColor		 #0000ff
+
+        ComputeUsingTerrain		 No
+        MaxStepWhenUsingTerrain		 30
+        UseCustomEclipseBodies		 No
+
+    END Eclipse
+
+    BEGIN RealTimeDef
+
+        HistoryDuration		  1.8000000000000000e+03
+        LookAheadDuration		  1.8000000000000000e+03
+
+    END RealTimeDef
+
+
+    BEGIN Extensions
+
+        BEGIN ClsApp
+            RangeConstraint		 5000
+            ApoPeriPad		 30000
+            OrbitPathPad		 100000
+            TimeDistPad		 30000
+            OutOfDate		 2592000
+            MaxApoPeriStep		 900
+            ApoPeriAngle		 0.7853981633974483
+            UseApogeePerigeeFilter		 Yes
+            UsePathFilter		 No
+            UseTimeFilter		 Yes
+            UseOutOfDate		 Yes
+            CreateSats		 No
+            MaxSatsToCreate		 500
+            UseModelScale		 No
+            ModelScale		 0
+            UseCrossRefDb		 Yes
+            CollisionDB		 stkAllTLE.tce
+            CollisionCrossRefDB		 stkAllTLE.sd
+            ShowLine		 Yes
+            AnimHighlight		 Yes
+            StaticHighlight		 Yes
+            UseLaunchWindow		 No
+            LaunchWindowUseEntireTraj		 Yes
+            LaunchWindowTrajMETStart		 0
+            LaunchWindowTrajMETStop		 900
+            LaunchWindowStart		 0
+            LaunchWindowStop		 -84067200
+            LaunchMETOffset		 0
+            LaunchWindowUseSecEphem		 No 
+            LaunchWindowUseScenFolderForSecEphem		 Yes
+            LaunchWindowUsePrimEphem		 No 
+            LaunchWindowUseScenFolderForPrimEphem		 Yes
+            LaunchWindowIntervalPtr		
+            BEGIN EVENTINTERVAL
+                BEGIN Interval
+                    Start		 28 Aug 2024 04:01:00.000000000
+                    Stop		 28 Aug 2024 04:01:00.000000000
+                END Interval
+                IntervalState		 Explicit
+            END EVENTINTERVAL
+
+            LaunchWindowUsePrimMTO		 No 
+            GroupLaunches		 No 
+            LWTimeConvergence		 0.001
+            LWRelValueConvergence		 1e-08
+            LWTSRTimeConvergence		 0.0001
+            LWTSRRelValueConvergence		 1e-10
+            LaunchWindowStep		 300
+            MaxTSRStep		  1.8000000000000000e+02
+            MaxTSRRelMotion		  2.0000000000000000e+01
+            UseLaunchArea		 No 
+            LaunchAreaOrientation		 North
+            LaunchAreaAzimuth		 0
+            LaunchAreaXLimits		 -10000 10000
+            LaunchAreaYLimits		 -10000 10000
+            LaunchAreaNumXIntrPnts		 1
+            LaunchAreaNumYIntrPnts		 1
+            LaunchAreaAltReference		 Ellipsoid
+            TargetSameStop		 No 
+            SkipSurfaceMetric		 No 
+            LWAreaTSRRelValueConvergence		 1e-10
+            AreaLaunchWindowStep		 300
+            AreaMaxTSRStep		  3.0000000000000000e+01
+            AreaMaxTSRRelMotion		 1
+            ShowLaunchArea		 No 
+            ShowBlackoutTracks		 No 
+            ShowClearedTracks		 No 
+            UseObjectForClearedColor		 No 
+            BlackoutColor		 #ff0000
+            ClearedColor		 #ffffff
+            ShowTracksSegments		 No 
+            ShowMinRangeTracks		 No 
+            MinRangeTrackTimeStep		 0.5
+            UsePrimStepForTracks		 Yes
+            GfxTracksTimeStep		 30
+            GfxAreaNumXIntrPnts		 1
+            GfxAreaNumYIntrPnts		 1
+            CreateLaunchMTO		 No 
+            CovarianceSigmaScale		 3
+            CovarianceMode		 None 
+        END ClsApp
+
+        BEGIN ExternData
+        END ExternData
+
+        BEGIN Lifetime
+            Semi_parameter		  6.6781370000000000e+06
+            Eccentricity		  0.0000000000000000e+00
+            Argument_Perigee		  0.0000000000000000e+00
+            RA_Asc_Node		  0.0000000000000000e+00
+            Inclination		  4.9741883681799998e-01
+            UTC_Year		 1997
+            UTC_Month		 1
+            UTC_Day		 1
+            UTC_Hour		 0
+            UTC_Minute		 0
+            UTC_Second		  0.0000000000000000e+00
+            Limit_Type		 OrbitCount
+            Duration_Limit		 36525
+            Rev_Count_Limit		 99999
+            Revs_Calculation		 10
+            Gaussian_Quadratures		 1
+            Flux_Sigma_Level		 0
+            Gravity_Model_Flag		 0
+            Reflection_Coef		  1.0000000000000000e+00
+            Sun_Area		  1.5430000000000000e+01
+            Mass		 -1.0000000000000000e+00
+            Drag_Coef		  2.2000000000000002e+00
+            Drag_Area		  1.3650000000000000e+01
+            Rotating_Atm_Flag		 1
+            Osculating_Alt_Flag		 1
+            Compute_Gamma_Flag		 0
+            Initial_Time		  0.0000000000000000e+00
+            Decay_Alt		  6.5000000000000000e+04
+            Solar_Flux_Filename		 SolFlx_CSSI.dat
+            AtmDensityModel		 Jacchia70
+        END Lifetime
+
+        BEGIN ADFFileData
+        END ADFFileData
+
+        BEGIN AccessConstraints
+            LineOfSight IncludeIntervals
+
+            UsePreferredMaxStep No
+            PreferredMaxStep 360
+        END AccessConstraints
+
+        BEGIN AttitudeSimulator
+            UseReferenceForAttitude		 No
+            UseForAttitude		 No
+            UsePctCmplt		 Yes
+            PctCmpltDivisor		 24
+            PctCmpltTitle		 Attitude Simulation
+            UseAnimate		 No
+            AnimateSampling		  1.0000000000000000e+00
+            StartTime		 28 Aug 2024 04:01:00.000000000
+            StopTime		 23 Aug 2025 04:01:00.000000000
+            Step		  0.0000000000000000e+00
+            InitialTime		 28 Aug 2024 04:01:00.000000000
+            SmartEpochPtr		
+            BEGIN EVENT
+                Epoch		 28 Aug 2024 04:01:00.000000000
+                EventEpoch		
+                BEGIN EVENT
+                    Type		 EVENT_LINKTO
+                    Name		 EphemerisStartTime
+                END EVENT
+                EpochState		 Implicit
+            END EVENT
+
+            SmartIntervalPtr		
+            BEGIN EVENTINTERVAL
+                EventInterval		
+                BEGIN EVENTINTERVAL
+                    Type		 EVENTINTERVAL_LINKTO
+                    Name		 EphemerisTimeSpan
+                END EVENTINTERVAL
+                IntervalState		 Implicit
+            END EVENTINTERVAL
+
+            BEGIN InitialAttitude
+                 0.0000000000000000e+00
+                 0.0000000000000000e+00
+                 0.0000000000000000e+00
+                 1.0000000000000000e+00
+            END InitialAttitude
+            Representation		 0
+            Sequence		 0
+            BEGIN InitialAngVel
+                 0.0000000000000000e+00
+                 0.0000000000000000e+00
+                 0.0000000000000000e+00
+            END InitialAngVel
+            BEGIN InitialMomentumBias
+                 0.0000000000000000e+00
+                 0.0000000000000000e+00
+                 0.0000000000000000e+00
+            END InitialMomentumBias
+            UseMomentumBias		 No
+            BEGIN IntegratedSimulation
+                BEGIN Integrator
+                    Type		 RK78
+                    RelTol		  1.0000000000000000e-03
+                    AbsTol		  9.9999999999999995e-07
+                    MinStep		  9.9999999999999995e-07
+                    UseMinStep		 No
+                    MaxStep		  1.0000000000000000e+01
+                    UseMaxStep		 No
+                    NumIter		 10
+                    UseIter		 No
+                    UseStat		 No
+                END Integrator
+                BEGIN Formulation
+                    BEGIN EnvironmentData
+                        UseApproxAlt		 No
+                        MeanFlux		 150
+                        DailyFlux		 150
+                        GeoMagIndex		  3.0000000000000000e+00
+                        RefAlt		  0.0000000000000000e+00
+                        ScaleAlt		  8.5000000000000000e+03
+                        RefDensity		  1.2170000000000001e+00
+                        DensityModel		 Exponential
+                    END EnvironmentData
+                    BEGIN InitList
+                    END InitList
+                    BEGIN UpdateList
+                    END UpdateList
+                    BEGIN PostList
+                    END PostList
+                    UseInitialUpdateStep		 No
+                    UseUpdateStep		 No
+                END Formulation
+            END IntegratedSimulation
+        END AttitudeSimulator
+
+        BEGIN ObjectCoverage
+        END ObjectCoverage
+
+        BEGIN Desc
+        END Desc
+
+        BEGIN RadarCrossSection
+<?xml version = "1.0" standalone = "yes"?>
+<SCOPE>
+    <VAR name = "Inherit">
+        <BOOL>true</BOOL>
+    </VAR>
+    <VAR name = "Model">
+        <SCOPE Class = "LinkEmbedControl" />
+    </VAR>
+</SCOPE>        END RadarCrossSection
+
+        BEGIN RadarClutter
+<?xml version = "1.0" standalone = "yes"?>
+<SCOPE>
+    <VAR name = "Inherit">
+        <BOOL>true</BOOL>
+    </VAR>
+</SCOPE>        END RadarClutter
+
+        BEGIN Ellipse
+            TimesTrackVehStartTime		 Yes
+        END Ellipse
+
+        BEGIN Reference
+        END Reference
+
+        BEGIN AcquisitionData
+            DataType		 IIRV9
+            CoordinateSystem		 1
+            MassAtEpoch		 1000
+            IIRV_MessageID		 0
+            IIRV_MessageClass		 10
+            IIRV_MessageOrigin		 A
+            IIRV_MessageDestination		 GSVL
+            IIRV_VectorType		 1
+            IIRV_VectorSource		 1
+            IIRV_SupportID		 0
+            IIRV_VehicleIdentificationCode		 1
+            IIRV_CounterStart		 1
+            IIRV_Area		 0
+            IIRV_DragCoefficient		 2
+            IIRV_SolarReflectivity		 0
+            IIRV_OriginRouteMsg		 HJSC
+            IIRV9_MessageOrigin		 A
+            IIRV9_MessageDestination		 GSVL
+            IIRV9_VectorSource		 1
+            IIRV9_IRON		 1
+            IIRV9_PerturbationCoeffType		 0
+            IIRV9_DragCoefficient		 2
+            IIRV9_SRPCoefficient		 1
+            IIRV9_Area		 0
+            IIRV9_OriginRouteMsg		 HJSC
+            IIRV1_MessageDestination		 GSVL
+            IIRV1_VectorType		 1
+            IIRV1_VectorSource		 1
+            IIRV1_SupportID		 0
+            IIRV1_VehicleIdentificationCode		 5
+            IIRV1_CounterStart		 1
+            IIRV1_Area		 0
+            IIRV1_DragCoefficient		 2
+            IIRV1_OriginRouteMsg		 HJSC
+            EPV_MessageID		 1
+            EPV_MessageClass		 10
+            EPV_MessageOrigin		 A
+            EPV_MessageDestination		 GSVL
+            EPV_VectorType		 1
+            EPV_VectorSource		 1
+            EPV_SupportID		 0
+            EPV_VehicleIdentificationCode		 1
+            EPV_CounterStart		 1
+            NASA_MissionID		 eol
+            NASA_MessageID		 0
+            NASA_MessageClass		 10
+            NASA_RoutIndicator		 GSVL
+            NASA_VectorType		 1
+            NASA_VectorSource		 1
+            NASA_Area		 0
+            NASA_DragCoefficient		 2
+            NASA_SolarReflectivity		 0
+            NASA_OriginRouteMsg		 0
+            CCSDS_OPM_Format		 0
+        END AcquisitionData
+
+        BEGIN Identification
+        END Identification
+
+        BEGIN Crdn
+        END Crdn
+
+        BEGIN SpaceEnvironment
+
+            BEGIN VehicleTemperature
+
+                EarthAlbedo		 0.34
+                MaterialEmissivity		 0.924
+                MaterialAbsorptivity		 0.248
+                Dissipation		 0
+                CrossSectionalArea		 1
+                VehShapeModel		 Sphere
+
+                NormalVector		
+                Sun		
+
+            END VehicleTemperature
+
+
+            BEGIN ParticleFlux
+
+                Material		 Aluminum
+                Density		 2700
+                Tensile		 400
+                SatArea		 1
+                PitDepth		 0.001
+                F10.7Source		 StaticValue
+                F10.7		 150
+                FluxFile		 SpaceWeather-v1.2.txt
+                UseSporadicMeteors		 Yes
+
+            END ParticleFlux
+
+
+            BEGIN MagneticField
+
+                MainField		 IGRF
+                ExternalField		 None
+                IGRF_UpdateRate		 86400
+
+            END MagneticField
+
+
+            BEGIN Radiation
+
+                VersionIndicator		 20100729
+                CompMode		 RadOnly
+                UseModelEpoch		 Yes
+                ShiftSAA		 Yes
+                DoseIntegStep		 60
+                DoseReportStep		 21600
+                DoseChannel		 Total
+                UseNuclearAttenuation		 No
+                IncludeNucAttenNeutrons		 No
+                DetectorGeometry		 SemiInfiniteSlab
+                DetectorType		 Silicon
+                ApSource		 StaticValue
+                Ap15Avg		 10
+                FluxFile		 SpaceWeather-v1.2.txt
+
+            END Radiation
+
+
+            BEGIN SAAContour
+
+                Channel		 >23MeV
+                FluxLevel		 Background+3Sigma
+
+            END SAAContour
+
+
+            BEGIN GCRSettings
+
+                GCRModel		 BO10
+                SolarInfluence		 SolarMax
+                AtomicNumber		 1
+                InterplanetaryWeatherIndex		 1
+                PHI		 1100
+                SampleTime		 0.25
+
+            END GCRSettings
+
+
+            BEGIN SEPSettings
+
+                SEPModel		 JPL91
+                Duration		 3
+                Probability		 90
+                Energy		 1
+                Energy		 4
+                Energy		 10
+                Energy		 30
+                Energy		 60
+
+            END SEPSettings
+
+        END SpaceEnvironment
+
+        BEGIN Graphics
+
+            BEGIN GenericGraphics
+                IntvlHideShowAll		 Off
+                ShowPassLabel		 Off
+                ShowPathLabel		 Off
+                TransformTrajectory		 On
+                MinGfxGndTrkTimeStep		  0.0000000000000000e+00
+                MaxGfxGndTrkTimeStep		  6.0000000000000000e+02
+                MinGfxOrbitTimeStep		  0.0000000000000000e+00
+                MaxGfxOrbitTimeStep		  6.0000000000000000e+02
+                ShowGlintPoint		 Off
+                ShowGlintColor		 #ffffff
+                ShowGlintStyle		 2
+            END GenericGraphics
+
+            BEGIN AttributeData
+                ShowGfx		 Off
+                AttributeType		                Basic		
+                BEGIN DefaultAttributes
+                    Show		 Off
+                    Inherit		 On
+                    ShowLabel		 On
+                    ShowGndTrack		 On
+                    ShowGndMarker		 On
+                    ShowOrbit		 On
+                    ShowOrbitMarker		 On
+                    ShowElsetNum		 Off
+                    ShowSpecialSwath		 On
+                    AllColors		 #ffa0cc
+                    LineStyle		 0
+                    LineWidth		 2
+                    MarkerStyle		 15
+                    FontStyle		 0
+                    SwathLineStyle		 0
+                    SpecSwathLineStyle		 1
+                END DefaultAttributes
+
+                BEGIN CustomIntervalList
+                    BEGIN DefaultAttributes
+                        Show		 On
+                        Inherit		 On
+                        ShowLabel		 On
+                        ShowGndTrack		 On
+                        ShowGndMarker		 On
+                        ShowOrbit		 On
+                        ShowOrbitMarker		 On
+                        ShowElsetNum		 Off
+                        ShowSpecialSwath		 On
+                        AllColors		 #00ffff
+                        LineStyle		 0
+                        LineWidth		 2
+                        MarkerStyle		 15
+                        FontStyle		 0
+                        SwathLineStyle		 0
+                        SpecSwathLineStyle		 1
+                    END DefaultAttributes
+                END CustomIntervalList
+
+                BEGIN AccessIntervalsAttributes
+                    BEGIN AttrDuringAccess
+                        Show		 On
+                        Inherit		 On
+                        ShowLabel		 On
+                        ShowGndTrack		 On
+                        ShowGndMarker		 On
+                        ShowOrbit		 On
+                        ShowOrbitMarker		 On
+                        ShowElsetNum		 Off
+                        ShowSpecialSwath		 On
+                        AllColors		 #00ffff
+                        LineStyle		 0
+                        LineWidth		 2
+                        MarkerStyle		 15
+                        FontStyle		 0
+                        SwathLineStyle		 0
+                        SpecSwathLineStyle		 1
+                    END AttrDuringAccess
+                    BEGIN AttrDuringNoAccess
+                        Show		 Off
+                        Inherit		 On
+                        ShowLabel		 On
+                        ShowGndTrack		 On
+                        ShowGndMarker		 On
+                        ShowOrbit		 On
+                        ShowOrbitMarker		 On
+                        ShowElsetNum		 Off
+                        ShowSpecialSwath		 On
+                        AllColors		 #ff00ff
+                        LineStyle		 0
+                        LineWidth		 2
+                        MarkerStyle		 15
+                        FontStyle		 0
+                        SwathLineStyle		 0
+                        SpecSwathLineStyle		 1
+                    END AttrDuringNoAccess
+                END AccessIntervalsAttributes
+
+                BEGIN TimeComponentIntervalsAttributes
+                    BEGIN DefaultAttributes
+                        Show		 On
+                        Inherit		 On
+                        ShowLabel		 On
+                        ShowGndTrack		 On
+                        ShowGndMarker		 On
+                        ShowOrbit		 On
+                        ShowOrbitMarker		 On
+                        ShowElsetNum		 Off
+                        ShowSpecialSwath		 On
+                        AllColors		 #00ffff
+                        LineStyle		 0
+                        LineWidth		 2
+                        MarkerStyle		 15
+                        FontStyle		 0
+                        SwathLineStyle		 0
+                        SpecSwathLineStyle		 1
+                    END DefaultAttributes
+                END TimeComponentIntervalsAttributes
+
+                BEGIN RealTimeAttributes
+                    BEGIN HistoryAttr
+                        Show		 On
+                        Inherit		 On
+                        ShowLabel		 On
+                        ShowGndTrack		 On
+                        ShowGndMarker		 On
+                        ShowOrbit		 On
+                        ShowOrbitMarker		 On
+                        ShowElsetNum		 Off
+                        ShowSpecialSwath		 On
+                        AllColors		 #00ffff
+                        LineStyle		 0
+                        LineWidth		 2
+                        MarkerStyle		 15
+                        FontStyle		 0
+                        SwathLineStyle		 0
+                        SpecSwathLineStyle		 1
+                    END HistoryAttr
+                    BEGIN SplineAttr
+                        Show		 On
+                        Inherit		 On
+                        ShowLabel		 On
+                        ShowGndTrack		 On
+                        ShowGndMarker		 On
+                        ShowOrbit		 On
+                        ShowOrbitMarker		 On
+                        ShowElsetNum		 Off
+                        ShowSpecialSwath		 On
+                        AllColors		 #ffff00
+                        LineStyle		 0
+                        LineWidth		 2
+                        MarkerStyle		 15
+                        FontStyle		 0
+                        SwathLineStyle		 0
+                        SpecSwathLineStyle		 1
+                    END SplineAttr
+                    BEGIN LookAheadAttr
+                        Show		 On
+                        Inherit		 On
+                        ShowLabel		 On
+                        ShowGndTrack		 On
+                        ShowGndMarker		 On
+                        ShowOrbit		 On
+                        ShowOrbitMarker		 On
+                        ShowElsetNum		 Off
+                        ShowSpecialSwath		 On
+                        AllColors		 #ffffff
+                        LineStyle		 0
+                        LineWidth		 2
+                        MarkerStyle		 15
+                        FontStyle		 0
+                        SwathLineStyle		 0
+                        SpecSwathLineStyle		 1
+                    END LookAheadAttr
+                    BEGIN DropOutAttr
+                        Show		 On
+                        Inherit		 On
+                        ShowLabel		 On
+                        ShowGndTrack		 On
+                        ShowGndMarker		 On
+                        ShowOrbit		 On
+                        ShowOrbitMarker		 On
+                        ShowElsetNum		 Off
+                        ShowSpecialSwath		 On
+                        AllColors		 #ff0000
+                        LineStyle		 0
+                        LineWidth		 2
+                        MarkerStyle		 15
+                        FontStyle		 0
+                        SwathLineStyle		 0
+                        SpecSwathLineStyle		 1
+                    END DropOutAttr
+                END RealTimeAttributes
+            END AttributeData
+
+            BEGIN LeadTrailData
+                GtLeadingType		 OnePass
+                GtTrailingType		 OnePass
+                OrbitLeadingType		 OnePass
+                OrbitTrailingType		 OnePass
+            END LeadTrailData
+            BEGIN SaaData
+                ShowSaa		 Off
+                ShowSaaFill		 Off
+                SaaFillTranslucency		 0.7
+                TrackSaa		 On
+                SaaAltitude		 500000
+            END SaaData
+            BEGIN GroundTracks
+                BEGIN GroundTrack
+                    CentralBody		 Earth
+                END GroundTrack
+            END GroundTracks
+            BEGIN EllipseSetGxData
+                BEGIN DefEllipseSetGx
+                    ShowStatic		 On
+                    ShowDynamic		 On
+                    UseLastDynPos		 Off
+                    HoldLastDynPos		 Off
+                    ShowName		 Off
+                    ShowMarker		 On
+                    MarkerStyle		 0
+                    LineStyle		 0
+                    LineWidth		 1
+                END DefEllipseSetGx
+            END EllipseSetGxData
+        END Graphics
+
+        BEGIN ContourGfx
+            ShowContours		 Off
+        END ContourGfx
+
+        BEGIN Contours
+            ActiveContourType		 Radar Cross Section
+
+            BEGIN ContourSet Radar Cross Section
+                Altitude		 0
+                ShowAtAltitude		 Off
+                Projected		 On
+                Relative		 On
+                ShowLabels		 Off
+                LineWidth		 1
+                DecimalDigits		 1
+                ColorRamp		 On
+                ColorRampStartColor		 #ff0000
+                ColorRampEndColor		 #0000ff
+                BEGIN ContourDefinition
+                    BEGIN CntrAntAzEl
+                        CoordinateSystem		 0
+                        BEGIN AzElPatternDef
+                            SetResolutionTogether		 0
+                            NumAzPoints		 361
+                            AzimuthRes		 1
+                            MinAzimuth		 -180
+                            MaxAzimuth		 180
+                            NumElPoints		 91
+                            ElevationRes		 1
+                            MinElevation		 0
+                            MaxElevation		 90
+                        END AzElPatternDef
+                    END CntrAntAzEl
+                    BEGIN RCSContour
+                        Frequency		 2997924580
+                        ComputeType		 0
+                    END RCSContour
+                END ContourDefinition
+            END ContourSet
+        END Contours
+
+        BEGIN VO
+        END VO
+
+        BEGIN 3dVolume
+            ActiveVolumeType		 Radar Cross Section
+
+            BEGIN VolumeSet Radar Cross Section
+                Scale		 100
+                MinimumDisplayedRcs		 1
+                Frequency		  1.4500000000000000e+10
+                ShowAsWireframe		 0
+                BEGIN AzElPatternDef
+                    SetResolutionTogether		 0
+                    NumAzPoints		 50
+                    AzimuthRes		 7.346938775510203
+                    MinAzimuth		 -180
+                    MaxAzimuth		 180
+                    NumElPoints		 50
+                    ElevationRes		 3.673469387755102
+                    MinElevation		 0
+                    MaxElevation		 180
+                END AzElPatternDef
+                ColorMethod		 1
+                MinToMaxStartColor		 #ff0000
+                MinToMaxStopColor		 #0000ff
+                RelativeToMaximum		 0
+            END VolumeSet
+            BEGIN VolumeGraphics
+                ShowContours		 No
+                ShowVolume		 No
+            END VolumeGraphics
+        END 3dVolume
+
+        BEGIN SpaceEnvironmentGfx
+            BEGIN Gfx
+
+                BEGIN MagFieldLineGfx
+                    Show2D		 No
+                    Show3D		 No
+                    ShowLabel		 Yes
+                    Color		 #ff0000
+                    LineStyle		 1
+                    LineWidth		 2
+                END MagFieldLineGfx
+
+            END Gfx
+
+        END SpaceEnvironmentGfx
+
+        BEGIN DIS
+
+            BEGIN Input
+
+
+            END Input
+
+
+            BEGIN Output
+
+                Enable		 Off
+                ForceID		 1
+                EntityID		 0:0:0
+                PriEntityType		 0:0:0:0:0:0:0
+                AltEntityType		 0:0:0:0:0:0:0
+                DistanceThresh		 1
+
+            END Output
+
+        END DIS
+
+    END Extensions
+
+    BEGIN SubObjects
+
+    END SubObjects
+
+END Satellite
+

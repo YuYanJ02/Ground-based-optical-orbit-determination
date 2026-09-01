@@ -1,0 +1,4 @@
+"Type","TypeDesc","ErrorCode","Filename","LineNumber","DateTime","ComputerName","UserName","Message"
+3,"MsgWnd",0,"",0,02/03/2024 11:47:14,"ZHR-LAPTOP","haozh","No valid 64 bit Matlab automation server is available.  Please run matlab /regserver as administrator or see Mathworks online help."
+2,"Default",0,"AgApRmtMsg.cpp",1336,02/03/2024 11:47:15,"ZHR-LAPTOP","haozh","STK/CON: Initializing STK/CON module."
+2,"Default",0,"AgApRmtMsg.cpp",1516,02/03/2024 11:47:15,"ZHR-LAPTOP","haozh","STK/CON: Accepting connection requests"

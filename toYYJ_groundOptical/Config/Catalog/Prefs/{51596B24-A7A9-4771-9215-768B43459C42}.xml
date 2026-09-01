@@ -1,0 +1,8 @@
+<?xml version = "1.0" standalone = "yes"?>
+<AgXMLPropertyBagData version = "1.0">
+    <Object clsid = "{51596B24-A7A9-4771-9215-768B43459C42}">
+        <NumDefaultCats Value = "0" VarType = "VT_UI4" />
+        <DataFileMode Value = "0" VarType = "VT_I4" />
+        <OverrideDataFile Value = "" VarType = "VT_BSTR" />
+    </Object>
+</AgXMLPropertyBagData>

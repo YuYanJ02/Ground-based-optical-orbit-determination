@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataMappingTable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <_dataMappingTable>
+    <DataMapping>
+      <DataAssociations>
+        <DataAssociation>
+          <PropertyName>Time</PropertyName>
+          <MappedDataElement>Scalar Calculations\ElapsedTimeFromStart</MappedDataElement>
+        </DataAssociation>
+      </DataAssociations>
+      <DataOptions>
+        <DataOption>
+          <OptionName>SourceType</OptionName>
+          <OptionValue>stk</OptionValue>
+        </DataOption>
+      </DataOptions>
+      <MappingType>Time</MappingType>
+      <Name>STK Time</Name>
+      <CreationTime>2025-11-15T13:05:12.0971354+08:00</CreationTime>
+    </DataMapping>
+  </_dataMappingTable>
+  <Version>2.1.0.0</Version>
+</DataMappingTable>

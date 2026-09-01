@@ -1,0 +1,13 @@
+<?xml version = "1.0" standalone = "yes"?>
+<AgXMLPropertyBagData version = "1.0">
+    <Object clsid = "{54E4F38A-6C69-4029-9B8A-9B5DD8D20A8E}">
+        <Favorites VarType = "VT_UNKNOWN">
+            <Object clsid = "{220F14FC-8BA1-41D0-91A3-0565B52DD987}">
+                <DisplayName Value = "Favorites" VarType = "VT_BSTR" />
+                <CategoryCLSID Value = "{54E4F38A-6C69-4029-9B8A-9B5DD8D20A8E}" VarType = "VT_BSTR" />
+                <ItemCount Value = "0" VarType = "VT_UI4" />
+            </Object>
+        </Favorites>
+        <DefaultChild Value = "" VarType = "VT_BSTR" />
+    </Object>
+</AgXMLPropertyBagData>

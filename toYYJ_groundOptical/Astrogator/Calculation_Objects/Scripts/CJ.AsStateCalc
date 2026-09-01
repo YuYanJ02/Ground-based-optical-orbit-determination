@@ -1,0 +1,47 @@
+<?xml version = "1.0" standalone = "yes"?>
+<VAR name = "CJ">
+    <SCOPE Class = "AsStateCalc">
+        <VAR name = "Version">
+            <STRING>&quot;1.0.0 a&quot;</STRING>
+        </VAR>
+        <VAR name = "STKVersion">
+            <INT>1220</INT>
+        </VAR>
+        <VAR name = "Description">
+            <STRING>&quot;Calculation produced by a VBScript inline function&quot;</STRING>
+        </VAR>
+        <VAR name = "Type">
+            <STRING>&quot;CAgAsStateCalcVBScript&quot;</STRING>
+        </VAR>
+        <VAR name = "UserComment">
+            <STRING>&quot;Calculation produced by a VBScript inline function&quot;</STRING>
+        </VAR>
+        <VAR name = "ReadOnly">
+            <BOOL>false</BOOL>
+        </VAR>
+        <VAR name = "Clonable">
+            <BOOL>true</BOOL>
+        </VAR>
+        <VAR name = "Category">
+            <STRING>&quot;Scripts&quot;</STRING>
+        </VAR>
+        <VAR name = "ShooterControls">
+            <LIST />
+        </VAR>
+        <VAR name = "CalcArgumentsSelected">
+            <LIST />
+        </VAR>
+        <VAR name = "CalcArguments">
+            <LISTLINKTOOBJ>
+                <STRING>&quot;Eccentricity&quot;</STRING>
+                <STRING>&quot;sma_ND&quot;</STRING>
+            </LISTLINKTOOBJ>
+        </VAR>
+        <VAR name = "InlineFunc">
+            <STRING>&quot;1/sma_ND+2*Sqr(sma_ND*(1-Eccentricity^2))&quot;</STRING>
+        </VAR>
+        <VAR name = "UnitDimension">
+            <STRING>&quot;Unitless&quot;</STRING>
+        </VAR>
+    </SCOPE>
+</VAR>

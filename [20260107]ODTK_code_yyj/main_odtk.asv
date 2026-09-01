@@ -1,0 +1,466 @@
+clear ;clc;
+% 长弧：遍历全部 C(n,3) IOD 三点组合，记录三重积与观测弧段内平均定轨误差
+
+%% 读取文件
+READ_MPC80('DROB_20251026_27.txt','MPC80_DROB_20251026_27.txt')
+[targets,stations,mag,time,ra_deg,dec_deg,station_per_obs,~] = MPC2TDM('MPC80_DROB_20251026_27.txt', 'TDM_DROB_20251026_27.tdm');
+t = time(:);
+ra_deg = ra_deg(:);
+dec_deg = dec_deg(:);
+file_trace = ['D:\documents\keyan\projects\Ground-based_Optical-Observation_OD\[20260315]code\[20260107]ODTK_code_yyj\','TDM_DROB_20251026_27.tdm'];
+
+
+
+%% 开启 ODTK
+% Make sure ODTK is running with the HTTP server started (default port is 9393)
+winopen('MAIN_LaunchODTK-9494-od.cmd')
+
+
+%% 连接 ODTK
+addpath('C:\Program Files\AGI\ODTK 7\CodeSamples\CrossPlatform\ODTK\matlab\lib');
+client = Client('localhost', 9494);
+odtk = client.Root;
+odtkChildCount = odtk.children.count;
+
+
+%% 配置场景
+if odtkChildCount > 0
+    odtk.application.deleteObject("", odtk.scenario{0});
+    fprintf("Scenario closed.\n");
+end
+scenario = odtk.application.createObj(odtk, "Scenario", "TestScenario");
+fprintf("Scenario created.\n");
+scenario.EarthDefinition.EOPData.Filename = 'C:\ProgramData\AGI\ODTK 7\DynamicEarthData\EOP-All-v1.1.txt';
+measurementFiles = scenario.Measurements.Files;
+fprintf("Measurement files count: %i\n", measurementFiles.count);
+% Clear the list
+measurementFiles.clear();
+% Add a new item to it
+ne = measurementFiles.NewElem();
+ne.Enabled = true;
+ne.FileName = file_trace;
+measurementFiles.push_back(ne);
+fprintf("Measurement files count: %i\n", measurementFiles.count);
+   
+
+
+%% 配置卫星
+satName = "yyj";
+mySat = odtk.application.createObj(odtk.scenario{0}, "Satellite", satName);
+fprintf('创建卫星: %s\n', satName);
+
+% 设置追踪编号
+for satId = 1:length(targets)
+    ne = mySat.MeasurementProcessing.TrackingIDAliases.NewElem();
+    ne.AliasID = targets{satId};
+    mySat.MeasurementProcessing.TrackingIDAliases.push_back(ne);
+end
+
+% 设置力学模型
+mySat.ForceModel.Gravity.DegreeAndOrder = 70; % 地球非球型
+mySat.ForceModel.Gravity.Tides.SolidTides = 'false'; % 固体潮
+mySat.ForceModel.Gravity.Tides.OceanTides = 'false'; % 海洋潮
+mySat.ForceModel.Drag.Use = 'No'; % 大气
+% satellite.ForceModel.Drag.Model.CD = 2.2;
+% satellite.ForceModel.Drag.Model.Area.Set(20 , 'm^2');
+mySat.ForceModel.SolarPressure.Use = 'No'; % 光压
+% satellite.ForceModel.SolarPressure.Model.Cr = 1;
+% satellite.ForceModel.SolarPressure.Model.Area.Set(20 , 'm^2');
+mySat.ForceModel.Gravity.ThirdBodies.Settings{0}.GMSource = 'JPL DE'; % 三体引力（默认）
+mySat.ForceModel.Gravity.ThirdBodies.Settings{1}.GMSource = 'JPL DE';
+
+
+
+
+
+%% 配置地面测站
+%BiasSigma = 1 :0.02 :3;
+n = length(1:0.02:3);                % 原样本数 101
+sigma = 1.0;                    % 标准差（单位：角秒）
+WhiteNoiseSigma = sigma * randn(1, n); % 生成零均值高斯白噪声
+Rsigma = zeros(100,1);
+Isigma = zeros(100,1);
+Csigma = zeros(100,1);
+RMSE = zeros(100,1);
+BiasNoise = 0.5+0.2 * randn(1, n);
+
+% 各测站测量噪声：[RA_bias, RA_sigma, Dec_bias, Dec_sigma]（角秒）
+defaultMeas = [-12, 1, -12, 1];
+staMeasCfg = containers.Map( ...
+    {'K19', 'N56', 'O17', 'O46', 'P13', 'D29', 'U74', 'I52', '703'}, { ...
+    [0, 1, 0, 1], ...   % K19  PASTIS, Banon
+    [0, 1, 0, 1], ...   % N56  阿里 JIST
+    [0, 1, 0, 1], ...   % O17  冷湖-1
+    [0, 1, 0, 1], ...   % O46  稻城
+    [0, 2, 0, 2], ...   % P13  百花山
+    [0, 1, 0, 1], ...   % D29  盱眙
+    [0, 1, 0, 1], ...   % U74  JPL Auberry
+    [0, 1, 0, 1], ...   % I52  Mt. Lemmon
+    [0, 1, 0, 1]});     % 703  Catalina
+
+StaNum = length(stations);
+trakSys = odtk.application.createObj(odtk.scenario{0}, 'TrackingSystem', 'trakSys');
+for StaIdx = 1:StaNum
+    StaId = stations{StaIdx};
+    [Lon, Lat, alt_m] = GetStationCoordinates(StaId); % 从 MPC_Codes.txt 获取测站位置
+    
+    facility = odtk.application.createObj(trakSys, 'Facility', StaId);
+    facility.MeasurementProcessing.TrackingID = 100+StaIdx;
+    ne = facility.MeasurementProcessing.TrackingIDAliases.NewElem();
+    ne.AliasID = StaId; % 测站编号
+    facility.MeasurementProcessing.TrackingIDAliases.push_back(ne);
+    pos = facility.Position.ToGeodetic();
+    pos.Lat.Set(Lat, 'deg');
+    pos.Lon.Set(Lon, 'deg');
+    if isnan(alt_m)
+        alt_m = 0;
+    end
+    pos.Alt.Set(alt_m, 'm');
+    facility.Position.Assign(pos);
+    pos = facility.Position.ToGeodetic();
+    printGeodeticPos(pos);
+    
+    % 测量值（按 staMeasCfg 逐站配置）
+    cfg = lookupStaMeasCfg(staMeasCfg, StaId, defaultMeas);
+    RA_BiasSigma = cfg(1);
+    RA_WhiteNoiseSigma = cfg(2);
+    Dec_BiasSigama = cfg(3);
+    Dec_WhiteNoiseSigma = cfg(4);
+    fprintf('测站 %s: RA bias=%.2f″, RA σ=%.2f″, Dec bias=%.2f″, Dec σ=%.2f″\n', ...
+        char(string(StaId)), RA_BiasSigma, RA_WhiteNoiseSigma, Dec_BiasConst, Dec_WhiteNoiseSigma);
+    facility.MeasurementStatistics.clear();
+    facility.MeasurementStatistics.InsertByName('Right Ascension');
+    facility.MeasurementStatistics.InsertByName('Declination');
+    RA = facility.MeasurementStatistics{0};
+    RA.Type.BiasModel.Constant.Set(RA_BiasSigma, 'arcSec');
+    RA.Type.WhiteNoiseSigma.Set(RA_WhiteNoiseSigma, 'arcSec');
+    Dec = facility.MeasurementStatistics{1};
+    Dec.Type.BiasModel.Constant.Set(Dec_BiasConst, 'arcSec');
+    Dec.Type.WhiteNoiseSigma.Set(Dec_WhiteNoiseSigma, 'arcSec');
+    % 
+    % 观测属性
+    facility.OpticalProperties.ReferenceFrame = 'MEME J2000';
+    facility.AntennaType = 'Optical';
+
+
+    facility.UsePositionFromMeasurementFile = 'false';
+end
+
+
+
+
+
+
+%% 配置IOD
+IOD_Ground = odtk.application.createObj(odtk.scenario{0}.yyj, 'InitialOrbitDetermination', 'IOD_Ground');
+fprintf('InitialOrbitDetermination "IOD_Ground" created.\n');
+
+IOD_Ground.Method.Type = 'GoodingAnglesOnly';% 测量方法
+
+% IOD_Ground.Method.Range1Estimate.Set(200000 , 'km');
+% IOD_Ground.Method.Range3Estimate.Set(200000 , 'km');
+
+% 添加测站
+IOD_Ground.Method.TrackerList.clear();
+for StaIdx = 1:StaNum
+    StaId = stations{StaIdx};
+    TrackerName = ['trakSys.',StaId];
+    IOD_Ground.Method.TrackerList.Insert(TrackerName);
+end
+MeaNum = IOD_Ground.Method.SelectedMeasurements.Choices.count; % 获取观测数据总数
+
+%ls_temp.c.Set('29 Nov 2025 20:04:20.294' , 'UTCG');
+%ls_temp.StopTime.Set('30 Dec 2025 00:04:20.294' , 'UTCG');
+
+% MeaStart = IOD_Ground.Method.SelectedMeasurements.Choices{0};
+% MeaEnd = IOD_Ground.Method.SelectedMeasurements.Choices{MeaNum-1};
+
+
+
+
+
+
+
+
+
+
+%% 配置最小二乘
+LS_Ground = odtk.application.createObj(odtk.scenario{0}.yyj, 'LeastSquares', 'LS_Ground');
+fprintf('LeastSquares "LS_Ground" created.\n');
+
+% 添加测站
+LS_Ground.TrackerList.clear();
+for StaIdx = 1:StaNum
+    StaId = stations{StaIdx};
+    TrackerName = ['trakSys.',StaId];
+    LS_Ground.TrackerList.Insert(TrackerName);
+end
+
+% 测量类型
+LS_Ground.MeasTypes.clear();
+LS_Ground.MeasTypes.Insert('Right Ascension');
+LS_Ground.MeasTypes.Insert('Declination');
+
+
+LS_Ground.ConsiderStates.MeasBias = true;
+
+% 配置星历
+LS_Ground.Output.STKEphemeris.DuringProcess.Generate = 'true';
+LS_Ground.Output.STKEphemeris.Covariance = 'true';
+LS_Ground.CombineMeasUncertainty = 'true';
+
+
+
+
+
+
+%% 配置滤波器
+Filter_Ground = odtk.application.createObj(odtk.scenario{0}, 'Filter', 'Filter1');
+fprintf('Filter "Filter_Ground" created.\n');
+
+% 指定卫星
+Filter_Ground.SatelliteList.clear();
+Filter_Ground.SatelliteList.InsertByName("yyj");
+
+% 添加测站
+Filter_Ground.TrackerList.clear();
+for StaIdx = 1:StaNum
+    StaId = stations{StaIdx};
+    TrackerName = ['trakSys.',StaId];
+    Filter_Ground.TrackerList.Insert(TrackerName);
+end
+
+% 测量类型
+Filter_Ground.MeasTypes.clear();
+Filter_Ground.MeasTypes.Insert('Right Ascension');
+Filter_Ground.MeasTypes.Insert('Declination');
+
+% 不输出平滑器数据
+Filter_Ground.Output.SmootherData.Generate = 1;
+
+% 修改输出文件名
+prop_name = 'TestScenario';
+% Filter_Ground.Output.DataArchive.Filename = ['D:\keyan\projects\Ground-based_Optical-Observation_OD\[20260315]code\[20260107]ODTK_code_yyj\ODTK\' , prop_name , '.filrun'];
+Filter_Ground.Output.SmootherData.Generate = 1;
+
+
+
+
+
+
+
+%% 遍历全部 C(n,3) 三点组合：记录三重积与观测弧段内平均定轨误差
+rho_nom_km = 380000;
+nObs = length(ra_deg);
+
+if nObs < 3
+    error('至少需要 3 条观测');
+end
+
+% 预计算测站→地心单位矢（经纬高均来自 MPC_Codes.txt）
+I_geoc = zeros(nObs, 3);
+for iiobs = 1:nObs
+    code = station_per_obs{iiobs};
+    if iscell(code)
+        code = code{1};
+    end
+    code = upper(strtrim(char(string(code))));
+    [Lon, Lat, alt_m] = GetStationCoordinates(code);
+    if isnan(Lon) || isnan(Lat)
+        u_wrong = [cosd(dec_deg(iiobs)) * cosd(ra_deg(iiobs)); ...
+                   cosd(dec_deg(iiobs)) * sind(ra_deg(iiobs)); ...
+                   sind(dec_deg(iiobs))];
+        I_geoc(iiobs, :) = u_wrong.';
+    else
+        if isnan(alt_m)
+            alt_m = 0;
+        end
+        I_geoc(iiobs, :) = topo_j2000_radec_to_geocentric_unit(ra_deg(iiobs), dec_deg(iiobs), ...
+            Lat, Lon, alt_m, t(iiobs), rho_nom_km).';
+    end
+end
+
+nComb = nObs * (nObs - 1) * (nObs - 2) / 6;
+idx1 = zeros(nComb, 1);
+idx2 = zeros(nComb, 1);
+idx3 = zeros(nComb, 1);
+tripleProd = zeros(nComb, 1);
+timeSpan_h = zeros(nComb, 1);
+meanDis_km = zeros(nComb, 1);
+converged = false(nComb, 1);
+t_obs = datetime(t(:));
+
+fprintf('开始遍历 %d 组 IOD 三点组合（rho = %.1f km）...\n', nComb, rho_nom_km);
+combId = 0;
+tScanStart = tic;
+odErrFig = [];
+bestOdMean_km = inf;
+
+for ii = 1:nObs - 2
+    % for jj = ii + 1:nObs - 1
+    for jj = 20
+        % for kk = jj + 1:nObs
+        for kk = 39
+            combId = combId + 1;
+            idx1(combId) = ii;
+            idx2(combId) = jj;
+            idx3(combId) = kk;
+            tripleProd(combId) = abs(dot(I_geoc(ii, :), cross(I_geoc(jj, :), I_geoc(kk, :))));
+            timeSpan_h(combId) = hours(t_obs(kk) - t_obs(ii));
+
+            IOD_Ground.Method.SelectedMeasurements.clear();
+            Mea1 = IOD_Ground.Method.SelectedMeasurements.Choices{ii - 1};
+            Mea2 = IOD_Ground.Method.SelectedMeasurements.Choices{jj - 1};
+            Mea3 = IOD_Ground.Method.SelectedMeasurements.Choices{kk - 1};
+            IOD_Ground.Method.SelectedMeasurements.Insert(Mea1);
+            IOD_Ground.Method.SelectedMeasurements.Insert(Mea2);
+            IOD_Ground.Method.SelectedMeasurements.Insert(Mea3);
+            IOD_Ground.go();
+            kep = IOD_Ground.Output.OrbitState.ToKeplerian();
+            a_IOD = kep.SemiMajorAxis.GetIn("km");
+            if a_IOD == 0
+                continue;
+            end
+            IOD_Ground.transfer();
+
+            LS_Ground.Stages.clear();
+            LS_newStage = LS_Ground.Stages.NewElem();
+            LS_Ground.Stages.push_back(LS_newStage);
+            ls_temp = LS_Ground.Stages{0};
+            StartTime = extractTimeString(IOD_Ground.Method.SelectedMeasurements.Choices{0});
+            StopTime = extractTimeString(IOD_Ground.Method.SelectedMeasurements.Choices{MeaNum - 1});
+            ls_temp.EstimateMeasBias = 'true';
+            ls_temp.MaxIterations = 40;
+            ls_temp.StartTime.Set(StartTime, 'UTCG');
+            ls_temp.StopTime.Set(StopTime, 'UTCG');
+            LS_Ground.go();
+            if ~LS_Ground.RunResults.RunSuccess
+                continue;
+            end
+            if LS_Ground.Output.STKEphemeris.Files.count == 0
+                continue;
+            end
+            LS_Ground.transfer();
+            Filter_Ground.go();
+            EphemerisFileName = Filter_Ground.Output.STKEphemeris.Files{0}.Filename;
+            [dis,t,Sun,Moon,Target,Target_real] = main_stk_dis(EphemerisFileName);
+            totalTar = max(length(Target_real));
+            if isempty(dis)
+                continue;
+            end
+
+            dis_km = abs(dis(1:totalTar)) / 1000;
+            curMean_km = mean(dis_km);
+            meanDis_km(combId) = curMean_km;
+            converged(combId) = true;
+
+            % 定轨位置误差可视化（刷新当前最优组合）
+            if curMean_km < bestOdMean_km
+                bestOdMean_km = curMean_km;
+                odErrFig = plotOdPositionError(t(1:totalTar), dis_km, [ii, jj, kk], curMean_km, odErrFig);
+            end
+
+            if mod(combId, max(1, floor(nComb / 20))) == 0 || combId == nComb
+                fprintf('[%.1f%%] %d/%d  当前 [%d,%d,%d] TP=%.4g  mean|dis|=%.3f km\n', ...
+                    100 * combId / nComb, combId, nComb, ii, jj, kk, ...
+                    tripleProd(combId), meanDis_km(combId));
+            end
+        end
+    end
+end
+
+fprintf('遍历完成，耗时 %.1f min，收敛 %d/%d 组\n', toc(tScanStart) / 60, sum(converged), nComb);
+
+TPDetail = table((1:nComb).', idx1, idx2, idx3, tripleProd, timeSpan_h, meanDis_km, converged, ...
+    'VariableNames', {'CombID', 'Idx1', 'Idx2', 'Idx3', 'TripleProduct', 'TimeSpan_h', 'MeanDis_km', 'Converged'});
+writetable(TPDetail, 'TP_IOD_scan_detail2.csv');
+save('TP_IOD_scan_detail3.mat', 'TPDetail', 'rho_nom_km');
+
+if any(converged)
+    convIdx = find(converged);
+    [~, ord] = min(meanDis_km(convIdx));
+    bestId = convIdx(ord);
+    fprintf('最优组合 [%d,%d,%d]：TP=%.4g，mean|dis|=%.3f km\n', ...
+        idx1(bestId), idx2(bestId), idx3(bestId), tripleProd(bestId), meanDis_km(bestId));
+end
+
+
+
+
+
+%% functions
+
+function cfg = lookupStaMeasCfg(staMeasCfg, StaId, defaultMeas)
+code = upper(strtrim(char(string(StaId))));
+if all(isstrprop(code, 'digit'))
+    code = sprintf('%03d', str2double(code));
+end
+if isKey(staMeasCfg, code)
+    cfg = staMeasCfg(code);
+else
+    warning('测站 %s 未在 staMeasCfg 中，使用 defaultMeas', code);
+    cfg = defaultMeas;
+end
+end
+
+function fig = plotOdPositionError(t_stk, dis_km, iodIdx, mean_km, fig)
+if nargin < 5 || isempty(fig) || ~isvalid(fig)
+    fig = figure('Name', 'OD Position Error', 'NumberTitle', 'off', ...
+        'Position', [120, 120, 860, 360]);
+else
+    figure(fig);
+end
+
+if iscell(t_stk)
+    tt_no_ns = cellfun(@(x) char(x), t_stk, 'UniformOutput', false);
+    tt_no_ns = cellfun(@(x) x(1:min(23, numel(x))), tt_no_ns, 'UniformOutput', false);
+    t_plot = datetime(tt_no_ns, 'InputFormat', 'dd MMM yyyy HH:mm:ss.SSS', 'Locale', 'en_US');
+else
+    t_plot = t_stk;
+end
+
+clf;
+plot(t_plot, dis_km, 'b-', 'LineWidth', 1.2);
+grid on;
+xtickformat('MMM dd HH:mm');
+xlabel('Time [UTC]', 'FontName', 'Times New Roman', 'FontSize', 13);
+ylabel('Position Error [km]', 'FontName', 'Times New Roman', 'FontSize', 13);
+title(sprintf('IOD [%d, %d, %d], mean |error| = %.2f km', ...
+    iodIdx(1), iodIdx(2), iodIdx(3), mean_km), ...
+    'FontName', 'Times New Roman', 'FontSize', 13);
+drawnow;
+end
+
+function printKeplerianOrbitState(os)
+    fprintf("Epoch : %s UTCG, Eccentricity: %f, " + ...
+            "TrueArgOfLatitude: %f deg, Inclination: %f deg, " + ...
+            "RAAN: %f deg, ArgOfPerigee: %f deg rad\n", ...
+            os.Epoch.Format("UTCG"), ...
+            os.Eccentricity, ...
+            os.TrueArgOfLatitude.GetIn("deg"), ...
+            os.Inclination.GetIn("deg"), ...
+            os.RAAN.GetIn("deg"), ...
+            os.ArgOfPerigee.GetIn("rad"));
+end
+
+function printGeodeticPos(p)
+    fprintf("Lat : %f deg, Lon: %f deg, Alt: %f m\n", ...
+        p.Lat.GetIn("deg"), ...
+        p.Lon.GetIn("deg"), ...
+        p.Alt.GetIn("m"));
+end
+
+
+function timeStr = extractTimeString(measStr)
+    % 使用正则表达式匹配时间格式
+    % pattern: 匹配"日期 月份 年份 时:分:秒.毫秒"
+    pattern = '\d{1,2}\s+[A-Za-z]{3}\s+\d{4}\s+\d{2}:\d{2}:\d{2}\.\d{3}';
+    match = regexp(measStr, pattern, 'match');
+    if ~isempty(match)
+        timeStr = string(regexprep(match{1}, '\s+', ' '));
+    else
+        timeStr = string('');
+        warning('未找到时间字符串: %s', measStr);
+    end
+end
+

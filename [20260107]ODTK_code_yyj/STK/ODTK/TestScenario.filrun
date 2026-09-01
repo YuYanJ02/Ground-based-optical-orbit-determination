@@ -1,0 +1,363 @@
+<?xml version = "1.0" standalone = "yes"?>
+<VAR name = "ODTK">
+    <PROP name = "BinaryRevision">
+        <INT>74</INT>
+    </PROP>
+    <PROP name = "Version">
+        <STRING>&quot;7.2&quot;</STRING>
+    </PROP>
+    <SCOPE>
+        <VAR name = "Run">
+            <SCOPE Class = "FilterRunFile">
+                <VAR name = "Name">
+                    <STRING>&quot;TestScenario&quot;</STRING>
+                </VAR>
+                <VAR name = "Description">
+                    <STRING>&quot;&quot;</STRING>
+                </VAR>
+                <VAR name = "CreatedBy">
+                    <STRING>&quot;Filter1&quot;</STRING>
+                </VAR>
+                <VAR name = "Trackers">
+                    <LIST>
+                        <STRING>&quot;trakSys.D29&quot;</STRING>
+                        <STRING>&quot;trakSys.G96&quot;</STRING>
+                        <STRING>&quot;trakSys.K19&quot;</STRING>
+                        <STRING>&quot;trakSys.N56&quot;</STRING>
+                        <STRING>&quot;trakSys.P13&quot;</STRING>
+                        <STRING>&quot;trakSys.U62&quot;</STRING>
+                    </LIST>
+                </VAR>
+                <VAR name = "Facilities">
+                    <LIST>
+                        <STRING>&quot;trakSys.D29&quot;</STRING>
+                        <STRING>&quot;trakSys.G96&quot;</STRING>
+                        <STRING>&quot;trakSys.K19&quot;</STRING>
+                        <STRING>&quot;trakSys.N56&quot;</STRING>
+                        <STRING>&quot;trakSys.P13&quot;</STRING>
+                        <STRING>&quot;trakSys.U62&quot;</STRING>
+                    </LIST>
+                </VAR>
+                <VAR name = "Satellites">
+                    <LIST>
+                        <STRING>&quot;yyj&quot;</STRING>
+                    </LIST>
+                </VAR>
+                <VAR name = "TrackingStrands">
+                    <LIST>
+                        <STRING>&quot;trakSys.D29 - *&quot;</STRING>
+                        <STRING>&quot;trakSys.G96 - *&quot;</STRING>
+                        <STRING>&quot;trakSys.N56 - *&quot;</STRING>
+                        <STRING>&quot;trakSys.P13 - *&quot;</STRING>
+                        <STRING>&quot;trakSys.U62 - *&quot;</STRING>
+                    </LIST>
+                </VAR>
+                <VAR name = "Transponders">
+                    <LIST />
+                </VAR>
+                <VAR name = "Retroreflectors">
+                    <LIST />
+                </VAR>
+                <VAR name = "Antennas">
+                    <LIST />
+                </VAR>
+                <VAR name = "Emitters">
+                    <LIST />
+                </VAR>
+                <VAR name = "Accelerometers">
+                    <LIST />
+                </VAR>
+                <VAR name = "TrackingInstruments">
+                    <LIST />
+                </VAR>
+                <VAR name = "GNSS">
+                    <LIST />
+                </VAR>
+                <VAR name = "Events">
+                    <LIST>
+                        <STRING>&quot;Finite Maneuver&quot;</STRING>
+                        <STRING>&quot;Instant Maneuver&quot;</STRING>
+                    </LIST>
+                </VAR>
+                <VAR name = "EmpiricalForces">
+                    <LIST />
+                </VAR>
+                <VAR name = "EmpiricalParameters">
+                    <LIST />
+                </VAR>
+                <VAR name = "MeasTypes">
+                    <LIST>
+                        <STRING>&quot;Declination&quot;</STRING>
+                        <STRING>&quot;Right Ascension&quot;</STRING>
+                    </LIST>
+                </VAR>
+                <VAR name = "FiniteManeuvers">
+                    <LIST />
+                </VAR>
+                <VAR name = "FiniteManeuverSatellites">
+                    <LIST />
+                </VAR>
+                <VAR name = "StartTime">
+                    <DATE>29 Nov 2025 20:04:57.294</DATE>
+                </VAR>
+                <VAR name = "StopTime">
+                    <DATE>9 Dec 2025 21:23:13.307</DATE>
+                </VAR>
+                <VAR name = "SaveCrossCorrelations">
+                    <BOOL>false</BOOL>
+                </VAR>
+                <VAR name = "TrackingID">
+                    <LIST>
+                        <VAR name = "NameID">
+                            <SCOPE>
+                                <VAR name = "ID">
+                                    <INT>101</INT>
+                                </VAR>
+                                <VAR name = "Name">
+                                    <STRING>&quot;trakSys.D29&quot;</STRING>
+                                </VAR>
+                            </SCOPE>
+                        </VAR>
+                        <VAR name = "NameID">
+                            <SCOPE>
+                                <VAR name = "ID">
+                                    <INT>102</INT>
+                                </VAR>
+                                <VAR name = "Name">
+                                    <STRING>&quot;trakSys.G96&quot;</STRING>
+                                </VAR>
+                            </SCOPE>
+                        </VAR>
+                        <VAR name = "NameID">
+                            <SCOPE>
+                                <VAR name = "ID">
+                                    <INT>103</INT>
+                                </VAR>
+                                <VAR name = "Name">
+                                    <STRING>&quot;trakSys.K19&quot;</STRING>
+                                </VAR>
+                            </SCOPE>
+                        </VAR>
+                        <VAR name = "NameID">
+                            <SCOPE>
+                                <VAR name = "ID">
+                                    <INT>104</INT>
+                                </VAR>
+                                <VAR name = "Name">
+                                    <STRING>&quot;trakSys.N56&quot;</STRING>
+                                </VAR>
+                            </SCOPE>
+                        </VAR>
+                        <VAR name = "NameID">
+                            <SCOPE>
+                                <VAR name = "ID">
+                                    <INT>105</INT>
+                                </VAR>
+                                <VAR name = "Name">
+                                    <STRING>&quot;trakSys.P13&quot;</STRING>
+                                </VAR>
+                            </SCOPE>
+                        </VAR>
+                        <VAR name = "NameID">
+                            <SCOPE>
+                                <VAR name = "ID">
+                                    <INT>106</INT>
+                                </VAR>
+                                <VAR name = "Name">
+                                    <STRING>&quot;trakSys.U62&quot;</STRING>
+                                </VAR>
+                            </SCOPE>
+                        </VAR>
+                    </LIST>
+                </VAR>
+                <VAR name = "SatID">
+                    <LIST>
+                        <VAR name = "NameID">
+                            <SCOPE>
+                                <VAR name = "ID">
+                                    <INT>1000</INT>
+                                </VAR>
+                                <VAR name = "Name">
+                                    <STRING>&quot;yyj&quot;</STRING>
+                                </VAR>
+                            </SCOPE>
+                        </VAR>
+                    </LIST>
+                </VAR>
+                <VAR name = "FacID">
+                    <LIST>
+                        <VAR name = "NameID">
+                            <SCOPE>
+                                <VAR name = "ID">
+                                    <INT>101</INT>
+                                </VAR>
+                                <VAR name = "Name">
+                                    <STRING>&quot;trakSys.D29&quot;</STRING>
+                                </VAR>
+                            </SCOPE>
+                        </VAR>
+                        <VAR name = "NameID">
+                            <SCOPE>
+                                <VAR name = "ID">
+                                    <INT>102</INT>
+                                </VAR>
+                                <VAR name = "Name">
+                                    <STRING>&quot;trakSys.G96&quot;</STRING>
+                                </VAR>
+                            </SCOPE>
+                        </VAR>
+                        <VAR name = "NameID">
+                            <SCOPE>
+                                <VAR name = "ID">
+                                    <INT>103</INT>
+                                </VAR>
+                                <VAR name = "Name">
+                                    <STRING>&quot;trakSys.K19&quot;</STRING>
+                                </VAR>
+                            </SCOPE>
+                        </VAR>
+                        <VAR name = "NameID">
+                            <SCOPE>
+                                <VAR name = "ID">
+                                    <INT>104</INT>
+                                </VAR>
+                                <VAR name = "Name">
+                                    <STRING>&quot;trakSys.N56&quot;</STRING>
+                                </VAR>
+                            </SCOPE>
+                        </VAR>
+                        <VAR name = "NameID">
+                            <SCOPE>
+                                <VAR name = "ID">
+                                    <INT>105</INT>
+                                </VAR>
+                                <VAR name = "Name">
+                                    <STRING>&quot;trakSys.P13&quot;</STRING>
+                                </VAR>
+                            </SCOPE>
+                        </VAR>
+                        <VAR name = "NameID">
+                            <SCOPE>
+                                <VAR name = "ID">
+                                    <INT>106</INT>
+                                </VAR>
+                                <VAR name = "Name">
+                                    <STRING>&quot;trakSys.U62&quot;</STRING>
+                                </VAR>
+                            </SCOPE>
+                        </VAR>
+                    </LIST>
+                </VAR>
+                <VAR name = "EmitterID">
+                    <LIST />
+                </VAR>
+                <VAR name = "AccelerometerID">
+                    <LIST />
+                </VAR>
+                <VAR name = "TrackingInstrumentID">
+                    <LIST />
+                </VAR>
+                <VAR name = "GNSSID">
+                    <LIST />
+                </VAR>
+                <VAR name = "StateHist">
+                    <BOOL>true</BOOL>
+                </VAR>
+                <VAR name = "StateHistTime">
+                    <BOOL>false</BOOL>
+                </VAR>
+                <VAR name = "MeasurementUpdates">
+                    <INT>-1</INT>
+                </VAR>
+                <VAR name = "StateHistMeas">
+                    <BOOL>false</BOOL>
+                </VAR>
+                <VAR name = "TimeUpdates">
+                    <INT>-1</INT>
+                </VAR>
+                <VAR name = "MeasHist">
+                    <BOOL>true</BOOL>
+                </VAR>
+                <VAR name = "Summary">
+                    <BOOL>true</BOOL>
+                </VAR>
+                <VAR name = "Histogram">
+                    <BOOL>true</BOOL>
+                </VAR>
+                <VAR name = "HistogramSize">
+                    <INT>3</INT>
+                </VAR>
+                <VAR name = "NumHistogramBins">
+                    <INT>22</INT>
+                </VAR>
+                <VAR name = "Maneuver">
+                    <BOOL>true</BOOL>
+                </VAR>
+                <VAR name = "HasCovariance">
+                    <BOOL>true</BOOL>
+                </VAR>
+                <VAR name = "StateSize">
+                    <INT>18</INT>
+                </VAR>
+                <VAR name = "NumIdxRecs">
+                    <INT>14595</INT>
+                </VAR>
+                <VAR name = "NumHstRecs">
+                    <INT>0</INT>
+                </VAR>
+                <VAR name = "NumImnRecs">
+                    <INT>0</INT>
+                </VAR>
+                <VAR name = "NumFmnRecs">
+                    <INT>0</INT>
+                </VAR>
+                <VAR name = "NumSthistRecs">
+                    <INT>14537</INT>
+                </VAR>
+                <VAR name = "NumMshistRecs">
+                    <INT>58</INT>
+                </VAR>
+                <VAR name = "HasDataFileSummary">
+                    <BOOL>true</BOOL>
+                </VAR>
+                <VAR name = "EventData">
+                    <BOOL>true</BOOL>
+                </VAR>
+                <VAR name = "NumEventRecs">
+                    <INT>0</INT>
+                </VAR>
+                <VAR name = "EmpiricalForcesData">
+                    <BOOL>false</BOOL>
+                </VAR>
+                <VAR name = "FluxData">
+                    <SCOPE>
+                        <VAR name = "InputMethod">
+                            <STRING>&quot;Read From File&quot;</STRING>
+                        </VAR>
+                        <VAR name = "InputFluxFile">
+                            <STRING>&quot;C:\ProgramData\AGI\ODTK 7\DynamicEarthData\SpaceWeather-v1.2.txt&quot;</STRING>
+                        </VAR>
+                        <VAR name = "F10">
+                            <REAL>150</REAL>
+                        </VAR>
+                        <VAR name = "F10bar">
+                            <REAL>150</REAL>
+                        </VAR>
+                        <VAR name = "KpUpdate">
+                            <STRING>&quot;3-Hourly&quot;</STRING>
+                        </VAR>
+                        <VAR name = "KpSubSamplingRatio">
+                            <INT>1</INT>
+                        </VAR>
+                        <VAR name = "Ap">
+                            <REAL>8.113124895222493</REAL>
+                        </VAR>
+                        <VAR name = "Kp">
+                            <REAL>2.209975772807119</REAL>
+                        </VAR>
+                    </SCOPE>
+                </VAR>
+            </SCOPE>
+        </VAR>
+    </SCOPE>
+</VAR>

@@ -1,0 +1,290 @@
+<?xml version = "1.0" standalone = "yes"?>
+<AgXMLPropertyBagData version = "1.0">
+    <Object clsid = "{6A113081-45F0-452E-B0FC-C449823CC3D8}">
+        <BaseDataSourceCLSID Value = "{28B6EE51-8EA3-4E9F-B3F8-03BD1FE715B4}" VarType = "VT_BSTR" />
+        <BuiltInAccel VarType = "VT_UNKNOWN">
+            <Object clsid = "{1E2570DC-57FC-4277-9E0B-ADC5D076E40C}">
+                <DisplayName Value = "Built-In Model" VarType = "VT_BSTR" />
+                <DisplayTurns Value = "0" VarType = "VT_I4" />
+                <LoadFactorG Value = "3.0000000000019997e+00" VarType = "VT_R8" />
+                <TurnRate Value = "5.2359877559829890e-02" VarType = "VT_R8" />
+                <TurnRadius Value = "1.8520000000000000e+03" VarType = "VT_R8" />
+                <RollRate Value = "1.0471975511965976e+00" VarType = "VT_R8" />
+                <PullUpG Value = "3.0000000000000000e+00" VarType = "VT_R8" />
+                <PushOverG Value = "5.0000000000000000e-01" VarType = "VT_R8" />
+                <AOARate Value = "1.7453292519943295e-01" VarType = "VT_R8" />
+                <YawRate Value = "3.4906585039886590e-01" VarType = "VT_R8" />
+                <Aerodynamics VarType = "VT_UNKNOWN">
+                    <Object clsid = "{15094728-1301-46C2-A17A-A7329AF5D14E}">
+                        <FlightMode Value = "0" VarType = "VT_I4" />
+                        <SRef Value = "0.0000000000000000e+00" VarType = "VT_R8" />
+                        <ClMax Value = "0.0000000000000000e+00" VarType = "VT_R8" />
+                        <Cd Value = "0.0000000000000000e+00" VarType = "VT_R8" />
+                        <UserProperties VarType = "VT_UNKNOWN">
+                            <Object clsid = "{21306355-2B56-47BA-AB2F-72F8DF5B6B9E}">
+                                <PropertyCount Value = "0" VarType = "VT_I4" />
+                            </Object>
+                        </UserProperties>
+                    </Object>
+                </Aerodynamics>
+                <Propulsion VarType = "VT_UNKNOWN">
+                    <Object clsid = "{43F2BDE4-8795-4482-B28B-3AC9F1E22956}">
+                        <AccelerationG Value = "5.0000000000000000e-01" VarType = "VT_R8" />
+                        <DecelerationG Value = "5.0000000000000000e-01" VarType = "VT_R8" />
+                        <DensityScale Value = "0" VarType = "VT_I1" />
+                        <DensityExponent Value = "0.0000000000000000e+00" VarType = "VT_R8" />
+                        <UserProperties VarType = "VT_UNKNOWN">
+                            <Object clsid = "{21306355-2B56-47BA-AB2F-72F8DF5B6B9E}">
+                                <PropertyCount Value = "0" VarType = "VT_I4" />
+                            </Object>
+                        </UserProperties>
+                    </Object>
+                </Propulsion>
+                <DynamicsMoments VarType = "VT_UNKNOWN">
+                    <Object clsid = "{71F81600-1859-4650-B7EE-27E0146C99F7}">
+                        <DisplayName Value = "Simple Aero" VarType = "VT_BSTR" />
+                        <MaxRequiredPDot Value = "1.0471975511965976e+00" VarType = "VT_R8" />
+                        <MaxRequiredQDot Value = "5.2359877559829882e-01" VarType = "VT_R8" />
+                        <MaxRequiredRDot Value = "2.6179938779914941e-01" VarType = "VT_R8" />
+                        <ControlSurfAreaP Value = "1.0000000000000000e+00" VarType = "VT_R8" />
+                        <MomentArmLengthP Value = "6.0960000000000001e+00" VarType = "VT_R8" />
+                        <ClMaxP Value = "1.6000000000000001e+00" VarType = "VT_R8" />
+                        <ControlSurfAreaQ Value = "1.0000000000000000e+00" VarType = "VT_R8" />
+                        <MomentArmLengthQ Value = "6.0960000000000001e+00" VarType = "VT_R8" />
+                        <ClMaxQ Value = "1.6000000000000001e+00" VarType = "VT_R8" />
+                        <ControlSurfAreaR Value = "1.0000000000000000e+00" VarType = "VT_R8" />
+                        <MomentArmLengthR Value = "6.0960000000000001e+00" VarType = "VT_R8" />
+                        <ClMaxR Value = "1.6000000000000001e+00" VarType = "VT_R8" />
+                        <ChangeOneChangeAll_S Value = "0" VarType = "VT_I2" />
+                        <ChangeOneChangeAll_L Value = "0" VarType = "VT_I2" />
+                        <ChangeOneChangeAll_CLMAX Value = "0" VarType = "VT_I2" />
+                        <UserProperties VarType = "VT_UNKNOWN">
+                            <Object clsid = "{21306355-2B56-47BA-AB2F-72F8DF5B6B9E}">
+                                <PropertyCount Value = "0" VarType = "VT_I4" />
+                            </Object>
+                        </UserProperties>
+                    </Object>
+                </DynamicsMoments>
+                <LiftFactor Value = "1.0000000000000000e+00" VarType = "VT_R8" />
+                <DragFactor Value = "1.0000000000000000e+00" VarType = "VT_R8" />
+                <ThrustFactor Value = "1.0000000000000000e+00" VarType = "VT_R8" />
+                <FuelFactor Value = "1.0000000000000000e+00" VarType = "VT_R8" />
+                <TurnManeuverMode Value = "0" VarType = "VT_I4" />
+                <PushPullManeuverMode Value = "0" VarType = "VT_I4" />
+                <IgnorePushPullFPA Value = "0" VarType = "VT_I1" />
+                <ManeuverAeroPropHelper VarType = "VT_UNKNOWN">
+                    <Object clsid = "{94138300-C317-46A1-B904-ACCCADD7E0BF}">
+                        <Mode Value = "0" VarType = "VT_I4" />
+                        <PerfMode Value = "0" VarType = "VT_I4" />
+                        <PhaseOfFlight Value = "3" VarType = "VT_I4" />
+                        <UseBurnerIfPossible Value = "0" VarType = "VT_I1" />
+                        <TurnAllocation Value = "7.5000000000000000e-01" VarType = "VT_R8" />
+                        <RefLoadFactor Value = "5.0000000000000000e+00" VarType = "VT_R8" />
+                        <RefWeight Value = "4.5359237000000003e+03" VarType = "VT_R8" />
+                        <RefAirspeed Value = "1.8005555555555557e+02" VarType = "VT_R8" />
+                        <RefAirspeedType Value = "1" VarType = "VT_I4" />
+                        <RefAltitude Value = "3.0480000000000000e+03" VarType = "VT_R8" />
+                        <AeroValid Value = "0" VarType = "VT_I2" />
+                        <ThrustValid Value = "0" VarType = "VT_I2" />
+                        <ConstrainToMaxAeroLoadFactor Value = "0" VarType = "VT_I1" />
+                    </Object>
+                </ManeuverAeroPropHelper>
+                <UserProperties VarType = "VT_UNKNOWN">
+                    <Object clsid = "{21306355-2B56-47BA-AB2F-72F8DF5B6B9E}">
+                        <PropertyCount Value = "0" VarType = "VT_I4" />
+                    </Object>
+                </UserProperties>
+                <_BSTRUniqueID Value = "{75104B37-C734-4CCE-8B59-1C59C63ACB17}" VarType = "VT_BSTR" />
+            </Object>
+        </BuiltInAccel>
+        <BuiltInClimb VarType = "VT_UNKNOWN">
+            <Object clsid = "{B4C53FF0-B962-4C3A-BEA8-0E58444B7BC2}">
+                <DisplayName Value = "Built-In Model" VarType = "VT_BSTR" />
+                <Airspeed Value = "2.1606666666666669e+02" VarType = "VT_R8" />
+                <AirspeedType Value = "3" VarType = "VT_I4" />
+                <AltRate Value = "1.0160000000000001e+02" VarType = "VT_R8" />
+                <FuelFlow Value = "6.2998940277777782e-01" VarType = "VT_R8" />
+                <CeilingAlt Value = "1.5240000000000000e+04" VarType = "VT_R8" />
+                <DoAccelManeuver Value = "0" VarType = "VT_I1" />
+                <AccelManeuverRelSpeedTol Value = "5.0000000000000003e-02" VarType = "VT_R8" />
+                <UseAeroPropFuel Value = "0" VarType = "VT_I1" />
+                <ScaleFuelByDensity Value = "0" VarType = "VT_I1" />
+                <UserProperties VarType = "VT_UNKNOWN">
+                    <Object clsid = "{21306355-2B56-47BA-AB2F-72F8DF5B6B9E}">
+                        <PropertyCount Value = "0" VarType = "VT_I4" />
+                    </Object>
+                </UserProperties>
+                <_BSTRUniqueID Value = "{497F52A4-9752-4515-B1F4-B2F9F83E406A}" VarType = "VT_BSTR" />
+            </Object>
+        </BuiltInClimb>
+        <BuiltInCruise VarType = "VT_UNKNOWN">
+            <Object clsid = "{D1E65650-E1C9-4431-AB2B-9F0D72B24D6E}">
+                <DisplayName Value = "Built-In Model" VarType = "VT_BSTR" />
+                <MinAirspeedFuelFlow Value = "1.8899682083333333e+00" VarType = "VT_R8" />
+                <MaxEnduranceFuelFlow Value = "6.2998940277777782e-01" VarType = "VT_R8" />
+                <MaxRangeFuelFlow Value = "7.5598728333333332e-01" VarType = "VT_R8" />
+                <MaxAirspeedFuelFlow Value = "1.8899682083333333e+00" VarType = "VT_R8" />
+                <MaxPerfAirspeedFuelFlow Value = "1.3229777458333334e+00" VarType = "VT_R8" />
+                <AirspeedType Value = "1" VarType = "VT_I4" />
+                <MinAirspeed Value = "5.1444444444444450e+01" VarType = "VT_R8" />
+                <MaxEnduranceAirspeed Value = "1.0803333333333335e+02" VarType = "VT_R8" />
+                <MaxRangeAirspeed Value = "1.4918888888888890e+02" VarType = "VT_R8" />
+                <MaxAirspeed Value = "3.0866666666666669e+02" VarType = "VT_R8" />
+                <MaxPerfAirspeed Value = "2.2892777777777781e+02" VarType = "VT_R8" />
+                <CeilingAlt Value = "1.5240000000000000e+04" VarType = "VT_R8" />
+                <DefaultCruiseAltitude Value = "9.1440000000000000e+03" VarType = "VT_R8" />
+                <UseAeroPropFuel Value = "0" VarType = "VT_I1" />
+                <ScaleFuelByDensity Value = "0" VarType = "VT_I1" />
+                <UserProperties VarType = "VT_UNKNOWN">
+                    <Object clsid = "{21306355-2B56-47BA-AB2F-72F8DF5B6B9E}">
+                        <PropertyCount Value = "0" VarType = "VT_I4" />
+                    </Object>
+                </UserProperties>
+                <_BSTRUniqueID Value = "{5D8A72F5-AF3B-4BB9-81C0-44603904E9CA}" VarType = "VT_BSTR" />
+            </Object>
+        </BuiltInCruise>
+        <BuiltInDescent VarType = "VT_UNKNOWN">
+            <Object clsid = "{35F65FDE-300F-4AF1-9584-6AC1671EA81A}">
+                <DisplayName Value = "Built-In Model" VarType = "VT_BSTR" />
+                <Airspeed Value = "2.1606666666666669e+02" VarType = "VT_R8" />
+                <AirspeedType Value = "3" VarType = "VT_I4" />
+                <AltRate Value = "-1.0160000000000001e+02" VarType = "VT_R8" />
+                <FuelFlow Value = "6.2998940277777782e-01" VarType = "VT_R8" />
+                <CeilingAlt Value = "1.5240000000000000e+04" VarType = "VT_R8" />
+                <DoAccelManeuver Value = "0" VarType = "VT_I1" />
+                <AccelManeuverRelSpeedTol Value = "5.0000000000000003e-02" VarType = "VT_R8" />
+                <UseAeroPropFuel Value = "0" VarType = "VT_I1" />
+                <ScaleFuelByDensity Value = "0" VarType = "VT_I1" />
+                <UserProperties VarType = "VT_UNKNOWN">
+                    <Object clsid = "{21306355-2B56-47BA-AB2F-72F8DF5B6B9E}">
+                        <PropertyCount Value = "0" VarType = "VT_I4" />
+                    </Object>
+                </UserProperties>
+                <_BSTRUniqueID Value = "{DBC2CDF7-0D66-4199-83D9-3F64605322E7}" VarType = "VT_BSTR" />
+            </Object>
+        </BuiltInDescent>
+        <BuiltInLanding VarType = "VT_UNKNOWN">
+            <Object clsid = "{6D6ED3BC-0409-4234-A779-3447BF19016A}">
+                <DisplayName Value = "Built-In Model" VarType = "VT_BSTR" />
+                <FuelFlow Value = "6.2998940277777782e-01" VarType = "VT_R8" />
+                <GroundRoll Value = "6.0960000000000002e+02" VarType = "VT_R8" />
+                <FixedGroundRoll Value = "0" VarType = "VT_I1" />
+                <LandingTakeoffSpeed Value = "7.7166666666666671e+01" VarType = "VT_R8" />
+                <ApproachSpeed Value = "7.7166666666666671e+01" VarType = "VT_R8" />
+                <AirspeedType Value = "3" VarType = "VT_I4" />
+                <UseAeroPropFuel Value = "0" VarType = "VT_I1" />
+                <ScaleFuelByDensity Value = "0" VarType = "VT_I1" />
+                <UserProperties VarType = "VT_UNKNOWN">
+                    <Object clsid = "{21306355-2B56-47BA-AB2F-72F8DF5B6B9E}">
+                        <PropertyCount Value = "0" VarType = "VT_I4" />
+                    </Object>
+                </UserProperties>
+                <_BSTRUniqueID Value = "{E67A99A4-EA73-46D5-8A3E-A564E24B1183}" VarType = "VT_BSTR" />
+            </Object>
+        </BuiltInLanding>
+        <BuiltInTakeoff VarType = "VT_UNKNOWN">
+            <Object clsid = "{00BDA271-6C14-4CB6-ACB3-681DDB271DD0}">
+                <DisplayName Value = "Built-In Model" VarType = "VT_BSTR" />
+                <DepartureSpeed Value = "7.7166640079996156e+01" VarType = "VT_R8" />
+                <FuelFlow Value = "6.2998940277777782e-01" VarType = "VT_R8" />
+                <DepartFuelFlow Value = "6.2998940277777782e-01" VarType = "VT_R8" />
+                <GroundRoll Value = "6.0960000000000002e+02" VarType = "VT_R8" />
+                <FixedGroundRoll Value = "0" VarType = "VT_I1" />
+                <LandingTakeoffSpeed Value = "7.7166640079996156e+01" VarType = "VT_R8" />
+                <TakeoffClimbAngle Value = "5.2359877559829890e-02" VarType = "VT_R8" />
+                <TakeoffAirspeedType Value = "1" VarType = "VT_I4" />
+                <DepartAirspeedType Value = "1" VarType = "VT_I4" />
+                <UseAeroPropFuel Value = "0" VarType = "VT_I1" />
+                <ScaleFuelByDensity Value = "0" VarType = "VT_I1" />
+                <UserProperties VarType = "VT_UNKNOWN">
+                    <Object clsid = "{21306355-2B56-47BA-AB2F-72F8DF5B6B9E}">
+                        <PropertyCount Value = "0" VarType = "VT_I4" />
+                    </Object>
+                </UserProperties>
+                <_BSTRUniqueID Value = "{DC3900B0-FFDD-4027-8675-D1FCCB43C40F}" VarType = "VT_BSTR" />
+            </Object>
+        </BuiltInTakeoff>
+        <DisplayName Value = "F35VSTOL" VarType = "VT_BSTR" />
+        <Model3D Value = "Air\f-35_jsf_cv.mdl" VarType = "VT_BSTR" />
+        <Icon Value = "" VarType = "VT_BSTR" />
+        <DefaultModels VarType = "VT_ARRAY">
+            <Dimension>
+                <ArrayData Value = "Acceleration/Built-In Model" VarType = "VT_BSTR" />
+            </Dimension>
+            <Dimension>
+                <ArrayData Value = "Climb/Built-In Model" VarType = "VT_BSTR" />
+            </Dimension>
+            <Dimension>
+                <ArrayData Value = "Cruise/Built-In Model" VarType = "VT_BSTR" />
+            </Dimension>
+            <Dimension>
+                <ArrayData Value = "Descent/Built-In Model" VarType = "VT_BSTR" />
+            </Dimension>
+            <Dimension>
+                <ArrayData Value = "Landing/Built-In Model" VarType = "VT_BSTR" />
+            </Dimension>
+            <Dimension>
+                <ArrayData Value = "Takeoff/Built-In Model" VarType = "VT_BSTR" />
+            </Dimension>
+        </DefaultModels>
+        <DefaultConfiguration VarType = "VT_UNKNOWN">
+            <Object clsid = "{961ED659-F7CD-43CD-8042-13754AEE715D}">
+                <GUID Value = "{341F1627-B77D-49E5-A58F-DF7A6F1F97CF}" VarType = "VT_BSTR" />
+                <DisplayName Value = "Default Configuration" VarType = "VT_BSTR" />
+                <EmptyWeight Value = "8.1646626600000000e+03" VarType = "VT_R8" />
+                <BaseDrag Value = "0.0000000000000000e+00" VarType = "VT_R8" />
+                <CharacteristicLength Value = "9.1440000000000001e+00" VarType = "VT_R8" />
+                <EmptyCG VarType = "VT_UNKNOWN">
+                    <Object clsid = "{D4B5BDAA-A8E1-4f6c-BBCF-9AD487693A2C}">
+                        <X Value = "0.0000000000000000e+00" VarType = "VT_R8" />
+                        <Y Value = "0.0000000000000000e+00" VarType = "VT_R8" />
+                        <Z Value = "0.0000000000000000e+00" VarType = "VT_R8" />
+                    </Object>
+                </EmptyCG>
+                <PayloadStations VarType = "VT_ARRAY">
+                    <Dimension>
+                        <ArrayData VarType = "VT_UNKNOWN">
+                            <Object clsid = "{C75B1093-95F1-45F5-A849-E2AFEA3B6B39}">
+                                <_BSTRUniqueID Value = "{E8B6314A-F994-4FD0-B17E-498EBA0F1EFC}" VarType = "VT_BSTR" />
+                                <DisplayName Value = "Internal Fuel" VarType = "VT_BSTR" />
+                                <Capacity Value = "4.5359237000000003e+03" VarType = "VT_R8" />
+                                <InitialState Value = "9.0718474000000003e+02" VarType = "VT_R8" />
+                                <CurrentState Value = "9.0718474000000003e+02" VarType = "VT_R8" />
+                                <ConsumptionOrder Value = "0" VarType = "VT_I4" />
+                                <ParentRelPos VarType = "VT_UNKNOWN">
+                                    <Object clsid = "{D4B5BDAA-A8E1-4f6c-BBCF-9AD487693A2C}">
+                                        <X Value = "0.0000000000000000e+00" VarType = "VT_R8" />
+                                        <Y Value = "0.0000000000000000e+00" VarType = "VT_R8" />
+                                        <Z Value = "0.0000000000000000e+00" VarType = "VT_R8" />
+                                    </Object>
+                                </ParentRelPos>
+                                <UserProperties VarType = "VT_UNKNOWN">
+                                    <Object clsid = "{21306355-2B56-47BA-AB2F-72F8DF5B6B9E}">
+                                        <PropertyCount Value = "0" VarType = "VT_I4" />
+                                    </Object>
+                                </UserProperties>
+                            </Object>
+                        </ArrayData>
+                    </Dimension>
+                </PayloadStations>
+                <Systems VarType = "VT_ARRAY" />
+                <InertiaMatrix VarType = "VT_UNKNOWN">
+                    <Object clsid = "{B0433C3C-D7C5-48EA-8256-0EB6845BBC53}">
+                        <Jx Value = "3.7926099084424322e+03" VarType = "VT_R8" />
+                        <Jy Value = "6.5106470094928423e+04" VarType = "VT_R8" />
+                        <Jz Value = "6.5106470094928423e+04" VarType = "VT_R8" />
+                        <Jxy Value = "0.0000000000000000e+00" VarType = "VT_R8" />
+                        <Jzx Value = "0.0000000000000000e+00" VarType = "VT_R8" />
+                        <Jyz Value = "0.0000000000000000e+00" VarType = "VT_R8" />
+                    </Object>
+                </InertiaMatrix>
+                <MaxLandingWeight Value = "8.6182550300000003e+03" VarType = "VT_R8" />
+                <UserProperties VarType = "VT_UNKNOWN">
+                    <Object clsid = "{21306355-2B56-47BA-AB2F-72F8DF5B6B9E}">
+                        <PropertyCount Value = "0" VarType = "VT_I4" />
+                    </Object>
+                </UserProperties>
+            </Object>
+        </DefaultConfiguration>
+    </Object>
+</AgXMLPropertyBagData>

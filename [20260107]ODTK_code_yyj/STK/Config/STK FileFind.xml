@@ -1,0 +1,33 @@
+<?xml version = "1.0" standalone = "yes"?>
+<FileFind TypeSelection = "0" version = "1.0">
+    <Cursor>
+        <Path Directory = "C:\Users\yyj\Documents\STK 12\Config\Pixmaps" />
+        <Path Directory = "C:\ProgramData\AGI\STK 12\STKData\Pixmaps" />
+        <Path Directory = "E:\STK12\STKData\Pixmaps" />
+    </Cursor>
+    <DAFIF />
+    <DynamicEarthData>
+        <Path Directory = "C:\Users\yyj\Documents\STK 12\Config\DynamicEarthData" />
+        <Path Directory = "C:\ProgramData\AGI\STK 12\DynamicEarthData" />
+        <Path Directory = "E:\STK12\DynamicEarthData" />
+    </DynamicEarthData>
+    <Help>
+        <Path Directory = "C:\Users\yyj\Documents\STK 12\Config\Help" />
+        <Path Directory = "C:\ProgramData\AGI\STK 12\Help" />
+        <Path Directory = "E:\STK12\Help" />
+    </Help>
+    <HelpIndex>
+        <Path Directory = "C:\Users\yyj\Documents\STK 12\Config\Help" />
+        <Path Directory = "C:\ProgramData\AGI\STK 12\Help" />
+        <Path Directory = "E:\STK12\Help" />
+    </HelpIndex>
+    <Image>
+        <Path Directory = "C:\Users\yyj\Documents\STK 12\Config\Pixmaps" />
+        <Path Directory = "C:\ProgramData\AGI\STK 12\STKData\Pixmaps" />
+        <Path Directory = "E:\STK12\STKData\Pixmaps" />
+    </Image>
+    <VODataDir>
+        <Path Directory = "E:\STK12\STKData\VO\Textures" />
+        <Path Directory = "C:\Users\yyj\Documents\AGIDownloadData" />
+    </VODataDir>
+</FileFind>

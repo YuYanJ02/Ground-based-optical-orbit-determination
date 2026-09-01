@@ -1,0 +1,2327 @@
+stk.v.12.0
+WrittenBy    STK_v12.2.0
+
+BEGIN Satellite
+
+    Name		 DROB_OEM
+
+    BEGIN VehiclePath
+        CentralBody		 Earth
+        StoreEphemeris		 Yes
+        SmoothInterp		 No
+
+        BEGIN StkExternal
+
+            Format		 CCSDS_OEM
+            Covariance		 PosVel
+            Filename		 E:\Matlab\in_orbit\optical\DROB_20260101_000100_20260522_080000_.oem
+
+        END StkExternal
+
+        BEGIN PassDefn
+
+            Break		 Ascending
+            CoordSystem		 Inertial
+            BreakType		 Latitude
+            BreakAngle		  0.0000000000000000e+00
+            PartialPassMethod		 ByTime
+            DisplayFlag		 Both
+            FirstPass		 1
+            FirstPath		 1
+            RepeatCycle		 1
+            MaintainPassNum		 No
+            RangeFirstPass		 1
+            RangeLastPass		 2147483647
+            DisplayScheme		 AllEphemeris
+            ScenarioEpoch		 28 Aug 2024 04:01:00.000000
+        END PassDefn
+
+    END VehiclePath
+
+    BEGIN MassProperties
+
+        Mass		  1.0000000000000000e+03
+        InertiaXX		  4.5000000000000000e+03
+        InertiaYX		  0.0000000000000000e+00
+        InertiaYY		  4.5000000000000000e+03
+        InertiaZX		  0.0000000000000000e+00
+        InertiaZY		  0.0000000000000000e+00
+        InertiaZZ		  4.5000000000000000e+03
+
+    END MassProperties
+
+    BEGIN Attitude
+
+        ScenarioEpoch		 28 Aug 2024 04:01:00.000000
+
+        BEGIN Profile
+            Name		 ECIVVLH
+            UserNamed		 No
+            StartTime		 -6.0000012999997125e+01
+            StartTimePtr		
+            BEGIN EVENT
+                Epoch		 28 Aug 2024 03:59:59.999987000
+                EpochState		 Explicit
+            END EVENT
+
+            BEGIN ECIVVLH
+                Azimuth		  0.0000000000000000e+00
+            END ECIVVLH
+        END Profile
+
+        BEGIN Profile
+            Name		 Inert_250504
+            UserNamed		 Yes
+            StartTime		  2.1499140000000000e+07
+            StartTimePtr		
+            BEGIN EVENT
+                Epoch		 4 May 2025 00:00:00.000000000
+                EpochState		 Explicit
+            END EVENT
+
+            BEGIN YPRFixedECI
+
+                Yaw		  3.5148842729998904e+01
+
+                Pitch		 -8.1050694500618334e+01
+
+                Roll		 -7.3168263157194673e+01
+
+                UiSequence		 0
+
+                UiCoordType		 0
+            END YPRFixedECI
+        END Profile
+
+        BEGIN Profile
+            Name		 Inert_250512
+            UserNamed		 Yes
+            StartTime		  2.2222740000000000e+07
+            StartTimePtr		
+            BEGIN EVENT
+                Epoch		 12 May 2025 09:00:00.000000000
+                EpochState		 Explicit
+            END EVENT
+
+            BEGIN YPRFixedECI
+
+                Yaw		  4.0756974230869659e+01
+
+                Pitch		  2.0234289735619384e+01
+
+                Roll		  1.1792937885539008e+02
+
+                UiSequence		 0
+
+                UiCoordType		 0
+            END YPRFixedECI
+        END Profile
+
+        BEGIN Profile
+            Name		 Inert_250521
+            UserNamed		 Yes
+            StartTime		  2.3000340000000000e+07
+            StartTimePtr		
+            BEGIN EVENT
+                Epoch		 21 May 2025 09:00:00.000000000
+                EpochState		 Explicit
+            END EVENT
+
+            BEGIN YPRFixedECI
+
+                Yaw		 -1.2655905025092042e+02
+
+                Pitch		 -8.0940405129458583e+01
+
+                Roll		  1.2055849584544447e+02
+
+                UiSequence		 0
+
+                UiCoordType		 0
+            END YPRFixedECI
+        END Profile
+
+        BEGIN Profile
+            Name		 Inert_250522
+            UserNamed		 Yes
+            StartTime		  2.3056140000000000e+07
+            StartTimePtr		
+            BEGIN EVENT
+                Epoch		 22 May 2025 00:30:00.000000000
+                EpochState		 Explicit
+            END EVENT
+
+            BEGIN YPRFixedECI
+
+                Yaw		 -1.2655905025092058e+02
+
+                Pitch		 -8.0940405129458497e+01
+
+                Roll		  1.2055849584544431e+02
+
+                UiSequence		 0
+
+                UiCoordType		 0
+            END YPRFixedECI
+        END Profile
+
+        BEGIN Profile
+            Name		 VVLH_250523
+            UserNamed		 Yes
+            StartTime		  2.3140740000000000e+07
+            StartTimePtr		
+            BEGIN EVENT
+                Epoch		 23 May 2025 00:00:00.000000000
+                EpochState		 Explicit
+            END EVENT
+
+            BEGIN Fixed
+
+                Yaw		  5.3000000000000000e+01
+
+                Pitch		  0.0000000000000000e+00
+
+                Roll		 -0.0000000000000000e+00
+
+                UiSequence		 321
+
+                UiCoordType		 2
+
+                Reference		
+                VVLH		
+            END Fixed
+        END Profile
+
+        BEGIN Profile
+            Name		 Inert_250523
+            UserNamed		 Yes
+            StartTime		  2.3153340000000000e+07
+            StartTimePtr		
+            BEGIN EVENT
+                Epoch		 23 May 2025 03:30:00.000000000
+                EpochState		 Explicit
+            END EVENT
+
+            BEGIN YPRFixedECI
+
+                Yaw		  4.0581244162599347e+01
+
+                Pitch		  2.5101515915782588e+01
+
+                Roll		  1.1785847863123620e+02
+
+                UiSequence		 0
+
+                UiCoordType		 0
+            END YPRFixedECI
+        END Profile
+
+        BEGIN Profile
+            Name		 Inert_250525
+            UserNamed		 Yes
+            StartTime		  2.3313540000000000e+07
+            StartTimePtr		
+            BEGIN EVENT
+                Epoch		 25 May 2025 00:00:00.000000000
+                EpochState		 Explicit
+            END EVENT
+
+            BEGIN YPRFixedECI
+
+                Yaw		 -1.2703745405576799e+02
+
+                Pitch		 -7.8012537919145132e+01
+
+                Roll		  1.1995826385706968e+02
+
+                UiSequence		 0
+
+                UiCoordType		 0
+            END YPRFixedECI
+        END Profile
+
+        BEGIN Profile
+            Name		 Inert_250530
+            UserNamed		 Yes
+            StartTime		  2.3745540000000000e+07
+            StartTimePtr		
+            BEGIN EVENT
+                Epoch		 30 May 2025 00:00:00.000000000
+                EpochState		 Explicit
+            END EVENT
+
+            BEGIN YPRFixedECI
+
+                Yaw		  4.0466901901742133e+01
+
+                Pitch		  3.6314888155847150e+01
+
+                Roll		  1.1763274401578585e+02
+
+                UiSequence		 0
+
+                UiCoordType		 0
+            END YPRFixedECI
+        END Profile
+
+        BEGIN Profile
+            Name		 Inert_250606
+            UserNamed		 Yes
+            StartTime		  2.4357540000000000e+07
+            StartTimePtr		
+            BEGIN EVENT
+                Epoch		 6 Jun 2025 02:00:00.000000000
+                EpochState		 Explicit
+            END EVENT
+
+            BEGIN YPRFixedECI
+
+                Yaw		 -1.2732076166566449e+02
+
+                Pitch		 -6.5569562895797290e+01
+
+                Roll		  1.1924087764836301e+02
+
+                UiSequence		 0
+
+                UiCoordType		 0
+            END YPRFixedECI
+        END Profile
+
+        BEGIN Profile
+            Name		 Inert_250608
+            UserNamed		 Yes
+            StartTime		  2.4548340000000000e+07
+            StartTimePtr		
+            BEGIN EVENT
+                Epoch		 8 Jun 2025 07:00:00.000000000
+                EpochState		 Explicit
+            END EVENT
+
+            BEGIN YPRFixedECI
+
+                Yaw		  4.0420543726297801e+01
+
+                Pitch		  4.0450111123919470e+01
+
+                Roll		  1.1758521550206444e+02
+
+                UiSequence		 0
+
+                UiCoordType		 0
+            END YPRFixedECI
+        END Profile
+
+        BEGIN Profile
+            Name		 Inert_250611
+            UserNamed		 Yes
+            StartTime		  2.4775140000000000e+07
+            StartTimePtr		
+            BEGIN EVENT
+                Epoch		 10 Jun 2025 22:00:00.000000000
+                EpochState		 Explicit
+            END EVENT
+
+            BEGIN YPRFixedECI
+
+                Yaw		 -1.2742680376506318e+02
+
+                Pitch		 -6.2154511603125492e+01
+
+                Roll		  1.1909277749247262e+02
+
+                UiSequence		 0
+
+                UiCoordType		 0
+            END YPRFixedECI
+        END Profile
+
+        BEGIN Profile
+            Name		 Inert_250617
+            UserNamed		 Yes
+            StartTime		  2.5347540000000000e+07
+            StartTimePtr		
+            BEGIN EVENT
+                Epoch		 17 Jun 2025 13:00:00.000000000
+                EpochState		 Explicit
+            END EVENT
+
+            BEGIN YPRFixedECI
+
+                Yaw		  4.0931641827998980e+01
+
+                Pitch		  5.2182505018894865e+01
+
+                Roll		  1.1709860849706232e+02
+
+                UiSequence		 0
+
+                UiCoordType		 0
+            END YPRFixedECI
+        END Profile
+
+        BEGIN Profile
+            Name		 Inert_250623
+            UserNamed		 Yes
+            StartTime		  2.5853340000000000e+07
+            StartTimePtr		
+            BEGIN EVENT
+                Epoch		 23 Jun 2025 09:30:00.000000000
+                EpochState		 Explicit
+            END EVENT
+
+            BEGIN YPRFixedECI
+
+                Yaw		 -1.2753068496020812e+02
+
+                Pitch		 -5.0287507495154763e+01
+
+                Roll		  1.1892286227928510e+02
+
+                UiSequence		 0
+
+                UiCoordType		 0
+            END YPRFixedECI
+        END Profile
+
+        BEGIN Profile
+            Name		 Inert_250624
+            UserNamed		 Yes
+            StartTime		  2.5937940000000000e+07
+            StartTimePtr		
+            BEGIN EVENT
+                Epoch		 24 Jun 2025 09:00:00.000000000
+                EpochState		 Explicit
+            END EVENT
+
+            BEGIN YPRFixedECI
+
+                Yaw		  4.1082118778386324e+01
+
+                Pitch		  5.5781382809614605e+01
+
+                Roll		  1.1697927019874555e+02
+
+                UiSequence		 0
+
+                UiCoordType		 0
+            END YPRFixedECI
+        END Profile
+
+        BEGIN Profile
+            Name		 Inert_250627
+            UserNamed		 Yes
+            StartTime		  2.6207940000000000e+07
+            StartTimePtr		
+            BEGIN EVENT
+                Epoch		 27 Jun 2025 12:00:00.000000000
+                EpochState		 Explicit
+            END EVENT
+
+            BEGIN YPRFixedECI
+
+                Yaw		 -1.4255011841320564e+02
+
+                Pitch		 -5.6256476619827509e+01
+
+                Roll		  1.1912663733934455e+02
+
+                UiSequence		 0
+
+                UiCoordType		 0
+            END YPRFixedECI
+        END Profile
+
+        BEGIN Profile
+            Name		 Inert_250705
+            UserNamed		 Yes
+            StartTime		  2.6913480000000000e+07
+            StartTimePtr		
+            BEGIN EVENT
+                Epoch		 5 Jul 2025 15:59:00.000000000
+                EpochState		 Explicit
+            END EVENT
+
+            BEGIN YPRFixedECI
+
+                Yaw		 -7.3340337872308474e+00
+
+                Pitch		  7.5066370226675687e+01
+
+                Roll		  1.4823292589054140e+02
+
+                UiSequence		 0
+
+                UiCoordType		 0
+            END YPRFixedECI
+        END Profile
+
+        BEGIN Profile
+            Name		 Inert_250712
+            UserNamed		 Yes
+            StartTime		  2.7503940000000000e+07
+            StartTimePtr		
+            BEGIN EVENT
+                Epoch		 12 Jul 2025 12:00:00.000000000
+                EpochState		 Explicit
+            END EVENT
+
+            BEGIN YPRFixedECI
+
+                Yaw		 -1.4315255349739780e+02
+
+                Pitch		 -4.1961985523688412e+01
+
+                Roll		  1.1888395628872571e+02
+
+                UiSequence		 0
+
+                UiCoordType		 0
+            END YPRFixedECI
+        END Profile
+
+        BEGIN Profile
+            Name		 Inert_250713
+            UserNamed		 Yes
+            StartTime		  2.7579540000000000e+07
+            StartTimePtr		
+            BEGIN EVENT
+                Epoch		 13 Jul 2025 09:00:00.000000000
+                EpochState		 Explicit
+            END EVENT
+
+            BEGIN YPRFixedECI
+
+                Yaw		  3.5681864707075604e+01
+
+                Pitch		  8.4027808669394801e+01
+
+                Roll		  1.0902191096309869e+02
+
+                UiSequence		 0
+
+                UiCoordType		 0
+            END YPRFixedECI
+        END Profile
+
+        BEGIN Profile
+            Name		 Inert_250719
+            UserNamed		 Yes
+            StartTime		  2.8072740000000000e+07
+            StartTimePtr		
+            BEGIN EVENT
+                Epoch		 19 Jul 2025 02:00:00.000000000
+                EpochState		 Explicit
+            END EVENT
+
+            BEGIN YPRFixedECI
+
+                Yaw		 -1.4270022124388598e+02
+
+                Pitch		 -3.5731556567605708e+01
+
+                Roll		  1.1960380986161125e+02
+
+                UiSequence		 0
+
+                UiCoordType		 0
+            END YPRFixedECI
+        END Profile
+
+        BEGIN Profile
+            Name		 Inert_250726
+            UserNamed		 Yes
+            StartTime		  2.8753140000000000e+07
+            StartTimePtr		
+            BEGIN EVENT
+                Epoch		 26 Jul 2025 23:00:00.000000000
+                EpochState		 Explicit
+            END EVENT
+
+            BEGIN YPRFixedECI
+
+                Yaw		 -1.5880942195316459e+02
+
+                Pitch		  8.0138516356772087e+01
+
+                Roll		 -5.5559113896854399e+01
+
+                UiSequence		 0
+
+                UiCoordType		 0
+            END YPRFixedECI
+        END Profile
+
+        BEGIN Profile
+            Name		 Inert_250801
+            UserNamed		 Yes
+            StartTime		  2.9206740000000000e+07
+            StartTimePtr		
+            BEGIN EVENT
+                Epoch		 1 Aug 2025 05:00:00.000000000
+                EpochState		 Explicit
+            END EVENT
+
+            BEGIN YPRFixedECI
+
+                Yaw		 -1.4444860429662705e+02
+
+                Pitch		 -2.3220900050536734e+01
+
+                Roll		  1.1853281428765020e+02
+
+                UiSequence		 0
+
+                UiCoordType		 0
+            END YPRFixedECI
+        END Profile
+
+        BEGIN Profile
+            Name		 Inert_250803
+            UserNamed		 Yes
+            StartTime		  2.9390340000000000e+07
+            StartTimePtr		
+            BEGIN EVENT
+                Epoch		 3 Aug 2025 08:00:00.000000000
+                EpochState		 Explicit
+            END EVENT
+
+            BEGIN YPRFixedECI
+
+                Yaw		 -1.5697893738002841e+02
+
+                Pitch		  7.6518867891340975e+01
+
+                Roll		 -5.7208532243793769e+01
+
+                UiSequence		 0
+
+                UiCoordType		 0
+            END YPRFixedECI
+        END Profile
+
+        BEGIN Profile
+            Name		 Inert_250803
+            UserNamed		 Yes
+            StartTime		  2.9390640000000000e+07
+            StartTimePtr		
+            BEGIN EVENT
+                Epoch		 3 Aug 2025 08:05:00.000000000
+                EpochState		 Explicit
+            END EVENT
+
+            BEGIN AlignConstrain
+
+                BodyVectorA		  0.0000000000000000e+00  0.0000000000000000e+00  1.0000000000000000e+00
+
+                UiSequenceA		 321
+
+                UiCoordTypeA		 4
+
+                ReferenceVectorA		
+                Earth		
+
+                BodyVectorC		  7.5893206708460670e-01 -4.5535924025076407e-01 -4.6547833447855874e-01
+
+                UiSequenceC		 321
+
+                UiCoordTypeC		 4
+
+                ReferenceVectorC		
+                Sun		
+            END AlignConstrain
+        END Profile
+
+        BEGIN Profile
+            Name		 Inert_250803
+            UserNamed		 Yes
+            StartTime		  2.9390760000000000e+07
+            StartTimePtr		
+            BEGIN EVENT
+                Epoch		 3 Aug 2025 08:07:00.000000000
+                EpochState		 Explicit
+            END EVENT
+
+            BEGIN YPRFixedECI
+
+                Yaw		 -1.5684130498328813e+02
+
+                Pitch		  7.6554803878392235e+01
+
+                Roll		 -5.7285567808188901e+01
+
+                UiSequence		 0
+
+                UiCoordType		 0
+            END YPRFixedECI
+        END Profile
+
+        BEGIN Profile
+            Name		 Inert_250803
+            UserNamed		 Yes
+            StartTime		  2.9390940000000000e+07
+            StartTimePtr		
+            BEGIN EVENT
+                Epoch		 3 Aug 2025 08:10:00.000000000
+                EpochState		 Explicit
+            END EVENT
+
+            BEGIN YPRFixedECI
+
+                Yaw		  4.6878840114951274e+01
+
+                Pitch		  8.1761601615292577e+01
+
+                Roll		  1.1038465568086809e+02
+
+                UiSequence		 0
+
+                UiCoordType		 0
+            END YPRFixedECI
+        END Profile
+
+        BEGIN Profile
+            Name		 Inert_250907
+            UserNamed		 Yes
+            StartTime		  3.2411580000000000e+07
+            StartTimePtr		
+            BEGIN EVENT
+                Epoch		 7 Sep 2025 07:14:00.000000000
+                EpochState		 Explicit
+            END EVENT
+
+            BEGIN YPRFixedECI
+
+                Yaw		 -4.7676217946573136e-03
+
+                Pitch		  5.5421723068730437e+01
+
+                Roll		  1.1702494386838980e+02
+
+                UiSequence		 0
+
+                UiCoordType		 0
+            END YPRFixedECI
+        END Profile
+
+        BEGIN Profile
+            Name		 Inert_250907
+            UserNamed		 Yes
+            StartTime		  3.2411940000000000e+07
+            StartTimePtr		
+            BEGIN EVENT
+                Epoch		 7 Sep 2025 07:20:00.000000000
+                EpochState		 Explicit
+            END EVENT
+
+            BEGIN AlignConstrain
+
+                BodyVectorA		 -3.2224745706967461e-01 -1.0070233033427361e-02 -9.4660190514216735e-01
+
+                UiSequenceA		 321
+
+                UiCoordTypeA		 4
+
+                ReferenceVectorA		
+                Sun		
+
+                BodyVectorC		 -1.0000000000000000e+00  0.0000000000000000e+00 -2.2204460492503131e-16
+
+                UiSequenceC		 321
+
+                UiCoordTypeC		 4
+
+                ReferenceVectorC		
+                Moon		
+            END AlignConstrain
+        END Profile
+
+        BEGIN Profile
+            Name		 InertMoon_251127
+            UserNamed		 Yes
+            StartTime		  3.9405540000000000e+07
+            StartTimePtr		
+            BEGIN EVENT
+                Epoch		 27 Nov 2025 06:00:00.000000000
+                EpochState		 Explicit
+            END EVENT
+
+            BEGIN Fixed
+
+                Yaw		  1.7159738110915325e+02
+
+                Pitch		 -6.1581917132775025e+01
+
+                Roll		 -6.5642857040955334e+01
+
+                UiSequence		 321
+
+                UiCoordType		 0
+
+                Reference		
+                ICRF		
+            END Fixed
+        END Profile
+
+        BEGIN Profile
+            Name		 InertMoon_251127
+            UserNamed		 Yes
+            StartTime		  3.9410220000000000e+07
+            StartTimePtr		
+            BEGIN EVENT
+                Epoch		 27 Nov 2025 07:18:00.000000000
+                EpochState		 Explicit
+            END EVENT
+
+            BEGIN Fixed
+
+                Yaw		  1.7116462179865962e+02
+
+                Pitch		 -6.1946425764425960e+01
+
+                Roll		 -6.6709385709767858e+01
+
+                UiSequence		 321
+
+                UiCoordType		 0
+
+                Reference		
+                ICRF		
+            END Fixed
+        END Profile
+
+        BEGIN Profile
+            Name		 Inert_251212
+            UserNamed		 Yes
+            StartTime		  4.0652340000000000e+07
+            StartTimePtr		
+            BEGIN EVENT
+                Epoch		 11 Dec 2025 16:20:00.000000000
+                EpochState		 Explicit
+            END EVENT
+
+            BEGIN Fixed
+
+                Yaw		 -1.3323075168443498e+02
+
+                Pitch		 -4.1557796559842025e+01
+
+                Roll		 -6.0823356333113217e+01
+
+                UiSequence		 321
+
+                UiCoordType		 0
+
+                Reference		
+                ICRF		
+            END Fixed
+        END Profile
+
+        BEGIN Profile
+            Name		 toCE6
+            UserNamed		 Yes
+            StartTime		  4.0703640000000000e+07
+            StartTimePtr		
+            BEGIN EVENT
+                Epoch		 12 Dec 2025 06:35:00.000000000
+                EpochState		 Explicit
+            END EVENT
+
+            BEGIN Fixed
+
+                Yaw		 -1.7974771546478563e+00
+
+                Pitch		  6.4659934843508921e+01
+
+                Roll		 -5.4809783033876137e+01
+
+                UiSequence		 321
+
+                UiCoordType		 0
+
+                Reference		
+                ICRF		
+            END Fixed
+        END Profile
+
+        BEGIN Profile
+            Name		 toMoon
+            UserNamed		 Yes
+            StartTime		  4.0704540000000000e+07
+            StartTimePtr		
+            BEGIN EVENT
+                Epoch		 12 Dec 2025 06:50:00.000000000
+                EpochState		 Explicit
+            END EVENT
+
+            BEGIN Fixed
+
+                Yaw		 -1.7883840454822317e+02
+
+                Pitch		  4.3699329950153363e+01
+
+                Roll		  1.0800775400567682e+02
+
+                UiSequence		 321
+
+                UiCoordType		 0
+
+                Reference		
+                ICRF		
+            END Fixed
+        END Profile
+
+        BEGIN Profile
+            Name		 Inert_251214
+            UserNamed		 Yes
+            StartTime		  4.0877940000000000e+07
+            StartTimePtr		
+            BEGIN EVENT
+                Epoch		 14 Dec 2025 07:00:00.000000000
+                EpochState		 Explicit
+            END EVENT
+
+            BEGIN Fixed
+
+                Yaw		  2.9580283601423417e+01
+
+                Pitch		  6.2121167452129065e+01
+
+                Roll		 -5.7895749811333495e+01
+
+                UiSequence		 321
+
+                UiCoordType		 0
+
+                Reference		
+                ICRF		
+            END Fixed
+        END Profile
+
+        BEGIN Profile
+            Name		 Inert_251219
+            UserNamed		 Yes
+            StartTime		  4.1320740000000000e+07
+            StartTimePtr		
+            BEGIN EVENT
+                Epoch		 19 Dec 2025 10:00:00.000000000
+                EpochState		 Explicit
+            END EVENT
+
+            BEGIN Fixed
+
+                Yaw		 -1.3915982686033351e+02
+
+                Pitch		 -6.0113216483810149e+01
+
+                Roll		 -6.5876793490072274e+01
+
+                UiSequence		 321
+
+                UiCoordType		 0
+
+                Reference		
+                ICRF		
+            END Fixed
+        END Profile
+
+        BEGIN Profile
+            Name		 Inert_251230
+            UserNamed		 Yes
+            StartTime		  4.2238740000000000e+07
+            StartTimePtr		
+            BEGIN EVENT
+                Epoch		 30 Dec 2025 01:00:00.000000000
+                EpochState		 Explicit
+            END EVENT
+
+            BEGIN Fixed
+
+                Yaw		  3.3850277580463839e+01
+
+                Pitch		  4.6812791050575406e+01
+
+                Roll		 -6.1415169554909291e+01
+
+                UiSequence		 321
+
+                UiCoordType		 0
+
+                Reference		
+                ICRF		
+            END Fixed
+        END Profile
+
+        BEGIN Profile
+            Name		 Inert_260104
+            UserNamed		 Yes
+            StartTime		  4.2674340000000000e+07
+            StartTimePtr		
+            BEGIN EVENT
+                Epoch		 4 Jan 2026 02:00:00.000000000
+                EpochState		 Explicit
+            END EVENT
+
+            BEGIN Fixed
+
+                Yaw		 -1.3626769015690135e+02
+
+                Pitch		 -7.3581891080843874e+01
+
+                Roll		 -6.3330446493736240e+01
+
+                UiSequence		 321
+
+                UiCoordType		 0
+
+                Reference		
+                ICRF		
+            END Fixed
+        END Profile
+
+        BEGIN Profile
+            Name		 Inert_260202
+            UserNamed		 Yes
+            StartTime		  4.5219540000000000e+07
+            StartTimePtr		
+            BEGIN EVENT
+                Epoch		 2 Feb 2026 13:00:00.000000000
+                EpochState		 Explicit
+            END EVENT
+
+            BEGIN Fixed
+
+                Yaw		  4.7126646923751686e+01
+
+                Pitch		 -7.7517321539056908e+01
+
+                Roll		  1.2200897682365883e+02
+
+                UiSequence		 321
+
+                UiCoordType		 0
+
+                Reference		
+                ICRF		
+            END Fixed
+        END Profile
+
+        BEGIN Profile
+            Name		 Inert_260212
+            UserNamed		 Yes
+            StartTime		  4.6094340000000000e+07
+            StartTimePtr		
+            BEGIN EVENT
+                Epoch		 12 Feb 2026 16:00:00.000000000
+                EpochState		 Explicit
+            END EVENT
+
+            BEGIN Fixed
+
+                Yaw		  3.5732923016202577e+01
+
+                Pitch		  1.1277534353986169e+00
+
+                Roll		 -6.0528819256433138e+01
+
+                UiSequence		 321
+
+                UiCoordType		 0
+
+                Reference		
+                ICRF		
+            END Fixed
+        END Profile
+
+        BEGIN Profile
+            Name		 Inert_260217
+            UserNamed		 Yes
+            StartTime		  4.6483140000000000e+07
+            StartTimePtr		
+            BEGIN EVENT
+                Epoch		 17 Feb 2026 04:00:00.000000000
+                EpochState		 Explicit
+            END EVENT
+
+            BEGIN Fixed
+
+                Yaw		  4.5654432152120670e+01
+
+                Pitch		 -6.0533174635202968e+01
+
+                Roll		  1.2397225760192997e+02
+
+                UiSequence		 321
+
+                UiCoordType		 0
+
+                Reference		
+                ICRF		
+            END Fixed
+        END Profile
+
+        BEGIN Profile
+            Name		 Inert_260226
+            UserNamed		 Yes
+            StartTime		  4.7260740000000000e+07
+            StartTimePtr		
+            BEGIN EVENT
+                Epoch		 26 Feb 2026 04:00:00.000000000
+                EpochState		 Explicit
+            END EVENT
+
+            BEGIN Fixed
+
+                Yaw		  3.8109383847972452e+01
+
+                Pitch		 -1.1788870520942540e+01
+
+                Roll		 -6.2457958559177030e+01
+
+                UiSequence		 321
+
+                UiCoordType		 0
+
+                Reference		
+                ICRF		
+            END Fixed
+        END Profile
+
+        BEGIN Profile
+            Name		 toA_260317
+            UserNamed		 Yes
+            StartTime		  4.7264340000000000e+07
+            StartTimePtr		
+            BEGIN EVENT
+                Epoch		 26 Feb 2026 05:00:00.000000000
+                EpochState		 Explicit
+            END EVENT
+
+            BEGIN AlignConstrain
+
+                BodyVectorA		 -1.0000000000000000e+00  0.0000000000000000e+00 -2.2204460492503131e-16
+
+                UiSequenceA		 321
+
+                UiCoordTypeA		 4
+
+                ReferenceVectorA		
+                DROA_OEM		
+
+                BodyVectorC		  0.0000000000000000e+00  0.0000000000000000e+00  1.0000000000000000e+00
+
+                UiSequenceC		 321
+
+                UiCoordTypeC		 4
+
+                ReferenceVectorC		
+                Nadir(Centric)		
+            END AlignConstrain
+        END Profile
+
+        BEGIN Profile
+            Name		 toOrion_260406
+            UserNamed		 Yes
+            StartTime		  5.0627940000000000e+07
+            StartTimePtr		
+            BEGIN EVENT
+                Epoch		 6 Apr 2026 03:20:00.000000000
+                EpochState		 Explicit
+            END EVENT
+
+            BEGIN YPRFixedECI
+
+                Yaw		  1.0305234094466525e+02
+
+                Pitch		 -4.8606804333552553e+01
+
+                Roll		  2.3941108544057265e+01
+
+                UiSequence		 0
+
+                UiCoordType		 0
+            END YPRFixedECI
+        END Profile
+
+        MultiSegMode		 Yes
+
+    END Attitude
+
+    BEGIN Swath
+
+        SwathType		 ElevAngleEnvelope
+        ElevationAngle		  0.0000000000000000e+00
+        HalfAngle		  0.0000000000000000e+00
+        Distance		  0.0000000000000000e+00
+        RepType		 NoSwath
+
+    END Swath
+
+    BEGIN Eclipse
+
+        Sunlight		 Off
+        SunlightLineStyle		 0
+        SunlightLineWidth		 3
+        SunlightMarkerStyle		 15
+
+        Penumbra		 Off
+        PenumbraLineStyle		 0
+        PenumbraLineWidth		 3
+        PenumbraMarkerStyle		 15
+
+        Umbra		 Off
+        UmbraLineStyle		 0
+        UmbraLineWidth		 3
+        UmbraMarkerStyle		 15
+
+        SunlightPenumbraLine		 Off
+        PenumbraUmbraLine		 Off
+
+        SunlightColor		 #ffff00
+        PenumbraColor		 #87cefa
+        UmbraColor		 #0000ff
+
+        ComputeUsingTerrain		 No
+        MaxStepWhenUsingTerrain		 30
+        UseCustomEclipseBodies		 No
+
+    END Eclipse
+
+    BEGIN RealTimeDef
+
+        HistoryDuration		  1.8000000000000000e+03
+        LookAheadDuration		  1.8000000000000000e+03
+
+    END RealTimeDef
+
+
+    BEGIN Extensions
+
+        BEGIN ClsApp
+            RangeConstraint		 5000
+            ApoPeriPad		 30000
+            OrbitPathPad		 100000
+            TimeDistPad		 30000
+            OutOfDate		 2592000
+            MaxApoPeriStep		 900
+            ApoPeriAngle		 0.7853981633974483
+            UseApogeePerigeeFilter		 Yes
+            UsePathFilter		 No
+            UseTimeFilter		 Yes
+            UseOutOfDate		 Yes
+            CreateSats		 No
+            MaxSatsToCreate		 500
+            UseModelScale		 No
+            ModelScale		 0
+            UseCrossRefDb		 Yes
+            CollisionDB		 stkAllTLE.tce
+            CollisionCrossRefDB		 stkAllTLE.sd
+            ShowLine		 Yes
+            AnimHighlight		 Yes
+            StaticHighlight		 Yes
+            UseLaunchWindow		 No
+            LaunchWindowUseEntireTraj		 Yes
+            LaunchWindowTrajMETStart		 0
+            LaunchWindowTrajMETStop		 900
+            LaunchWindowStart		 604740
+            LaunchWindowStop		 604740
+            LaunchMETOffset		 0
+            LaunchWindowUseSecEphem		 No 
+            LaunchWindowUseScenFolderForSecEphem		 Yes
+            LaunchWindowUsePrimEphem		 No 
+            LaunchWindowUseScenFolderForPrimEphem		 Yes
+            LaunchWindowIntervalPtr		
+            BEGIN EVENTINTERVAL
+                BEGIN Interval
+                    Start		 4 Sep 2024 04:00:00.000000000
+                    Stop		 4 Sep 2024 04:00:00.000000000
+                END Interval
+                IntervalState		 Explicit
+            END EVENTINTERVAL
+
+            LaunchWindowUsePrimMTO		 No 
+            GroupLaunches		 No 
+            LWTimeConvergence		 0.001
+            LWRelValueConvergence		 1e-08
+            LWTSRTimeConvergence		 0.0001
+            LWTSRRelValueConvergence		 1e-10
+            LaunchWindowStep		 300
+            MaxTSRStep		  1.8000000000000000e+02
+            MaxTSRRelMotion		  2.0000000000000000e+01
+            UseLaunchArea		 No 
+            LaunchAreaOrientation		 North
+            LaunchAreaAzimuth		 0
+            LaunchAreaXLimits		 -10000 10000
+            LaunchAreaYLimits		 -10000 10000
+            LaunchAreaNumXIntrPnts		 1
+            LaunchAreaNumYIntrPnts		 1
+            LaunchAreaAltReference		 Ellipsoid
+            TargetSameStop		 No 
+            SkipSurfaceMetric		 No 
+            LWAreaTSRRelValueConvergence		 1e-10
+            AreaLaunchWindowStep		 300
+            AreaMaxTSRStep		  3.0000000000000000e+01
+            AreaMaxTSRRelMotion		 1
+            ShowLaunchArea		 No 
+            ShowBlackoutTracks		 No 
+            ShowClearedTracks		 No 
+            UseObjectForClearedColor		 No 
+            BlackoutColor		 #ff0000
+            ClearedColor		 #ffffff
+            ShowTracksSegments		 No 
+            ShowMinRangeTracks		 No 
+            MinRangeTrackTimeStep		 0.5
+            UsePrimStepForTracks		 Yes
+            GfxTracksTimeStep		 30
+            GfxAreaNumXIntrPnts		 1
+            GfxAreaNumYIntrPnts		 1
+            CreateLaunchMTO		 No 
+            CovarianceSigmaScale		 3
+            CovarianceMode		 None 
+        END ClsApp
+
+        BEGIN ExternData
+        END ExternData
+
+        BEGIN Lifetime
+            Semi_parameter		  6.6781370000000000e+06
+            Eccentricity		  0.0000000000000000e+00
+            Argument_Perigee		  0.0000000000000000e+00
+            RA_Asc_Node		  0.0000000000000000e+00
+            Inclination		  4.9741883681799998e-01
+            UTC_Year		 1997
+            UTC_Month		 1
+            UTC_Day		 1
+            UTC_Hour		 0
+            UTC_Minute		 0
+            UTC_Second		  0.0000000000000000e+00
+            Limit_Type		 OrbitCount
+            Duration_Limit		 36525
+            Rev_Count_Limit		 99999
+            Revs_Calculation		 10
+            Gaussian_Quadratures		 1
+            Flux_Sigma_Level		 0
+            Gravity_Model_Flag		 0
+            Reflection_Coef		  1.0000000000000000e+00
+            Sun_Area		  1.5430000000000000e+01
+            Mass		 -1.0000000000000000e+00
+            Drag_Coef		  2.2000000000000002e+00
+            Drag_Area		  1.3650000000000000e+01
+            Rotating_Atm_Flag		 1
+            Osculating_Alt_Flag		 1
+            Compute_Gamma_Flag		 0
+            Initial_Time		  0.0000000000000000e+00
+            Decay_Alt		  6.5000000000000000e+04
+            Solar_Flux_Filename		 SolFlx_CSSI.dat
+            AtmDensityModel		 Jacchia70
+        END Lifetime
+
+        BEGIN ADFFileData
+        END ADFFileData
+
+        BEGIN AccessConstraints
+            LineOfSight IncludeIntervals
+
+            UsePreferredMaxStep No
+            PreferredMaxStep 360
+        END AccessConstraints
+
+        BEGIN AttitudeSimulator
+            UseReferenceForAttitude		 No
+            UseForAttitude		 No
+            UsePctCmplt		 Yes
+            PctCmpltDivisor		 24
+            PctCmpltTitle		 Attitude Simulation
+            UseAnimate		 No
+            AnimateSampling		  1.0000000000000000e+00
+            StartTime		 4 Sep 2024 04:00:00.000000000
+            StopTime		 5 Sep 2024 04:00:00.000000000
+            Step		  0.0000000000000000e+00
+            InitialTime		 4 Sep 2024 04:00:00.000000000
+            SmartEpochPtr		
+            BEGIN EVENT
+                Epoch		 4 Sep 2024 04:00:00.000000000
+                EventEpoch		
+                BEGIN EVENT
+                    Type		 EVENT_LINKTO
+                    Name		 EphemerisStartTime
+                END EVENT
+                EpochState		 Implicit
+            END EVENT
+
+            SmartIntervalPtr		
+            BEGIN EVENTINTERVAL
+                EventInterval		
+                BEGIN EVENTINTERVAL
+                    Type		 EVENTINTERVAL_LINKTO
+                    Name		 EphemerisTimeSpan
+                END EVENTINTERVAL
+                IntervalState		 Implicit
+            END EVENTINTERVAL
+
+            BEGIN InitialAttitude
+                 0.0000000000000000e+00
+                 0.0000000000000000e+00
+                 0.0000000000000000e+00
+                 1.0000000000000000e+00
+            END InitialAttitude
+            Representation		 0
+            Sequence		 0
+            BEGIN InitialAngVel
+                 0.0000000000000000e+00
+                 0.0000000000000000e+00
+                 0.0000000000000000e+00
+            END InitialAngVel
+            BEGIN InitialMomentumBias
+                 0.0000000000000000e+00
+                 0.0000000000000000e+00
+                 0.0000000000000000e+00
+            END InitialMomentumBias
+            UseMomentumBias		 No
+            BEGIN IntegratedSimulation
+                BEGIN Integrator
+                    Type		 RK78
+                    RelTol		  1.0000000000000000e-03
+                    AbsTol		  9.9999999999999995e-07
+                    MinStep		  9.9999999999999995e-07
+                    UseMinStep		 No
+                    MaxStep		  1.0000000000000000e+01
+                    UseMaxStep		 No
+                    NumIter		 10
+                    UseIter		 No
+                    UseStat		 No
+                END Integrator
+                BEGIN Formulation
+                    BEGIN EnvironmentData
+                        UseApproxAlt		 No
+                        MeanFlux		 150
+                        DailyFlux		 150
+                        GeoMagIndex		  3.0000000000000000e+00
+                        RefAlt		  0.0000000000000000e+00
+                        ScaleAlt		  8.5000000000000000e+03
+                        RefDensity		  1.2170000000000001e+00
+                        DensityModel		 Exponential
+                    END EnvironmentData
+                    BEGIN InitList
+                    END InitList
+                    BEGIN UpdateList
+                    END UpdateList
+                    BEGIN PostList
+                    END PostList
+                    UseInitialUpdateStep		 No
+                    UseUpdateStep		 No
+                END Formulation
+            END IntegratedSimulation
+        END AttitudeSimulator
+
+        BEGIN ObjectCoverage
+        END ObjectCoverage
+
+        BEGIN Desc
+        END Desc
+
+        BEGIN RadarCrossSection
+<?xml version = "1.0" standalone = "yes"?>
+<SCOPE>
+    <VAR name = "Inherit">
+        <BOOL>true</BOOL>
+    </VAR>
+    <VAR name = "Model">
+        <SCOPE Class = "LinkEmbedControl" />
+    </VAR>
+</SCOPE>        END RadarCrossSection
+
+        BEGIN RadarClutter
+<?xml version = "1.0" standalone = "yes"?>
+<SCOPE>
+    <VAR name = "Inherit">
+        <BOOL>true</BOOL>
+    </VAR>
+</SCOPE>        END RadarClutter
+
+        BEGIN Ellipse
+            TimesTrackVehStartTime		 Yes
+        END Ellipse
+
+        BEGIN Reference
+        END Reference
+
+        BEGIN AcquisitionData
+            DataType		 IIRV9
+            CoordinateSystem		 1
+            MassAtEpoch		 1000
+            IIRV_MessageID		 0
+            IIRV_MessageClass		 10
+            IIRV_MessageOrigin		 A
+            IIRV_MessageDestination		 GSVL
+            IIRV_VectorType		 1
+            IIRV_VectorSource		 1
+            IIRV_SupportID		 0
+            IIRV_VehicleIdentificationCode		 1
+            IIRV_CounterStart		 1
+            IIRV_Area		 0
+            IIRV_DragCoefficient		 2
+            IIRV_SolarReflectivity		 0
+            IIRV_OriginRouteMsg		 HJSC
+            IIRV9_MessageOrigin		 A
+            IIRV9_MessageDestination		 GSVL
+            IIRV9_VectorSource		 1
+            IIRV9_IRON		 1
+            IIRV9_PerturbationCoeffType		 0
+            IIRV9_DragCoefficient		 2
+            IIRV9_SRPCoefficient		 1
+            IIRV9_Area		 0
+            IIRV9_OriginRouteMsg		 HJSC
+            IIRV1_MessageDestination		 GSVL
+            IIRV1_VectorType		 1
+            IIRV1_VectorSource		 1
+            IIRV1_SupportID		 0
+            IIRV1_VehicleIdentificationCode		 5
+            IIRV1_CounterStart		 1
+            IIRV1_Area		 0
+            IIRV1_DragCoefficient		 2
+            IIRV1_OriginRouteMsg		 HJSC
+            EPV_MessageID		 1
+            EPV_MessageClass		 10
+            EPV_MessageOrigin		 A
+            EPV_MessageDestination		 GSVL
+            EPV_VectorType		 1
+            EPV_VectorSource		 1
+            EPV_SupportID		 0
+            EPV_VehicleIdentificationCode		 1
+            EPV_CounterStart		 1
+            NASA_MissionID		 eol
+            NASA_MessageID		 0
+            NASA_MessageClass		 10
+            NASA_RoutIndicator		 GSVL
+            NASA_VectorType		 1
+            NASA_VectorSource		 1
+            NASA_Area		 0
+            NASA_DragCoefficient		 2
+            NASA_SolarReflectivity		 0
+            NASA_OriginRouteMsg		 0
+            CCSDS_OPM_Format		 0
+        END AcquisitionData
+
+        BEGIN Identification
+        END Identification
+
+        BEGIN Crdn
+            BEGIN ANGLE
+                Type		 ANGLE_BETWEEN
+                Name		 BMA
+                Description		 <Enter description (up to 300 chars)>
+                Origin		
+                BEGIN VECTOR
+                    Type		 VECTOR_LINKTO
+                    Name		 Position(Moon)
+                END VECTOR
+                Destination		
+                BEGIN VECTOR
+                    Type		 VECTOR_LINKTO
+                    Name		 Position(Moon)
+                    RelativePath		 Satellite/DROA_0829
+                END VECTOR
+                Sampling		
+                BEGIN SAMPLING
+                    AbsolutePath		 Satellite/DROB_OEM
+                    Method		 AdaptiveStepValueError
+                    AbsoluteTolerance		  1.0000000000000000e-02
+                    RelativeTolerance		  1.0000000000000000e-03
+                    CurvatureTolerance		  1.0000000000000001e-01
+                    FixedTimeStep		  6.0000000000000000e+01
+                    MinTimeStep		  1.0000000000000000e-03
+                    MaxTimeStep		  3.6000000000000000e+02
+                    BoundTimeStep		  1.0000000000000000e-02
+                    MaxAngularDisp		  5.2359877559829882e-01
+                END SAMPLING
+                Convergence		
+                BEGIN CONVERGE
+                    AbsolutePath		 Satellite/DROB_OEM
+                    Sense		 Above
+                    AbsoluteTolerance		  1.0000000000000000e-14
+                    RelativeTolerance		  1.0000000000000000e-08
+                    TimeTolerance		  1.0000000000000000e-03
+                END CONVERGE
+            END ANGLE
+            BEGIN ANGLE
+                Type		 ANGLE_BETWEEN
+                Name		 ang_2CE6
+                Description		 <Enter description (up to 300 chars)>
+                Origin		
+                BEGIN VECTOR
+                    Type		 VECTOR_LINKTO
+                    Name		 Body.Axes.-X
+                END VECTOR
+                Destination		
+                BEGIN VECTOR
+                    Type		 VECTOR_LINKTO
+                    Name		 CE6
+                END VECTOR
+                Sampling		
+                BEGIN SAMPLING
+                    AbsolutePath		 Satellite/DROB_OEM
+                    Method		 AdaptiveStepValueError
+                    AbsoluteTolerance		  1.0000000000000000e-02
+                    RelativeTolerance		  1.0000000000000000e-03
+                    CurvatureTolerance		  1.0000000000000001e-01
+                    FixedTimeStep		  6.0000000000000000e+01
+                    MinTimeStep		  1.0000000000000000e-03
+                    MaxTimeStep		  3.6000000000000000e+02
+                    BoundTimeStep		  1.0000000000000000e-02
+                    MaxAngularDisp		  5.2359877559829882e-01
+                END SAMPLING
+                Convergence		
+                BEGIN CONVERGE
+                    AbsolutePath		 Satellite/DROB_OEM
+                    Sense		 Above
+                    AbsoluteTolerance		  1.0000000000000000e-14
+                    RelativeTolerance		  1.0000000000000000e-08
+                    TimeTolerance		  1.0000000000000000e-03
+                END CONVERGE
+            END ANGLE
+            BEGIN ANGLE
+                Type		 ANGLE_BETWEEN
+                Name		 ang_2MoonPlace
+                Description		 <Enter description (up to 300 chars)>
+                Origin		
+                BEGIN VECTOR
+                    Type		 VECTOR_LINKTO
+                    Name		 Body.Axes.-X
+                END VECTOR
+                Destination		
+                BEGIN VECTOR
+                    Type		 VECTOR_LINKTO
+                    Name		 PlaceOnMoon
+                END VECTOR
+                Sampling		
+                BEGIN SAMPLING
+                    AbsolutePath		 Satellite/DROB_OEM
+                    Method		 AdaptiveStepValueError
+                    AbsoluteTolerance		  1.0000000000000000e-02
+                    RelativeTolerance		  1.0000000000000000e-03
+                    CurvatureTolerance		  1.0000000000000001e-01
+                    FixedTimeStep		  6.0000000000000000e+01
+                    MinTimeStep		  1.0000000000000000e-03
+                    MaxTimeStep		  3.6000000000000000e+02
+                    BoundTimeStep		  1.0000000000000000e-02
+                    MaxAngularDisp		  5.2359877559829882e-01
+                END SAMPLING
+                Convergence		
+                BEGIN CONVERGE
+                    AbsolutePath		 Satellite/DROB_OEM
+                    Sense		 Above
+                    AbsoluteTolerance		  1.0000000000000000e-14
+                    RelativeTolerance		  1.0000000000000000e-08
+                    TimeTolerance		  1.0000000000000000e-03
+                END CONVERGE
+            END ANGLE
+            BEGIN ANGLE
+                Type		 ANGLE_BETWEEN
+                Name		 ttcPZ
+                Description		 <Enter description (up to 300 chars)>
+                Origin		
+                BEGIN VECTOR
+                    Type		 VECTOR_LINKTO
+                    Name		 Nadir(Centric)
+                END VECTOR
+                Destination		
+                BEGIN VECTOR
+                    Type		 VECTOR_LINKTO
+                    Name		 Body.Z
+                END VECTOR
+                Sampling		
+                BEGIN SAMPLING
+                    AbsolutePath		 Satellite/DROB_OEM
+                    Method		 AdaptiveStepValueError
+                    AbsoluteTolerance		  1.0000000000000000e-02
+                    RelativeTolerance		  1.0000000000000000e-03
+                    CurvatureTolerance		  1.0000000000000001e-01
+                    FixedTimeStep		  6.0000000000000000e+01
+                    MinTimeStep		  1.0000000000000000e-03
+                    MaxTimeStep		  3.6000000000000000e+02
+                    BoundTimeStep		  1.0000000000000000e-02
+                    MaxAngularDisp		  5.2359877559829882e-01
+                END SAMPLING
+                Convergence		
+                BEGIN CONVERGE
+                    AbsolutePath		 Satellite/DROB_OEM
+                    Sense		 Above
+                    AbsoluteTolerance		  1.0000000000000000e-14
+                    RelativeTolerance		  1.0000000000000000e-08
+                    TimeTolerance		  1.0000000000000000e-03
+                END CONVERGE
+            END ANGLE
+            BEGIN VECTOR
+                Type		 VECTOR_FIXED
+                Name		 BNCam
+                Description		 <Enter description (up to 300 chars)>
+                Dimension		 6
+                FixedVector		
+                -1.0000000000000000e+00
+                 0.0000000000000000e+00
+                 0.0000000000000000e+00
+                UiSequence		 321
+                UiCoordType		 4
+                ReferenceAxes		
+                BEGIN AXES
+                    Type		 AXES_LINKTO
+                    Name		 Body
+                END AXES
+            END VECTOR
+            BEGIN VECTOR
+                Type		 VECTOR_TOVECTOR
+                Name		 CE6
+                Description		 Displacement vector to CE6
+                Origin		
+                BEGIN POINT
+                    Type		 POINT_LINKTO
+                    Name		 Center
+                END POINT
+                Destination		
+                BEGIN POINT
+                    Type		 POINT_LINKTO
+                    Name		 Center
+                    RelativePath		 Satellite/CE6
+                END POINT
+                LTDRefSystem		
+                BEGIN SYSTEM
+                    Type		 SYSTEM_LINKTO
+                    Name		 BarycenterICRF
+                    AbsolutePath		 CentralBody/Sun
+                END SYSTEM
+                Apparent		 No
+                TimeConvergence		  1.0000000000000000e-03
+                TimeSense		 Receive
+                IgnoreAberration		 No
+            END VECTOR
+            BEGIN VECTOR
+                Type		 VECTOR_TOVECTOR
+                Name		 DROA_OEM
+                Description		 Displacement vector to DROA_OEM
+                Origin		
+                BEGIN POINT
+                    Type		 POINT_LINKTO
+                    Name		 Center
+                END POINT
+                Destination		
+                BEGIN POINT
+                    Type		 POINT_LINKTO
+                    Name		 Center
+                    RelativePath		 Satellite/DROA_OEM
+                END POINT
+                LTDRefSystem		
+                BEGIN SYSTEM
+                    Type		 SYSTEM_LINKTO
+                    Name		 BarycenterICRF
+                    AbsolutePath		 CentralBody/Sun
+                END SYSTEM
+                Apparent		 No
+                TimeConvergence		  1.0000000000000000e-03
+                TimeSense		 Receive
+                IgnoreAberration		 No
+            END VECTOR
+            BEGIN VECTOR
+                Type		 VECTOR_DISP
+                Name		 L4
+                Description		 <Enter description (up to 300 chars)>
+                Origin		
+                BEGIN POINT
+                    Type		 POINT_LINKTO
+                    Name		 Center
+                END POINT
+                Destination		
+                BEGIN POINT
+                    Type		 POINT_LINKTO
+                    Name		 L4
+                    AbsolutePath		 CentralBody/Moon
+                END POINT
+                LTDRefSystem		
+                BEGIN SYSTEM
+                    Type		 SYSTEM_LINKTO
+                    Name		 Inertial
+                    AbsolutePath		 CentralBody/Earth
+                END SYSTEM
+                Apparent		 No
+                TimeConvergence		  1.0000000000000000e-03
+                TimeSense		 Receive
+                IgnoreAberration		 Yes
+            END VECTOR
+            BEGIN VECTOR
+                Type		 VECTOR_DISP
+                Name		 L5
+                Description		 <Enter description (up to 300 chars)>
+                Origin		
+                BEGIN POINT
+                    Type		 POINT_LINKTO
+                    Name		 Center
+                END POINT
+                Destination		
+                BEGIN POINT
+                    Type		 POINT_LINKTO
+                    Name		 L5
+                    AbsolutePath		 CentralBody/Moon
+                END POINT
+                LTDRefSystem		
+                BEGIN SYSTEM
+                    Type		 SYSTEM_LINKTO
+                    Name		 Inertial
+                    AbsolutePath		 CentralBody/Earth
+                END SYSTEM
+                Apparent		 No
+                TimeConvergence		  1.0000000000000000e-03
+                TimeSense		 Receive
+                IgnoreAberration		 Yes
+            END VECTOR
+            BEGIN VECTOR
+                Type		 VECTOR_TOVECTOR
+                Name		 PlaceOnMoon
+                Description		 Displacement vector to PlaceOnMoon
+                Origin		
+                BEGIN POINT
+                    Type		 POINT_LINKTO
+                    Name		 Center
+                END POINT
+                Destination		
+                BEGIN POINT
+                    Type		 POINT_LINKTO
+                    Name		 Center
+                    RelativePath		 Place/PlaceOnMoon
+                END POINT
+                LTDRefSystem		
+                BEGIN SYSTEM
+                    Type		 SYSTEM_LINKTO
+                    Name		 BarycenterICRF
+                    AbsolutePath		 CentralBody/Sun
+                END SYSTEM
+                Apparent		 No
+                TimeConvergence		  1.0000000000000000e-03
+                TimeSense		 Receive
+                IgnoreAberration		 No
+            END VECTOR
+            BEGIN VECTOR
+                Type		 VECTOR_FORCE
+                Name		 srp
+                Description		 <Enter description (up to 300 chars)>
+                DimensionName		 Acceleration
+                ForceVector		
+                MagnitudeDefn		 Acceleration
+                ScaleFactor		  1.0000000000000000e+00
+                CentralBody		 Earth
+                UseGravity		 No
+                GravityFile		 EGM2008.grv
+                MaxDegree		 0
+                MaxOrder		 0
+                UseGravSecularVariations		 Yes
+                SolidTideType		 None
+                IncludeTimeDependSolidTides		 No
+                MinAmplitudeSolidTides		  0.0000000000000000e+00
+                TruncateSolidTides		 No
+                UseOceanTides		 No
+                MaxDegreeOceanTides		 4
+                MaxOrderOceanTides		 4
+                MinAmplitudeOceanTides		  0.0000000000000000e+00
+                IgnoreTwoBody		 No
+                IncludeGenRelCorrection		 No
+                Mass		  1.0000000000000000e+03
+                UseDrag		 No
+                DragCoefficient		  2.2000000000000002e+00
+                AreaMassRatio		  2.0000000000000000e-02
+                AtmDensityModel		 HarrisPriester
+                GeoMagneticFluxSource		 Kp
+                GeoMagneticFluxUpdateMethod		 Daily
+                GeoMagneticFluxInterpSubSamplingRatio		 1
+                AverageF10.7		  1.5000000000000000e+02
+                DailyF10.7		  1.5000000000000000e+02
+                Kp		  3.0000000000000000e+00
+                UseApproxAltForDrag		 Yes
+                UseApparentSunForDrag		 Yes
+                DensityType		 Mean
+                UseFluxApFile		 No
+                FluxApFile		 SpaceWeather-v1.2.txt
+                UseSRP		 Yes
+                BEGIN SolarPressureModel
+                    BEGIN Spherical
+                        Coefficient		  1.3000000000000000e+00
+                        Area		  1.3500000000000000e+01
+                        ReflectionModel		 Absorbing
+                        CorrectionType		 Cp_Additive
+                    END Spherical
+                END SolarPressureModel
+                SunPosition		 ApparentSunToTrueCB
+                DetectShadowBoundaries		 No
+                ShadowModel		 DualCone
+                BEGIN EclipsingBodies
+                    Body		 Earth
+                END EclipsingBodies
+                AtmAltForEclipse		  0.0000000000000000e+00
+                IncludeAlbedo		 No
+                IncludeThermalRadPressure		 No
+                RadPressureCoefficient		  1.0000000000000000e+00
+                RadPressureArea		  2.0000000000000000e+01
+                GroundReflectionModelFile		 SimpleReflectionModel.txt
+                UsePlugin		 No
+            END VECTOR
+        END Crdn
+
+        BEGIN SpaceEnvironment
+
+            BEGIN VehicleTemperature
+
+                EarthAlbedo		 0.34
+                MaterialEmissivity		 0.924
+                MaterialAbsorptivity		 0.248
+                Dissipation		 0
+                CrossSectionalArea		 1
+                VehShapeModel		 Sphere
+
+                NormalVector		
+                Sun		
+
+            END VehicleTemperature
+
+
+            BEGIN ParticleFlux
+
+                Material		 Aluminum
+                Density		 2700
+                Tensile		 400
+                SatArea		 1
+                PitDepth		 0.001
+                F10.7Source		 StaticValue
+                F10.7		 150
+                FluxFile		 SpaceWeather-v1.2.txt
+                UseSporadicMeteors		 Yes
+
+            END ParticleFlux
+
+
+            BEGIN MagneticField
+
+                MainField		 IGRF
+                ExternalField		 None
+                IGRF_UpdateRate		 86400
+
+            END MagneticField
+
+
+            BEGIN Radiation
+
+                VersionIndicator		 20100729
+                CompMode		 RadOnly
+                UseModelEpoch		 Yes
+                ShiftSAA		 Yes
+                DoseIntegStep		 60
+                DoseReportStep		 21600
+                DoseChannel		 Total
+                UseNuclearAttenuation		 No
+                IncludeNucAttenNeutrons		 No
+                DetectorGeometry		 SemiInfiniteSlab
+                DetectorType		 Silicon
+                ApSource		 StaticValue
+                Ap15Avg		 10
+                FluxFile		 SpaceWeather-v1.2.txt
+
+            END Radiation
+
+
+            BEGIN SAAContour
+
+                Channel		 >23MeV
+                FluxLevel		 Background+3Sigma
+
+            END SAAContour
+
+
+            BEGIN GCRSettings
+
+                GCRModel		 BO10
+                SolarInfluence		 SolarMax
+                AtomicNumber		 1
+                InterplanetaryWeatherIndex		 1
+                PHI		 1100
+                SampleTime		 0.25
+
+            END GCRSettings
+
+
+            BEGIN SEPSettings
+
+                SEPModel		 JPL91
+                Duration		 3
+                Probability		 90
+                Energy		 1
+                Energy		 4
+                Energy		 10
+                Energy		 30
+                Energy		 60
+
+            END SEPSettings
+
+        END SpaceEnvironment
+
+        BEGIN Graphics
+
+            BEGIN GenericGraphics
+                IntvlHideShowAll		 Off
+                ShowPassLabel		 Off
+                ShowPathLabel		 Off
+                TransformTrajectory		 On
+                MinGfxGndTrkTimeStep		  0.0000000000000000e+00
+                MaxGfxGndTrkTimeStep		  1.8000000000000000e+03
+                MinGfxOrbitTimeStep		  0.0000000000000000e+00
+                MaxGfxOrbitTimeStep		  4.3200000000000000e+04
+                ShowGlintPoint		 Off
+                ShowGlintColor		 #ffffff
+                ShowGlintStyle		 2
+            END GenericGraphics
+
+            BEGIN AttributeData
+                ShowGfx		 Off
+                AttributeType		                CustomIntervals		
+                BEGIN DefaultAttributes
+                    Show		 On
+                    Inherit		 On
+                    ShowLabel		 On
+                    ShowGndTrack		 On
+                    ShowGndMarker		 On
+                    ShowOrbit		 On
+                    ShowOrbitMarker		 On
+                    ShowElsetNum		 Off
+                    ShowSpecialSwath		 On
+                    AllColors		 #00ffff
+                    LineStyle		 0
+                    LineWidth		 2
+                    MarkerStyle		 15
+                    FontStyle		 0
+                    SwathLineStyle		 0
+                    SpecSwathLineStyle		 1
+                END DefaultAttributes
+
+                BEGIN CustomIntervalList
+                    BEGIN DefaultAttributes
+                        Show		 On
+                        Inherit		 On
+                        ShowLabel		 On
+                        ShowGndTrack		 On
+                        ShowGndMarker		 On
+                        ShowOrbit		 On
+                        ShowOrbitMarker		 On
+                        ShowElsetNum		 Off
+                        ShowSpecialSwath		 On
+                        AllColors		 #00ffff
+                        LineStyle		 0
+                        LineWidth		 3
+                        MarkerStyle		 15
+                        FontStyle		 0
+                        SwathLineStyle		 0
+                        SpecSwathLineStyle		 1
+                    END DefaultAttributes
+                    BEGIN GraphicsInterval
+                        StartTime		 -6.0000000000000000e+01
+                        StopTime		  6.0474000000000000e+05
+                        BEGIN Attributes
+                            AllColors		 #ff0000
+                            LineWidth		 2
+                        END Attributes
+                    END GraphicsInterval
+                END CustomIntervalList
+
+                BEGIN AccessIntervalsAttributes
+                    BEGIN AttrDuringAccess
+                        Show		 On
+                        Inherit		 On
+                        ShowLabel		 On
+                        ShowGndTrack		 On
+                        ShowGndMarker		 On
+                        ShowOrbit		 On
+                        ShowOrbitMarker		 On
+                        ShowElsetNum		 Off
+                        ShowSpecialSwath		 On
+                        AllColors		 #00ffff
+                        LineStyle		 0
+                        LineWidth		 2
+                        MarkerStyle		 15
+                        FontStyle		 0
+                        SwathLineStyle		 0
+                        SpecSwathLineStyle		 1
+                    END AttrDuringAccess
+                    BEGIN AttrDuringNoAccess
+                        Show		 Off
+                        Inherit		 On
+                        ShowLabel		 On
+                        ShowGndTrack		 On
+                        ShowGndMarker		 On
+                        ShowOrbit		 On
+                        ShowOrbitMarker		 On
+                        ShowElsetNum		 Off
+                        ShowSpecialSwath		 On
+                        AllColors		 #ff00ff
+                        LineStyle		 0
+                        LineWidth		 2
+                        MarkerStyle		 15
+                        FontStyle		 0
+                        SwathLineStyle		 0
+                        SpecSwathLineStyle		 1
+                    END AttrDuringNoAccess
+                END AccessIntervalsAttributes
+
+                BEGIN TimeComponentIntervalsAttributes
+                    BEGIN DefaultAttributes
+                        Show		 On
+                        Inherit		 On
+                        ShowLabel		 On
+                        ShowGndTrack		 On
+                        ShowGndMarker		 On
+                        ShowOrbit		 On
+                        ShowOrbitMarker		 On
+                        ShowElsetNum		 Off
+                        ShowSpecialSwath		 On
+                        AllColors		 #00ffff
+                        LineStyle		 0
+                        LineWidth		 2
+                        MarkerStyle		 15
+                        FontStyle		 0
+                        SwathLineStyle		 0
+                        SpecSwathLineStyle		 1
+                    END DefaultAttributes
+                END TimeComponentIntervalsAttributes
+
+                BEGIN RealTimeAttributes
+                    BEGIN HistoryAttr
+                        Show		 On
+                        Inherit		 On
+                        ShowLabel		 On
+                        ShowGndTrack		 On
+                        ShowGndMarker		 On
+                        ShowOrbit		 On
+                        ShowOrbitMarker		 On
+                        ShowElsetNum		 Off
+                        ShowSpecialSwath		 On
+                        AllColors		 #00ffff
+                        LineStyle		 0
+                        LineWidth		 2
+                        MarkerStyle		 15
+                        FontStyle		 0
+                        SwathLineStyle		 0
+                        SpecSwathLineStyle		 1
+                    END HistoryAttr
+                    BEGIN SplineAttr
+                        Show		 On
+                        Inherit		 On
+                        ShowLabel		 On
+                        ShowGndTrack		 On
+                        ShowGndMarker		 On
+                        ShowOrbit		 On
+                        ShowOrbitMarker		 On
+                        ShowElsetNum		 Off
+                        ShowSpecialSwath		 On
+                        AllColors		 #ffff00
+                        LineStyle		 0
+                        LineWidth		 2
+                        MarkerStyle		 15
+                        FontStyle		 0
+                        SwathLineStyle		 0
+                        SpecSwathLineStyle		 1
+                    END SplineAttr
+                    BEGIN LookAheadAttr
+                        Show		 On
+                        Inherit		 On
+                        ShowLabel		 On
+                        ShowGndTrack		 On
+                        ShowGndMarker		 On
+                        ShowOrbit		 On
+                        ShowOrbitMarker		 On
+                        ShowElsetNum		 Off
+                        ShowSpecialSwath		 On
+                        AllColors		 #ffffff
+                        LineStyle		 0
+                        LineWidth		 2
+                        MarkerStyle		 15
+                        FontStyle		 0
+                        SwathLineStyle		 0
+                        SpecSwathLineStyle		 1
+                    END LookAheadAttr
+                    BEGIN DropOutAttr
+                        Show		 On
+                        Inherit		 On
+                        ShowLabel		 On
+                        ShowGndTrack		 On
+                        ShowGndMarker		 On
+                        ShowOrbit		 On
+                        ShowOrbitMarker		 On
+                        ShowElsetNum		 Off
+                        ShowSpecialSwath		 On
+                        AllColors		 #ff0000
+                        LineStyle		 0
+                        LineWidth		 2
+                        MarkerStyle		 15
+                        FontStyle		 0
+                        SwathLineStyle		 0
+                        SpecSwathLineStyle		 1
+                    END DropOutAttr
+                END RealTimeAttributes
+            END AttributeData
+
+            BEGIN LeadTrailData
+                GtLeadingType		 Time
+                GtLeadingTime		 86400
+                GtTrailingType		 Time
+                GtTrailingTime		 86400
+                OrbitLeadingType		 OnePass
+                OrbitTrailingType		 OnePass
+            END LeadTrailData
+            BEGIN SaaData
+                ShowSaa		 Off
+                ShowSaaFill		 Off
+                SaaFillTranslucency		 0.7
+                TrackSaa		 On
+                SaaAltitude		 500000
+            END SaaData
+            BEGIN GroundTracks
+                BEGIN GroundTrack
+                    CentralBody		 Earth
+                END GroundTrack
+            END GroundTracks
+            BEGIN EllipseSetGxData
+                BEGIN DefEllipseSetGx
+                    ShowStatic		 On
+                    ShowDynamic		 On
+                    UseLastDynPos		 Off
+                    HoldLastDynPos		 Off
+                    ShowName		 Off
+                    ShowMarker		 On
+                    MarkerStyle		 0
+                    LineStyle		 0
+                    LineWidth		 1
+                END DefEllipseSetGx
+            END EllipseSetGxData
+        END Graphics
+
+        BEGIN ContourGfx
+            ShowContours		 Off
+        END ContourGfx
+
+        BEGIN Contours
+            ActiveContourType		 Radar Cross Section
+
+            BEGIN ContourSet Radar Cross Section
+                Altitude		 0
+                ShowAtAltitude		 Off
+                Projected		 On
+                Relative		 On
+                ShowLabels		 Off
+                LineWidth		 1
+                DecimalDigits		 1
+                ColorRamp		 On
+                ColorRampStartColor		 #ff0000
+                ColorRampEndColor		 #0000ff
+                BEGIN ContourDefinition
+                    BEGIN CntrAntAzEl
+                        CoordinateSystem		 0
+                        BEGIN AzElPatternDef
+                            SetResolutionTogether		 0
+                            NumAzPoints		 361
+                            AzimuthRes		 1
+                            MinAzimuth		 -180
+                            MaxAzimuth		 180
+                            NumElPoints		 91
+                            ElevationRes		 1
+                            MinElevation		 0
+                            MaxElevation		 90
+                        END AzElPatternDef
+                    END CntrAntAzEl
+                    BEGIN RCSContour
+                        Frequency		 2997924580
+                        ComputeType		 0
+                    END RCSContour
+                END ContourDefinition
+            END ContourSet
+        END Contours
+
+        BEGIN VO
+        END VO
+
+        BEGIN 3dVolume
+            ActiveVolumeType		 Radar Cross Section
+
+            BEGIN VolumeSet Radar Cross Section
+                Scale		 100
+                MinimumDisplayedRcs		 1
+                Frequency		  1.4500000000000000e+10
+                ShowAsWireframe		 0
+                BEGIN AzElPatternDef
+                    SetResolutionTogether		 0
+                    NumAzPoints		 50
+                    AzimuthRes		 7.346938775510203
+                    MinAzimuth		 -180
+                    MaxAzimuth		 180
+                    NumElPoints		 50
+                    ElevationRes		 3.673469387755102
+                    MinElevation		 0
+                    MaxElevation		 180
+                END AzElPatternDef
+                ColorMethod		 1
+                MinToMaxStartColor		 #ff0000
+                MinToMaxStopColor		 #0000ff
+                RelativeToMaximum		 0
+            END VolumeSet
+            BEGIN VolumeGraphics
+                ShowContours		 No
+                ShowVolume		 No
+            END VolumeGraphics
+        END 3dVolume
+
+        BEGIN SpaceEnvironmentGfx
+            BEGIN Gfx
+
+                BEGIN MagFieldLineGfx
+                    Show2D		 No
+                    Show3D		 No
+                    ShowLabel		 Yes
+                    Color		 #ff0000
+                    LineStyle		 1
+                    LineWidth		 2
+                END MagFieldLineGfx
+
+            END Gfx
+
+        END SpaceEnvironmentGfx
+
+        BEGIN DIS
+
+            BEGIN Input
+
+
+            END Input
+
+
+            BEGIN Output
+
+                Enable		 Off
+                ForceID		 1
+                EntityID		 0:0:0
+                PriEntityType		 0:0:0:0:0:0:0
+                AltEntityType		 0:0:0:0:0:0:0
+                DistanceThresh		 1
+
+            END Output
+
+        END DIS
+
+    END Extensions
+
+    BEGIN SubObjects
+
+        Class Sensor
+
+            BN		
+            BW		
+            RotAtna		
+
+        END Class
+
+    END SubObjects
+
+END Satellite
+

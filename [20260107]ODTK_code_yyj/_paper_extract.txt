@@ -1,0 +1,314 @@
+基于地基光学观测的DRO卫星光度与定轨特性分析
+俞言骏1，2，孙洋1，张皓1，2,*（1. 中国科学院空间应用工程与技术中心，北京100094；
+2. 中国科学院大学, 北京100049）
+ 
+摘要：利用地基光学望远镜对DRO-A/B卫星进行观测，旨在评估传统光度模型与定轨算法对该类目标的适用性。光度方面，采用漫反射‑镜面反射球体模型预测理论星等，并与实测数据对比。结果显示，短时内姿态变化可引起1.4~2.7星等的亮度波动，单一模型参数存在1星等的偏差。轨道方面，传统定轨算法分析表明：长弧定轨精度受初定轨质量、测站数量影响，可达一个量级差异；短弧定轨需引入距离约束方能收敛至正确分支；径向误差为最敏感。上述结果量化了传统方法的性能，建议光度预测采用多参数采样生成亮度包络，轨道测定需优化观测策略并提升初定轨算法精度。
+关键词：地月空间；目标探测；光度模型；轨道测定
+中图分类号：      文献标志码：A  
+Photometric and Orbital Determination Characteristics of DRO Satellites Based on Ground-Based Optical Observations
+YU Yanjun1，2 ，SUN Yang1，ZHANG Hao1，2,*
+(1. Technology and Engineering Center for Space Utilization, Chinese Academy of Sciences, Beijing 100094, China;
+2. University of Chinese Academy of Sciences, Beijing 100049, China)
+Abstract:（Ground-based optical telescopes were used to observe the DRO-A/B satellites, aiming to evaluate the applicability of traditional photometric models and orbit determination algorithms for this type of target. In terms of photometry, a diffuse-specular spherical model was employed to predict theoretical magnitudes, and the results were compared with measured data. The results show that short-term attitude changes can cause brightness fluctuations of 1.4–2.7 magnitudes, and a single set of model parameters yields a deviation of about 1 magnitude. In terms of orbit determination, analysis using traditional algorithms indicates that the accuracy of long-arc orbit determination depends on the quality of initial orbit determination and the number of observation stations, with differences up to one order of magnitude. Short-arc orbit determination requires range constraints to converge to the correct branch. Radial error is the most sensitive indicator. The above results quantify the performance of traditional methods. It is recommended to adopt multi-parameter sampling to generate a brightness envelope for photometric predictions, and for orbit determination, to optimize observation strategies and improve the accuracy of initial orbit determination algorithms.） 
+Keywords: cislunar space; target detection; photometric model; orbit determination
+0引言
+2024年2~3月，中国科学院通过两次火箭发射，成功实施战略性先导专项（A类）“地月空间远距离逆行轨道（distant retrograde orbit，DRO）探索研究”，部署了首个地月空间三星星座（表1），旨在探索DRO轨道特性[1]并开展先期科学技术验证实验。其中，DRO-A/B卫星（包含A、B两颗子卫星）运行于DRO，其轨道近月点数万公里、远月点可达数十万公里，具有长期稳定和入轨代价低的特点，是地月空间探索的核心轨道类型[2]。通过对DRO-A/B卫星进行地基观测，有助于揭示地月空间目标的实测数据与理论模型之间的差异，从而为目标探测提供模型修正与策略指导。
+对地月空间目标进行持续监测是空间态势感知（space domain awareness，SDA）的关键[3]，其重点在于获取目标的物理属性以及运动状态。然而，地月空间目标具有距离遥远、亮度暗弱等特点[3]，给传感器设计与观测策略带来了严峻挑战。当前光学SDA传感器的设计多依赖星等值作为目标亮度的度量指标，并以此推定望远镜的探测能力[4]。Saul与Schroeder[4]提出的基于信噪比（signal-to-noise ratio，SNR）的望远镜设计框架虽优于传统星等方法，但该模型在目标反射特性建模上仍依赖于简化的双向反射分布函数（bidirectional reflection distribution function，BRDF），忽略了实际卫星可能存在的镜面反射、复杂几何结构及姿态变化。这意味着，尽管光谱建模更为精细，但目标光度特性的不确定性仍是预测精度的主要瓶颈，需实测研究予以量化。
+现有的地月空间目标光度计算模型[5–7]多采用Hejduk[8]提出的漫反射‑镜面反射球体模型。Silha[9]等人基于大量近地目标实测光变曲线的统计分析，验证了该模型的有效性。然而，当将该模型推广至地月空间目标时，相关物理参数及姿态信息往往难以获取，因此其亮度预测结果的可靠性尚需通过实测研究加以验证。另一方面，基于BRDF的物理光学模型[4]以及数据驱动模型[10,11]虽可扩展为更精细的几何建模，但其应用需依赖目标的姿态信息，这使得问题实质上转化为基于光变曲线的姿态反演问题，对实际传感器设计的直接指导意义有限。
+地月空间目标的动力学具有高度非线性特征[12]，可见窗口往往间隔数天至数周且观测弧段稀疏[3]，给轨道确定带来极大挑战，迫使研究者转向概率性鲁棒定轨算法的研究[13-16]。Der[17]以2022年“阿尔忒弥斯1号”任务的地月空间真实光学观测数据为例，验证了所提算法的有效性与确定性输出，表明在适当数据处理与初值条件下，确定性定轨流程仍可获得可靠结果。然而，在地基光学定轨中，Gooding等初定轨（initial orbit determination，IOD）方法的输入具有较大选择自由度，不同观测组合产生的初值偏差将直接传递至后续批处理最小二乘（batch least square，BLS）。现有研究多聚焦于IOD算法改进或BLS收敛性分析，但对何种IOD观测值能够支撑BLS成功仍缺乏定量刻画；观测弧段长度、测站配置等因素对BLS性能的影响也缺少系统评估，难以为实际测控中的观测策略与观测值选取提供依据。
+为此，本文立足DRO-A/B卫星的地基光学实测数据，通过对比漫反射-镜面反射球体模型的理论值，归纳该模型的规律性认识，并期望构建更精确的亮度预测范围，从而为传感器架构设计提供依据，支撑目标探测的硬件研制。此外，利用地面实测数据，以标量三重积（scalar triple particle，STP）表征 IOD 观测值的几何发散度，以首末观测历元之差表征时间跨度，系统评估不同观测组合下IOD结果对BLS定轨精度的影响，从而量化传统IOD数据质量对批处理性能的影响。在此基础上，本文进一步对比长弧与短弧、单站与多站等观测配置下传统地基定轨算法的精度差异，以期为地月空间目标轨道测定及观测策略设计提供指导
+本文结构如下：第1节介绍获取观测数据及后续亮度与定轨分析的数学模型；第2节介绍观测系统、观测数据以及数据精度；第3节对比实测与模型的亮度特性与差异；第4节量化弧段长短、测站数量以及多种误差源对传统地基定轨算法的精度影响；第5节为结论。
+表 1 “地月空间DRO探索研究”星座基本信息
+Table 1 Basic information of the “Earth-Moon DRO Exploration Research” constellation
+卫星
+DRO-L
+DRO-A
+DRO-B
+发射时间
+2024.2.3
+2024.3.13(一箭双星)
+2024.3.13(一箭双星)
+轨道类型
+LEO
+DRO
+DRO3:2共振轨道
+地表距离
+~500 km
+310 000~470000 km
+140 000~470 000 km
+1数学基础模型
+1.1望远镜引导数学模型
+望远镜的精确指向依赖于动力学预报与实时修正。采用地心天球坐标系（geocentric celestial reference system ，GCRS）描述卫星运动，动力学方程包含地球中心引力及主要摄动项：
+式中， 为卫星在GCRS中的位置矢量， 为其加速度； 为万有引力常数； 为地球质量； 为地心距。 和  分别为月球和太阳的第三体引力摄动加速度； 为太阳辐射压摄动加速度； 为广义相对论修正加速度。该方程从初始状态数值积分得到任意时刻的预报位置。
+由于光速有限，望远镜需预报信号的发射时刻而非接收时刻。光行时修正通过迭代求解：
+     
+式中， 为目标卫星发出信号的光行时修正发射时刻； 为地面测站接收到信号的观测时刻； 为发射时刻目标卫星与地面测站之间的几何距离； 为真空中光速。该方程通过迭代求解光行时修正量 ，直至收敛。修正后的预报值转换为站心地平坐标驱动望远镜。
+观测中的主要误差源包括：测站大地坐标误差、低仰角大气折射残余、以及大气消光。其中测站坐标误差对定轨精度的影响见第4.3节，大气消光对探测能力的影响在[18]中进行了量化研究。
+1.2测光模型
+目标视星等采用漫反射‑镜面反射球体模型[8]进行计算，通过对数进行比较，数值越低表示亮度越高。计算公式如式(3)所示。
+ 
+其中，-26.74是太阳的参考视星等；表示目标的有效反射面积；R对应于目标与传感器卫星之间的距离；表示相位函数，其中相位角表示目标上入射光方向与反射方向（即传感器的方向）之间的夹角，如图1所示。红色卫星代表传感器卫星，而蓝色卫星表示被观测的目标物体。
+图1 观测相角示意图
+Fig.1 Schematic diagram of observation phase angle
+相位函数由漫反射和镜面反射两部分组成，其中混合系数表示两者的线性组合，有
+       
+  
+其中，有效反射面积和混合系数是关键参数，随不同的目标类型而变化； ​表示从目标物体到传感器卫星的方向，和分别表示目标物体和传感器卫星的位置；表示从目标物体到太阳的方向。
+1.3轨道测定
+对于实测弧段，根据时间跨度划分为短弧与长弧两类：若实测弧段不超过 1 天，定义为短弧，反之为长弧。
+对于观测数据，采用STP量化几何发散度：将第  条光学观测的站心 RA/Dec 转换至地心 J2000 系单位视线矢量 （名义地心距取 ）。对候选观测组合 ，定义
+STP 越大，三条视线越不共面，几何发散度越高。
+采用Gooding算法[19]进行初始轨道测定。该算法需要输入三个观测值，利用兰伯特问题求解器结算中间测量，并用数值多变量根查找算法来调整试验距离值，以最小化测量残差[20]。由于该方法基于二体动力学假设，直接应用于地月空间目标时，其输出结果可能发散[21]。此时本文借鉴了Der[17]算法六的思想，在合理的地心距范围内遍历候选距离 ，假设目标在短弧内作匀速直线运动，构建线性方程组求解首末观测斜距，并以全部观测值拟合残差最小为准则确定最优初始距离。将该距离作为强约束代入IOD求解器，强制收敛至正确分支。
+完成初定轨后，由于批处理最小二乘在最终估计精度上略优于无迹卡尔曼滤波[22]，因此采用批处理微分修正法[23]估计航天器状态。状态向量在GCRS中定义。观测方程为：
+式中， 和  分别为目标的赤经（right ascension，RA）和赤纬（declination，Dec）观测值，单位为度或弧度； 为目标在站心地平坐标系中的位置分量； 为目标到测站的距离。 为观测矢量， 为卫星状态矢量， 为观测时刻， 表示从状态到观测的非线性映射函数，即 。
+将观测方程在参考轨迹处线性化，利用状态转移矩阵将不同时刻的观测归算到参考历元，构建法方程：
+式中， 为参与定轨的观测数据总数； 为第  个观测时刻的设计矩阵，其元素为观测值对初始状态分量的偏导数 ； 为第  个观测时刻的观测噪声协方差矩阵，反映了各观测量的测量不确定度 为第  个观测时刻的观测残差矢量； 为参考历元处的状态改正量矢量，包含位置和速度的修正值。该方程通过迭代求解 ，直至状态收敛。
+2地基观测
+本节介绍观测系统、观测数据以及数据精度，为后续的光学特性与定轨分析提供数据基础。
+2.1系统介绍
+小行星中心（minor planet center，MPC）[24]承担了各天体的识别、命名、轨道计算、数据库维护等工作，本文的部分观测数据来源于此。
+地基观测系统由P13、O46、703、I52、U74等站点组成，地理坐标见表3。各站均配备地基光学望远镜，主要技术参数如表2：
+表2 各测站望远镜配置
+Table 2 Telescope configurations at each station
+站点
+望远镜类型
+口径(m) 
+焦比 
+相机类型
+703
+Schmidt
+0.68
+—
+CCD 
+I52
+主焦点
+1.0
+—
+CCD
+P13
+反射镜
+0.28
+2.2
+CMOS
+O46
+反射镜
+0.25
+8
+CMOS
+U74
+反射镜
+0.36
+—
+CCD
+表3 各测站位置信息
+Table 3 Location information of each station
+代码
+观测站名称
+原始经度 (°)
+纬度 (°)
+国家
+P13
+Baihuashan Observatory, Beijing
+115.573 33
+39.65
+中国
+O46
+Daocheng Glacier Observatory
+100.226 64
+28.86
+中国
+703
+Catalina Sky Survey
+249.267 36
+32.22
+美国
+I52
+Steward Observatory, Mt. Lemmon Station
+249.211 08
+32.26
+美国
+U74
+JPL SynTrack Robotic Telescope 2, Auberry
+240.587 20
+36.89
+美国
+2.2观测数据介绍
+观测活动分为两个阶段：2024年8月至2025年2月开展7次短期试验，覆盖不同月相、目标姿态及观测几何；2025年5月至10月进行单站及多站长弧连续观测。总计获取有效数据组数百组，部分数据示例见表4，图像示例见图2。
+表4 DRO-B地基光学观测数据示例（部分）
+Table 4 Example of ground-based optical observation data for DRO-B（partial）
+目标ID
+观测日期 (UTC)
+赤经 (RA)
+赤纬 (Dec)
+星等
+波段
+站点
+C4557E1
+2025-10-27.533783
+02 49 19.11
++19 33 42.4
+17.0
+G
+P13
+C4557E1
+2025-10-27.535645
+02 49 42.62
++19 36 11.2
+17.1
+G
+P13
+C4557E1
+2025-10-27.537541
+02 50 06.53
++19 38 42.1
+16.8
+G
+P13
+C4557E1
+2025-10-27.539447
+02 50 30.59
++19 41 14.1
+16.6
+G
+P13
+C4557E1
+2025-10-27.541377
+02 50 54.89
++19 43 47.5
+16.7
+G
+P13
+C4557E1
+2025-10-27.543380
+02 51 20.15
++19 46 26.3
+16.8
+G
+P13
+图2 地基望远镜观测DRO目标的图像
+Fig.2 Image of DRO target observed by ground-based telescope
+2.3数据精度
+图3展示了第一阶段观测的几何条件分布。图3(a)中，所有观测的月球角距均大于10°，太阳相位角集中在30°~120°之间，有效抑制了月球背景散射光并保证了目标光照。图3(b)显示，观测时刻的纬度幅角分布较为集中。定位误差与月球角距、太阳相位角、纬度幅角三者均未呈现显著单调关系，表明观测几何主要影响目标可见性，而非定位精度。
+(a) 月球角距与太阳相角的关系
+(a) Lunar angular distance vs. solar phase angle
+(b) 纬度幅角与太阳相角的关系
+(b) Latitude argument vs. solar phase angle
+图3 观测几何条件分布
+Fig.3 Distribution of observation geometry conditions
+图4给出了 A、B星实测视星等与天文定位精度的统计分布。两星视星等主要落在16至18等，属于微弱目标观测范畴。以百米级精密星历[25]为参考真值，经指向标定后逐次计算天文定位残差。A、B星各历元误差在时间与方向上的分布均较为离散，但赤经、赤纬两方向残差总体均处于角秒量级，多数落在约±1″～3″范围内，个别历元存在更大离群值。其中，赤经残差在部分观测簇内呈较明显的正偏，赤纬残差则围绕零值波动且正负均有出现。上述结果表明，在精密星历约束与指向标定配合下，地基光学系统对16至18等微弱目标具备可重复的探测与天文定位能力，单次定位精度总体可达角秒级，满足角秒级应用需求。
+(a) 整体
+(a) Overall
+(b) 局部
+(b) Local
+图4 DRO-A视星等与光学定位误差分布
+Fig.4 Distribution of apparent magnitude and optical positioning error for DRO-A
+3光学特性分析
+3.1实测亮度
+基于DRO-B的观测数据，提取各次观测的目标视星等，并计算对应的目标-测站距离及太阳相位角。图5给出了实测星等随距离和太阳相位角的变化，从中可以观察到两个主要特征：
+纵向对比A、E与B、C，星等值随距离增加而单调增大（变暗），与平方反比律一致。横向对比C、D与E、F，星等值随太阳相角增加而单调增大，与反射原理一致。
+在F处距离变化极为平缓的弧段，星等随太阳相角缓慢增大却出现“先亮后暗”的行为，无法简单由相位函数解释。
+图5 DRO-B实测星等分布图
+Fig.6 Distribution of observed magnitudes for DRO-B
+3.2模型亮度
+为对比理论预期，采用第2节所述方法在太阳相角–距离平面上计算模型星等，并以连续色场表示；同时将三期实测星等（2025.05.24、06.25、10.26）叠加于同一坐标系中，颜色与色标一致以便直接比较。
+由图6可见，模型星等随距离增大、相角增大而单调变暗，色场过渡平滑。相较之下，实测散点的颜色分布明显离散：同一相角、距离邻域内，不同历元的颜色标注可相差显著，说明在几何条件近似不变时，实测亮度仍发生明显跳变，无法用距离、相角的慢变单独解释。典型地，在相角约95°、距离约  km 附近，实测点普遍较背景模型偏暗（星等更大），残差可达约1等量级；而在高距离、中等相角区域，个别实测点与模型色场较为接近。以上结果表明固定参数球体模型可给出合理的亮度变化趋势，但难以再现实测星等的短时起伏。
+图6 DRO-B模型星等分布图
+Fig.7 Distribution of modeled magnitudes for DRO-B
+3.3异常检测
+图7将同一观测历元的模型星等与实测星等绘制成散点图，用于直观评估模型的计算效果。总体上，点群沿对角线分布，说明模型能够反映亮度随太阳相位角与距离变化的一阶趋势；但散点离散明显，多数点虽落在对角线附近，仍有不少样本偏离超过±0.5mag，部分可达±1.5mag。这表明在固定 、 参数下，单一球体模型难以同时拟合全部观测弧段，模型预测更适合作为亮度变化趋势参考，而不宜直接作为逐历元星等的精确预报值。
+进一步分析模型与实测的偏差特征，可归纳两点规律。其一，偏差具有显著的短时跳变特征：在相近观测历元，距离与太阳相位角变化缓慢，理论星等变化通常不足0.1等，实测与模型之差却可出现超过1等的突变。因此跳变很可能归因于姿态变化引起的有效反射面切换或反射特性改变。其二，不同观测夜的偏差存在系统性差异：10月26日模型亮于实测，10月27日实测亮于模型，这表明目标的姿态运动在不同时间段可能存在不同模式。
+图7 DRO-B模型星等与实测星等分布图，2025-10-26UTC到2025-10-28UTC
+Fig.8 Modeled vs. observed magnitudes for DRO-B, from 2025-10-26 UTC to 2025-10-28 UTC
+为验证星等偏差的跳变是否源于目标结构与姿态变化，将A、B星姿态信息映射为有效反光面积，并与同期实测星等及距离、太阳相角一并展示（图8）。
+由图8（a）可见，距离与太阳相角难以单独解释星等变化。在同一观测夜（同一竖向点簇）内，距离与相角变化很小，实测星等仍可出现超过1等的离散；此时星等起伏与有效反光面积的颜色变化同步性更好，表明短时亮度波动与姿态导致的有效反射几何变化密切相关。此外，1月观测簇地心距更近、相角更小、反光面积更大，但星等并不是最亮；2月距离更远、相角较大、反光面积较小，反而出现整体较亮的星等带。这表明除观测几何与卫星姿态外，存在其他波动因素，如反射特性改变。
+以上结果表明传统球体模型无法刻画此类短时标波动。为此，可利用漫反射‑镜面混合反射模型，令有效反射面积和混合系数随机采样，计算多组模型预测星等，取其最大值与最小值构成亮度包络。该包络可反映姿态变化可能导致的亮度波动范围，从而将传统单值预测扩展为统计区间。
+(a) 反光面积与星等分布
+(a) Reflective area vs. magnitude
+(b) 反光面示意图
+(b) Schematic diagram of reflective surfaces
+图 8  星等与归一化反光面积关系
+Fig.10 Relationship between magnitude and normalized reflective area
+4地基光学定轨分析 
+图9给出了DRO目标在2025年10月26至28日的地基光学观测分布。26日RA/Dec观测较为密集，弧段跨度不超过1天，构成短弧；27至28日仅有零星历元，与26日数据联合后形成跨越数天的长弧。不同符号对应703、I52、U74、P13等多个测站，观测在时间上高度间断。图10同时给出目标在地心系中的完整轨道及观测覆盖段，蓝色曲线为完整目标轨道，橙色曲线为参与定轨的观测弧段覆盖区间，可见参与定轨的弧段仅占轨道很小一部分。
+图 9  观测数据分布
+图 10  观测弧段几何示意图
+4.1长弧与短弧
+为考察不同观测组合下的IOD初值对BLS的影响，对全部观测组合开展IOD与BLS解算：每组仅改变Gooding初定轨所用的三个历元，BLS则始终采用该弧段内全部光学观测数据进行精化。
+以IOD首末历元之差表征时间跨度，以标量三重积STP表征几何发散度。图11显示，由于观测不连续，时间跨度在参数平面上呈三簇分布，约5h、31h与60h量级，分别对应首末观测落在不同观测时段的组合。灰色标记为未收敛样本，彩色点为已收敛结果。可见，在IOD时间跨度较短的簇内，低STP区域未收敛样本密集；随STP增大，可收敛组合显著增多。多数收敛样本误差集中于约 40 km，表明在全弧段BLS条件下，一旦初值落入正确收敛域，最终精度对STP并不敏感；中等时间跨度、较高STP处存在少量高误差点（400–700 km），说明 BLS 迭代成功并不等价于定轨精度满足要求；高时间跨度簇内，可收敛的STP范围明显拓宽，低STP区灰叉显著减少，说明IOD三点时间间隔越大，Gooding越易给出可用初值，BLS对STP选点的依赖随之降低。
+将BLS定轨位置误差50km以内的IOD初值定义为准确初轨，图12进一步按IOD时间跨度簇给出STP与收敛率、准确初轨率的关系。短跨度簇（中位5.7h）收敛率随STP由约0.2升至接近1.0，说明短基线IOD对几何选点高度敏感；中跨度带（31.1h）在中STP区间两率均接近1.0，当STP过高时，准确初轨率明显低于收敛率，出现BLS已收敛而位置误差较大的情形，说明该区间虽易收敛，却难以保证初轨精度，不宜作为优先选点区间；长跨度簇（59.6h）在宽STP范围内两率均高于0.9，表明IOD三点时间间隔较大时，更易为BLS提供可用初值。
+综上，IOD时间跨度主要影响BLS能否顺利收敛，时间间隔越大，对输入的观测数据的几何条件要求越低。STP则主要影响收敛结果是否达到可用精度，STP过低时BLS难以收敛，STP过高时虽可收敛，但位置误差仍可能显著偏大。
+图 11  
+图 12  星等与归一化反光面积关系
+4.2单站与多站比较
+通过删减部分测站的观测数据，对长/短弧、单/多站四种配置开展批处理定轨，结果如图13所示。长弧多站配置表现最优，位置误差全程稳定在约40km，速度误差约0.2m/s。长弧单站初始位置误差约370km，随弧段延长降至约90km后略有回升至150km量级，速度误差由约5m/s降至约2.6m/s，说明单站条件下批处理虽可收敛，但对观测几何分布仍较敏感。短弧多站位置误差约100至150km，速度误差约4.8m/s，明显劣于长弧多站。短弧单站位置误差达730km以上，基本不可用。总体而言，弧段长度是地月空间光学定轨的首要因素，测站数量能改善几何弱解问题，长弧多站为推荐配置。
+上述结果共同表明，在地月空间稀疏、间断观测条件下，传统确定性IOD和BLS仍可获得可靠定轨结果，但其成功高度依赖于观测弧段长度、测站配置及IOD观测数据质量。STP与时间跨度的全组合统计为初定轨选点提供了定量准则，长/短弧与单/多站对比则为实际测控中的观测策略设计提供了直接依据。
+(a) 位置误差
+ (a) Position error
+(b) 速度误差
+ (b) Velocity error
+图 13  不同观测配置的定轨结果
+4.3误差与敏感性分析
+4.3.1  测站位置误差
+为评估大地测量模型误差对定轨精度的影响，假设各测站坐标误差服从高斯分布，经度和纬度方向标准差均为10角秒，生成200组扰动测站坐标，保持原始观测值不变，分别进行定轨解算。图14表明，测站坐标10角秒的随机扰动会导致41.4 km的位置均方根误差(Root Mean Square Error，RMSE)。图15展示了位置不确定性累积均值随样本数的变化，统计结果表明测站坐标10角秒的随机扰动会导致5.218 km的位置不确定度，且主要影响径向分量。
+图 14  RMSE均值累积曲线
+Fig.16 Cumulative mean RMSE curve
+(a) 径向不确定度
+ (a) Radial uncertainty
+(b) 迹向不确定度
+ (b) Along-track uncertainty
+(c) 法向不确定度
+ (c) Normal uncertainty
+(d) 总不确定度
+ (d) Total uncertainty
+图 15  位置不确定性均值累积曲线
+Fig.17 Cumulative mean position uncertainty curve
+4.3.2  敏感性分析
+进一步考察测量噪声（随机误差）与系统偏差（如未模型化的大气折射）对定轨精度的影响。分别将白噪声标准差与常值偏差设为不同幅度，进行定轨解算，统计各方向的位置误差。图16展示了径向、迹向、法向位置不确定性随噪声幅度的变化。结果表明，径向误差随噪声幅度近似线性增长，而迹向与法向基本保持不变。这说明，无论随机误差还是系统误差，最终都会集中体现为径向不确定度的放大，提高定轨精度的核心在于增强径向约束。
+(a) 测量噪声对定轨误差的影响
+(a) Effect of measurement noise on orbit determination error
+(b) 系统偏差对定轨误差的影响
+(b) Effect of systematic bias on orbit determination error
+图 16各方向位置不确定性随噪声幅度的分布
+Fig.18 Distribution of position uncertainty in each direction with noise amplitude
+5结论
+目标实测星等大多符合反射定律，但少部分存在1.4～2.7等的姿态波动；传统测光模型虽能捕获亮度整体走势，但与实测值之间存在0.5～1等的系统偏差。据此，建议取混合系数为0.2（高镜面反射）与0.8（高漫反射），令有效反射面积在0.30～3.50内随机采样，计算多组模型预测星等，将传统单值预测扩展为统计区间，为传感器动态范围设计提供可靠的数值边界。
+传统长弧定轨精度受初轨确定质量与测站数量影响，差异可达一个量级；短弧定轨必须引入距离约束方可收敛至正确分支；径向误差是对各类误差源最敏感的指标。因此，轨道测定时应优先采用多站联合观测，并尽可能延长观测弧段、保证重访率；定轨算法需优化初轨确定精度或提高精密定轨对初值的鲁棒性，同时增强径向约束以减少不确定度。上述结论为地月空间目标轨道测定的观测策略与误差控制提供了量化依据。
+参考文献
+陈冠华, 杨驰航, 张晨, 等. 地月空间的远距离逆行轨道族及其分岔研究[J]. 北京航空航天大学学报, 2022, 48(12): 2576-2588.CHEN G H, YANG C H, ZHANG C, et al. Distant retrograde orbits and its bifurcations in Earth-Moon system[J]. Journal of Beijing University of Aeronautics and Astronautics, 2022, 48(12): 2576-2588 (in Chinese).
+张晨, 张皓. 基于月球借力的低能DRO入轨策略[J]. 航空学报, 2023, 44(2): 326507.ZHANG C, ZHANG H. Lunar-gravity-assisted low-energy transfer from Earth into Distant Retrograde Orbit (DRO)[J]. Acta Aeronautica et Astronautica Sinica, 2023, 44(2): 326507.
+HOLZINGER M J, CHOW C C, GARRETSON P. A primer on cislunar space[R]. Air Force Research Laboratory, 2021. (AFRL 2021-1271).
+SAUL G, SCHROEDER K. Metric-based design for optical space domain awareness observatories[C]//Proc. of the AAS/AIAA Astrodynamics Specialist Conference. 2024. (AAS 24-139)
+CHOW C C, WETTERER C J, HILL K, et al. Cislunar periodic orbit families and expected observational features[C]//Proc. of the Advanced Maui Optical and Space Surveillance Technologies Conference (AMOS). Maui, HI, 2020.
+WILMER A P, BETTINGER R A. Near-rectilinear halo orbit surveillance using cislunar periodic orbits[C]//Proc. of the Advanced Maui Optical and Space Surveillance Technologies Conference (AMOS). Maui, HI, 2022.
+SADAKA N I, GUPTA M, HOWELL K C, et al. Observing the cislunar surveillance cone from synodic resonant orbit constellations[C]//Proc. of the AAS/AIAA Astrodynamics Specialist Conference, 2024. (AAS 24-443).
+HEJDUK M D. Specular and diffuse components in spherical satellite photometric modeling[C]//Proc. of the Advanced Maui Optical and Space Surveillance Technologies Conference (AMOS). Maui, HI, 2011.
+SILHA J, JEVCAK P, ZIGO M, et al. Photometric phase functions of resident space objects and space debris extracted from brightness measurements[C]//Proc. of the Advanced Maui Optical and Space Surveillance Technologies Conference (AMOS). Wailea, Maui, HI, 2023.
+REID C, WITMAN D, OLSON T, et al. Evaluating photometric fingerprinting and change detection at scale[C]//Proc. of the Advanced Maui Optical and Space Surveillance Technologies Conference (AMOS). Maui, HI, 2025.
+GOUMIRI I R, MUYSKENS A L, PRIEST B W, et al. Light curve forecasting and anomaly detection using scalable, anisotropic, and heteroscedastic Gaussian process models[C]//Proc. of the Advanced Maui Optical and Space Surveillance Technologies Conference (AMOS). Maui, HI, 2023.
+BAKER-MCEVILLY B, BHADAURIA S, CANALES D, et al. A comprehensive review on cislunar expansion and space domain awareness[J]. Progress in Aerospace Sciences, 2024, 147: 101019.
+MISHRA U R, CHAKRAVORTY S, FABER W R, et al. Geometric solution to probabilistic admissible region (PAR)[J]. The Journal of the Astronautical Sciences, 2024, 71(3): 1-25.
+BOLDEN M, HUSSEIN I, BOROWSKI H, et al. Probabilistic initial orbit determination and object tracking in cislunar space using optical sensors[C]//Proc. of the Advanced Maui Optical and Space Surveillance Technologies Conference (AMOS). Maui, HI, 2022.
+PARANJAPE I P, CHAKRAVORTY S. Cislunar initial orbit determination and target tracking using kinematic fitting and particle Gaussian mixture filtering[C]//Proc. of the AAS/AIAA Astrodynamics Specialist Conference, 2025. (AAS 25-428).
+DINH Q, SCHEERES D J, HOLZINGER M J. Cislunar initial orbit determination using sensor and measurement-centric admissible regions[C]//Proc. of the Advanced Maui Optical and Space Surveillance Technologies Conference (AMOS). Maui, HI, 2024.
+DER G J. Initial orbit determination algorithms for rapid optical and radar data processing[C]//Proc. of the AAS/AIAA Astrodynamics Specialist Conference, 2023a. (AAS 23-204).
+吴连大, 熊建宁, 牛照东, 等. 空间目标的天基探测[M]. 北京: 科学出版社, 2017.WU L D, XIONG J N, NIU Z D, et al. Space-based detection of space objects[M]. Beijing: Science Press, 2017 (in Chinese).
+VALLADO D A. Evaluating Gooding angles-only orbit determination of space based space surveillance measurements. Paper Usr, 2010, 10: 1-21.
+WISHNEK S. A minimal observation method for initial maneuver determination[C]//Proc. of the Advanced Maui Optical and Space Surveillance Technologies Conference (AMOS), 2024.
+WISHNEK S, HOLZINGER M J., & HANDLEY, P. Robust cislunar initial orbit determination[C]//Proc. of the Advanced Maui Optical and Space Surveillance Technologies Conference (AMOS). Maui, HI, 2021.
+DENING J P, NEBELECKY C, CRASSIDIS J L. A comparison of orbit determination methods in cislunar space[C]//Proc. of the AAS/AIAA Astrodynamics Specialist Conference, 2024. (AAS 24-362).
+DER G J. Differential correction algorithms for rapid optical and radar data processing[C]//AAS/AIAA Astrodynamics Specialist Conference, 2023b. (AAS 23-207).
+Minor Planet Center. MPC data and services[EB/OL]. [2026-06-08]. https://www.minorplanetcenter.net.
+WANG W, SHU L, LIU J, et al. Joint navigation performance of distant retrograde orbits and cislunar orbits via LiAISON considering dynamic and clock model errors[J]. Navigation, 2019, 66(4): 781-802.
+俞言骏（2002-），男，博士研究生，主要研究方向为地月空间态势感知。
+E-mail：yuyanjun25@mails.ucas.ac.cn
+手机：18921920738　　　　　  固话：010-82178817　　　　　
+地址：北京市海淀区邓庄南路9号　　　　　　邮编：100094
+身份证号码：321001200210100017
+孙洋（1998-），女，助理研究员，博士，主要研究方向为地月空间轨道动力学。
+E-mail：sunyang19@csu.ac.cn
+手机：18600117012　　　　　  固话：010-82178817　　　　　
+地址：北京市海淀区邓庄南路9号　　　　　　邮编：100094
+张皓（1986-），男，研究员，博士，主要研究方向为地月空间航天任务分析。
+E-mail：hao.zhang.zhr@csu.ac.cn
+手机：13810681221　　　　　  固话：010-82178817　　　　　
+地址：北京市海淀区邓庄南路9号　　　　　　邮编：100094

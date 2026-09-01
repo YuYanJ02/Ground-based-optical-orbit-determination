@@ -1,0 +1,7 @@
+<?xml version = "1.0" standalone = "yes"?>
+<AgXMLPropertyBagData version = "1.0">
+    <Object clsid = "{0B8364BB-3378-4632-91EE-6FBA7F88107F}">
+        <HideDefaultApplicationData Value = "0" VarType = "VT_BOOL" />
+        <NumDefaultCats Value = "0" VarType = "VT_UI4" />
+    </Object>
+</AgXMLPropertyBagData>

@@ -1,0 +1,271 @@
+Component BodyFace7 
+	 Polygon 
+	 	 TxDef goldfoil.tga AA 
+	 	 TxScale 2 2 2 
+	 	 TxGen 
+	 	 NumVerts 4 
+	 	 Data 
+	 	 	 1.090000 0.505000 0.608500 
+	 	 	 1.090000 -0.505000 0.608500 
+	 	 	 1.090000 -0.505000 -0.608500 
+	 	 	 1.090000 0.505000 -0.608500 
+	 EndPolygon 
+EndComponent 
+Component BodyFace8 
+	 Polygon 
+	 	 TxDef goldfoil.tga AA 
+	 	 TxScale 2 2 2 
+	 	 TxGen 
+	 	 NumVerts 4 
+	 	 Data 
+	 	 	 0.000000 0.505000 0.608500 
+	 	 	 0.000000 0.505000 -0.608500 
+	 	 	 0.000000 -0.505000 -0.608500 
+	 	 	 0.000000 -0.505000 0.608500 
+	 EndPolygon 
+EndComponent 
+Component BodyFace9 
+	 Polygon 
+	 	 TxDef goldfoil.tga AA 
+	 	 TxScale 2 2 2 
+	 	 TxGen 
+	 	 NumVerts 4 
+	 	 Data 
+	 	 	 1.090000 -0.505000 0.608500 
+	 	 	 0.000000 -0.505000 0.608500 
+	 	 	 0.000000 -0.505000 -0.608500 
+	 	 	 1.090000 -0.505000 -0.608500 
+	 EndPolygon 
+EndComponent 
+Component BodyFace10 
+	 Polygon 
+	 	 TxDef goldfoil.tga AA 
+	 	 TxScale 2 2 2 
+	 	 TxGen 
+	 	 NumVerts 4 
+	 	 Data 
+	 	 	 1.090000 0.505000 0.608500 
+	 	 	 1.090000 0.505000 -0.608500 
+	 	 	 0.000000 0.505000 -0.608500 
+	 	 	 0.000000 0.505000 0.608500 
+	 EndPolygon 
+EndComponent 
+Component BodyFace11 
+	 Polygon 
+	 	 TxDef goldfoil.tga AA 
+	 	 TxScale 2 2 2 
+	 	 TxGen 
+	 	 NumVerts 4 
+	 	 Data 
+	 	 	 1.090000 0.505000 -0.608500 
+	 	 	 1.090000 -0.505000 -0.608500 
+	 	 	 0.000000 -0.505000 -0.608500 
+	 	 	 0.000000 0.505000 -0.608500 
+	 EndPolygon 
+EndComponent 
+Component BodyFace12 
+	 Polygon 
+	 	 TxDef goldfoil.tga AA 
+	 	 TxScale 2 2 2 
+	 	 TxGen 
+	 	 NumVerts 4 
+	 	 Data 
+	 	 	 1.090000 0.505000 0.608500 
+	 	 	 0.000000 0.505000 0.608500 
+	 	 	 0.000000 -0.505000 0.608500 
+	 	 	 1.090000 -0.505000 0.608500 
+	 EndPolygon 
+EndComponent 
+Component BodyConnect 
+	 Cylinder 
+	 	 FaceColor DarkSlateGray 
+	 	 NumSides 8 
+	 	 Face1Position 0.0 0.0 0.0 
+	 	 Face1Radius 0.05 
+	 	 Face1Normal 1.0 0.0 0.0 
+	 	 Face2Position 0.162 0.0 0.0 
+	 	 Face2Radius 0.05 
+	 	 Face2Normal 1.0 0.0 0.0 
+	 EndCylinder 
+EndComponent 
+Component MainBody 
+	 Refer 
+	 	 Translate 0 0 0 
+	 	 Component BodyFace7 
+	 EndRefer 
+	 Refer 
+	 	 Translate 0 0 0 
+	 	 Component BodyFace8 
+	 EndRefer 
+	 Refer 
+	 	 Translate 0 0 0 
+	 	 Component BodyFace9 
+	 EndRefer 
+	 Refer 
+	 	 Translate 0 0 0 
+	 	 Component BodyFace10 
+	 EndRefer 
+	 Refer 
+	 	 Translate 0 0 0 
+	 	 Component BodyFace11 
+	 EndRefer 
+	 Refer 
+	 	 Translate 0 0 0 
+	 	 Component BodyFace12 
+	 EndRefer 
+	 Refer 
+	 	 Translate -0.162 0.4 0.5 
+	 	 Component BodyConnect 
+	 EndRefer 
+	 Refer 
+	 	 Translate -0.162 -0.4 0.5 
+	 	 Component BodyConnect 
+	 EndRefer 
+	 Refer 
+	 	 Translate -0.162 0.4 -0.5 
+	 	 Component BodyConnect 
+	 EndRefer 
+	 Refer 
+	 	 Translate -0.162 -0.4 -0.5 
+	 	 Component BodyConnect 
+	 EndRefer 
+EndComponent 
+Component SatASlrPnlPlate 
+	 Extrusion 
+	 	 TxDef solarpanel.tga AA 
+	 	 TxScale 1 2 2 
+	 	 TxGen 
+	 	 Length 0.8 
+	 	 NumVerts 4 
+	 	 Data 
+	 	 	 -0.4 0 0 
+	 	 	 -0.4 0.817 0 
+	 	 	 -0.4 0.817 -0.02 
+	 	 	 -0.4 0 -0.02 
+	 EndExtrusion 
+	 Polygon 
+	 	 FaceColor gray 
+	 	 NumVerts 4 
+	 	 Data 
+	 	 	 -0.01 0 0.005 
+	 	 	 -0.01 0.817 0.005 
+	 	 	 0.01 0.817 0.005 
+	 	 	 0.01 0 0.005 
+	 EndPolygon 
+	 Polygon 
+	 	 FaceColor gray25 
+	 	 NumVerts 4 
+	 	 Data 
+	 	 	 -0.4 0 0 
+	 	 	 -0.4 0.817 0 
+	 	 	 -0.4 0.817 -0.02 
+	 	 	 -0.4 0 -0.02 
+	 EndPolygon 
+	 Polygon 
+	 	 FaceColor gray25 
+	 	 NumVerts 4 
+	 	 Data 
+	 	 	 0.4 0 0 
+	 	 	 0.4 0.817 0 
+	 	 	 0.4 0.817 -0.02 
+	 	 	 0.4 0 -0.02 
+	 EndPolygon 
+EndComponent 
+Component SatASlrPnlArm 
+	 Extrusion 
+	 	 SharpEdges 
+	 	 FaceColor snow 
+	 	 Length 0.1 
+	 	 NumVerts 4 
+	 	 Data 
+	 	 	 -0.05 0 0 
+	 	 	 -0.05 0.458 0 
+	 	 	 -0.05 0.458 -0.02 
+	 	 	 -0.05 0 -0.02 
+	 EndExtrusion 
+	 Polygon 
+	 	 FaceColor gray25 
+	 	 NumVerts 4 
+	 	 Data 
+	 	 	 -0.05 0 0 
+	 	 	 -0.05 0.458 0 
+	 	 	 -0.051 0.458 -0.02 
+	 	 	 -0.05 0 -0.02 
+	 EndPolygon 
+	 Polygon 
+	 	 FaceColor gray25 
+	 	 NumVerts 4 
+	 	 Data 
+	 	 	 0.05 0 0 
+	 	 	 0.05 0.458 0 
+	 	 	 0.05 0.458 -0.02 
+	 	 	 0.05 0 -0.02 
+	 EndPolygon 
+EndComponent 
+Component PanelConnect 
+	 Cylinder 
+	 	 FaceColor gold3 
+	 	 NumSides 8 
+	 	 Face1Position 0.0 0.0 0.0 
+	 	 Face1Radius 0.01 
+	 	 Face1Normal 1.0 0.0 0.0 
+	 	 Face2Position 0.02 0.0 0.0 
+	 	 Face2Radius 0.01 
+	 	 Face2Normal 1.0 0.0 0.0 
+	 	 Rotate 0 0 90 
+	 EndCylinder 
+EndComponent 
+Component SatASlrPnl 
+	 Refer 
+	 	 Translate 0 0 0 
+	 	 Component SatASlrPnlArm 
+	 EndRefer 
+	 Refer 
+	 	 Translate 0 0.458 0 
+	 	 Component SatASlrPnlPlate 
+	 EndRefer 
+	 Refer 
+	 	 Translate -0.38 1.275  -0.01 
+	 	 Component PanelConnect 
+	 EndRefer 
+	 Refer 
+	 	 Translate 0.38 1.275  -0.01 
+	 	 Component PanelConnect 
+	 EndRefer 
+	 Refer 
+	 	 Translate 0 1.295 0 
+	 	 Component SatASlrPnlPlate 
+	 EndRefer 
+EndComponent 
+Component SatABFrame 
+	 Refer 
+	 	 Translate 0 0 0 
+	 	 Component MainBody 
+	 EndRefer 
+	 Refer 
+	 	 Translate -1.013 -0.46 0.560 
+	 	 Component SatBKZD 
+	 EndRefer 
+	 Refer 
+	 	 Rotate 0 19.105692 0 
+	 	 Rotate -66.631584 0 0 
+	 	 Rotate 0 -0.000000 0 
+	 	 Translate 0.525 0.505 0 
+	 	 Component SatASlrPnl 
+	 EndRefer 
+	 Refer 
+	 	 Rotate 0 0 180 
+	 	 Rotate 0 22.116379 0 
+	 	 Rotate 26.162161 0 0 
+	 	 Rotate 0 0.000000 0 
+	 	 Translate 0.525 -0.505 0 
+	 	 Component SatASlrPnl 
+	 EndRefer 
+EndComponent 
+Component Vehicle 
+	 Root 
+	 Refer 
+	 	 Translate -0.545 0 0 
+	 	 Component SatABFrame 
+	 EndRefer 
+EndComponent 

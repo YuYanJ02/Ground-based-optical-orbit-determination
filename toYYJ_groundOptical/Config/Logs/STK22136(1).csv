@@ -1,0 +1,8 @@
+"Type","TypeDesc","ErrorCode","Filename","LineNumber","DateTime","ComputerName","UserName","Message"
+3,"MsgWnd",0,"",0,02/17/2024 10:48:36,"ZHR-LAPTOP","haozh","No valid 64 bit Matlab automation server is available.  Please run matlab /regserver as administrator or see Mathworks online help."
+2,"Default",0,"AgApRmtMsg.cpp",1336,02/17/2024 10:48:37,"ZHR-LAPTOP","haozh","STK/CON: Initializing STK/CON module."
+4,"MsgWnd",14008,"AgApRmtMsg.cpp",4341,02/17/2024 10:48:37,"ZHR-LAPTOP","haozh","STK/CON: Error binding to socket, Port 5001 address in use"
+1,"Default",0,"IAgUiPluginSiteImpl.hpp",50,02/17/2024 10:48:38,"ZHR-LAPTOP","haozh","Scalable Networks Modeling Interface:  Loading EXata UI xml files from ""C:\Program Files\AGI\STK 12\STK-QualNet Interface\QualNetUI\gui\settings""."
+3,"Default",0,"IAgUiPluginSiteImpl.hpp",50,02/17/2024 10:48:38,"ZHR-LAPTOP","haozh","Scalable Networks Modeling Interface:  Unable to find a valid Scalable Networks simulator installation."
+3,"Default",0,"AgSTKCommRdrComponentMgrScExt.cpp",975,02/17/2024 10:48:48,"ZHR-LAPTOP","haozh","TIREM is licensed, but a valid install was not found. Install TIREM."
+3,"Default",0,"AgSTKCommRdrComponentMgrScExt.cpp",894,02/17/2024 10:48:48,"ZHR-LAPTOP","haozh","STK Urban Propagation Extension for STK Communications is licensed, but a valid install was not found.  Install Urban Propagation Extension."

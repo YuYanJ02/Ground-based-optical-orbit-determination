@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<TePreferences xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <TERCDirectory>C:\Users\yyj\Documents\STK 12\Config</TERCDirectory>
+  <DropOutDuration>6</DropOutDuration>
+  <PersistenceDuration>0.001</PersistenceDuration>
+  <MetricInterpolationOrder>0</MetricInterpolationOrder>
+  <MeasuredInterpolationOrder>0</MeasuredInterpolationOrder>
+  <EphemerisInterpolationOrder>1</EphemerisInterpolationOrder>
+  <AttitudeInterpolationOrder>1</AttitudeInterpolationOrder>
+  <RepeatRecordTolerance>1</RepeatRecordTolerance>
+  <ModelSwitch />
+  <AntennaFileSwitch />
+  <TspiList />
+  <CustomFrameList />
+  <DataDirectoryList />
+  <SubSystemList>
+    <string>RF</string>
+    <string>RADAR</string>
+  </SubSystemList>
+  <DefaultScalarList />
+  <HideSignalDefinitionFileNotFoundError>false</HideSignalDefinitionFileNotFoundError>
+  <ShowCustomFeatures>false</ShowCustomFeatures>
+  <ShowExperimentalFeatures>false</ShowExperimentalFeatures>
+  <ShowDataDisplaySvg>false</ShowDataDisplaySvg>
+  <SmoothData>false</SmoothData>
+  <LoggingEnabled>true</LoggingEnabled>
+  <CacheEnabled>false</CacheEnabled>
+  <CacheSize>0</CacheSize>
+  <TrackCacheEnabled>true</TrackCacheEnabled>
+  <UseProjectWorkgroupDirectory>false</UseProjectWorkgroupDirectory>
+  <SyncUnitRead>false</SyncUnitRead>
+  <SyncUnitWrite>false</SyncUnitWrite>
+  <NameFormat>Short</NameFormat>
+  <PromotionConfiguration>
+    <LeadType>Time</LeadType>
+    <LeadValue>60</LeadValue>
+    <TrailType>Time</TrailType>
+    <TrailValue>60</TrailValue>
+    <ColorInt>-65536</ColorInt>
+    <ShowLabels>true</ShowLabels>
+    <ViewDistance>400000</ViewDistance>
+  </PromotionConfiguration>
+  <ContourFavorites />
+</TePreferences>

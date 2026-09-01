@@ -1,0 +1,6 @@
+"Type","TypeDesc","ErrorCode","Filename","LineNumber","DateTime","ComputerName","UserName","Message"
+1,"MsgWnd",0,"",0,08/28/2022 22:02:26,"ZHR-LAPTOP","haozh","STK MATLAB Interface:  Loaded API at C:\Program Files\MATLAB\R2021b\bin\win64."
+2,"Default",0,"AgApRmtMsg.cpp",1336,08/28/2022 22:02:26,"ZHR-LAPTOP","haozh","STK/CON: Initializing STK/CON module."
+2,"Default",0,"AgApRmtMsg.cpp",1516,08/28/2022 22:02:26,"ZHR-LAPTOP","haozh","STK/CON: Accepting connection requests"
+1,"Default",0,"IAgUiPluginSiteImpl.hpp",50,08/28/2022 22:02:29,"ZHR-LAPTOP","haozh","Scalable Networks Modeling Interface:  Loading EXata UI xml files from ""C:\Program Files\AGI\STK 12\STK-QualNet Interface\QualNetUI\gui\settings""."
+3,"Default",0,"IAgUiPluginSiteImpl.hpp",50,08/28/2022 22:02:30,"ZHR-LAPTOP","haozh","Scalable Networks Modeling Interface:  Unable to find a valid Scalable Networks simulator installation."

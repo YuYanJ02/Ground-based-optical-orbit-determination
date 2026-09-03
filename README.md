@@ -16,7 +16,7 @@
 |------|------|
 | **数据预处理** | MPC80 原始观测解析与标准化，转换为 CCSDS 503.0-B-2 TDM 格式 |
 | **ODTK 定轨** | 通过 MATLAB API 自动配置场景、测站、测量噪声与力学模型，运行 IOD / BLS / 滤波 |
-| **IOD 扫描** | 遍历 C(n,3) 三点组合，记录 STP、时间跨度与定轨收敛性 |
+| **IOD 扫描** | 遍历 C(n,3) 三点组合，记录 STP/LOS Cond、时间跨度与定轨收敛性 |
 | **STK 评估** | 导入 ODTK 星历，与参考轨道对比，输出位置误差及日月位置 |
 | **光度分析** | 理论星等模型与实测对比，分析相位角、距离与姿态对亮度的影响 |
 | **可视化** | 全球测站分布图、时间-几何条件数-定轨精度散点图等 |
@@ -27,14 +27,11 @@
 code/
 ├── [20260107]ODTK_code_yyj/          # 核心定轨与数据分析模块
 │   ├── main_odtk.m                   # ODTK 长弧定轨 + IOD 三点组合扫描
-│   ├── main_STP.m                    # 基于 STP 的 IOD 选点与短弧定轨
 │   ├── main_stk.m                    # STK 读取 ODTK 星历并提取目标/月球状态
 │   ├── main_stk_dis.m                # 定轨轨道 vs 参考轨道距离评估
 │   ├── main_mag.m                    # 光度模型与实测星等对比
 │   ├── main_TimeGeometryCompr.m      # 时间跨度 × LOS 条件数 × 定轨精度可视化
 │   ├── main_station_map.m            # 全球观测测站分布图
-│   ├── main_StationNoise.m           # 测站测量噪声蒙特卡洛分析
-│   ├── main_WhiteNoise.m             # 白噪声敏感性分析
 │   ├── READ_MPC80.m                  # MPC80 原始数据解析
 │   ├── MPC2TDM.m                     # MPC80 → TDM 转换
 │   ├── GetStationCoordinates.m       # 测站代码查经纬度
@@ -44,7 +41,7 @@ code/
 │   ├── ephemeris/                    # 参考星历（OEM 等）
 │   └── STK/                          # STK 场景配置文件
 │
-├── toYYJ/                            # STK 光学观测仿真与光度对比
+├── toYYJ/                            # STK 光学观测数据精度分析与仿真光度对比
 │   ├── main_optical_cmpar.m          # 光学观测与 STK 仿真对比（含光行时、姿态）
 │   ├── main_Astrometry.m             # 天体测量误差分析
 │   ├── ReadEph.m                     # 读取星历初值
@@ -111,8 +108,6 @@ READ_MPC80('DROB_20251026_27.txt', 'MPC80_DROB_20251026_27.txt');
 
 ```matlab
 main_odtk      % 长弧定轨 + 全部 C(n,3) IOD 组合扫描
-% 或
-main_STP       % 基于 STP 的 IOD 选点与短弧定轨
 ```
 
 脚本将自动：创建 Scenario → 加载 TDM → 配置卫星力学模型 → 创建 TrackingSystem 与光学测站 → 设置 RA/Dec 测量噪声 → 运行 IOD / BLS。
@@ -143,7 +138,6 @@ plot_od_error_compare       % 定轨误差对比图
 | 脚本 | 说明 |
 |------|------|
 | `main_odtk.m` | 长弧定轨主流程；遍历所有三点 IOD 组合，记录 STP、平均定轨误差 |
-| `main_STP.m` | 基于标量三重积筛选 IOD 观测值，结合距离约束的短弧定轨 |
 | `main_odtk1.m` | 定轨流程变体（简化配置） |
 | `recompute_TPAll_STP.m` | 重算 TPAll 中的 STP / LOS 条件数 |
 
@@ -152,8 +146,6 @@ plot_od_error_compare       % 定轨误差对比图
 | 脚本 | 说明 |
 |------|------|
 | `main_stk_dis.m` | ODTK 定轨 vs 参考轨道位置误差（km） |
-| `main_StationNoise.m` | 测站 RA/Dec 噪声蒙特卡洛 |
-| `main_WhiteNoise.m` | 白噪声 sigma 扫描 |
 | `range_residual_search.m` | 短弧距离约束搜索 |
 
 ### 光度与光学仿真
@@ -213,7 +205,7 @@ MPC80 原始观测
 READ_MPC80 ──► MPC2TDM ──► TDM 文件
     │
     ▼
-main_odtk / main_STP ──► ODTK IOD + BLS 定轨 ──► 星历 (.e)
+main_odtk ──► ODTK IOD + BLS 定轨 ──► 星历 (.e)
     │
     ├──► main_stk_dis ──► 与参考轨道对比误差
     │

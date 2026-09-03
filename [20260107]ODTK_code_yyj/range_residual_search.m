@@ -1,5 +1,5 @@
 function [best_rho, best_state] = range_residual_search(ra_deg, dec_deg, obs, station_per_obs, t, search_range_km, sta_alt_m)
-%RANGE_RESIDUAL_SEARCH 在 rho 网格上搜索，使「匀速直线 + 名义地心距」模型与所有观测最一致。
+%   对于短弧施加距离约束：在 rho 网格上搜索，假定目标匀速直线，迭代地心距，使所有观测残差最小。
 %
 %   obs : 参与拟合的观测在 ra_deg/dec_deg/t 中的下标（如 1:nObs 表示全部）
 %   对每条 rho_test：先算各地心单位矢 u_geo(i)，再对中间历元 i=2..n-1 用时间插值系数 k_i，
